@@ -27,39 +27,69 @@ public class DataClean {
     // Método para limpar os dados do arquivo CSV
     public void cleanData() {
         String dataPath = AppConfig.path_base;
-        String cleanedDataPath = AppConfig.path_finalbase;
         LOGGER.info("Caminho de leitura: " + dataPath);
-        
+    
+        // Caminho dos arquivos,
+        String finalDataPath = AppConfig.path_finalbase;
+        String semiFinalDataPath = AppConfig.path_semifinalbase;
+        String quarterFinalDataPath = AppConfig.path_quarterbase;
+        String octaFinalDataPath = AppConfig.path_octabase;
+    
         // Lê o arquivo CSV e escreve o arquivo limpo
         try {
             Reader in = new FileReader(dataPath);
             Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in);
     
-            Writer out = new FileWriter(cleanedDataPath);
-            CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+            //Cria os arquivos de saída
+            Writer outFinal = new FileWriter(finalDataPath);
+            CSVPrinter printerFinal = new CSVPrinter(outFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
     
-            processRecords(records.iterator(), printer);
+            Writer outSemiFinal = new FileWriter(semiFinalDataPath);
+            CSVPrinter printerSemiFinal = new CSVPrinter(outSemiFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
     
-            printer.close();
-            out.close();
-            LOGGER.info("Caminho da base tratada: " + cleanedDataPath);
+            Writer outQuarterFinal = new FileWriter(quarterFinalDataPath);
+            CSVPrinter printerQuarterFinal = new CSVPrinter(outQuarterFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+    
+            Writer outOctaFinal = new FileWriter(octaFinalDataPath);
+            CSVPrinter printerOctaFinal = new CSVPrinter(outOctaFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+    
+            processRecords(records.iterator(), printerFinal, printerSemiFinal, printerQuarterFinal, printerOctaFinal);
+    
+            // Fecha os arquivos de saída
+            printerFinal.close();
+            printerSemiFinal.close();
+            printerQuarterFinal.close();
+            printerOctaFinal.close();
         } catch (IOException e) {
-            LOGGER.log(Level.SEVERE, "Erro ao processar o CSV", e);
+            LOGGER.severe("Error processing CSV file: " + e.getMessage());
         }
     }
 
     // Método para processar os registros do arquivo CSV
-    private void processRecords(Iterator<CSVRecord> iterator, CSVPrinter printer) throws IOException {
-        if (iterator.hasNext()) {
-            // Processa os registros
-            CSVRecord record = iterator.next();
-            // Verifica se a fase é "Semi-Finais"
-            Map<String, String> values = record.toMap();
-            // Se a fase for "Semi-Finais", imprime o registro
-            if ("Semi-Finais".equals(values.get("fase"))) {
-                printer.printRecord(values.values());
-            }
-            processRecords(iterator, printer);
+    private void processRecords(Iterator<CSVRecord> iterator, 
+                            CSVPrinter printerFinal, 
+                            CSVPrinter printerSemiFinal, 
+                            CSVPrinter printerQuarterFinal, 
+                            CSVPrinter printerOctaFinal) throws IOException {
+    if (iterator.hasNext()) {
+        // Processa os registros
+        CSVRecord record = iterator.next();
+        // Verifica se a fase é "Semi-Finais", "Final", "Quartas De Final", "Oitavas De Final"
+        Map<String, String> values = record.toMap();
+        String fase = values.get("fase");
+
+        // Depending on the fase, print to the corresponding file
+        if ("Final".equals(fase)) {
+            printerFinal.printRecord(values.values());
+        } else if ("Semi-Finais".equals(fase)) {
+            printerSemiFinal.printRecord(values.values());
+        } else if ("Quartas De Final".equals(fase)) {
+            printerQuarterFinal.printRecord(values.values());
+        } else if ("Oitavas De Final".equals(fase)) {
+            printerOctaFinal.printRecord(values.values());
         }
+
+        processRecords(iterator, printerFinal, printerSemiFinal, printerQuarterFinal, printerOctaFinal);
     }
+}
 }

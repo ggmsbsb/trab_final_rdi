@@ -21,6 +21,6 @@ public class RdifinalApplication {
         ConfigurableApplicationContext context = SpringApplication.run(RdifinalApplication.class, args);
         DataClean dataClean = context.getBean(DataClean.class);
         dataClean.cleanData();
-		LOGGER.info("Base de dados limpa. Arquivos gerados em: " + AppConfig.path_finalbase);
+		LOGGER.info("Base de dados limpa. Arquivos gerados em: D:\\CDMI\\rdifinal\\src\\main\\resources\\data");
     }
 }
