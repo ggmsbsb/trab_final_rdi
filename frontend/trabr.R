@@ -7,6 +7,7 @@ library(caret)
 library(openxlsx)
 library(shinydashboard)
 library(shinyWidgets)
+library(plotly)
 
 # Definindo os caminhos dos arquivos CSV
 path_base <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league.csv"
@@ -91,6 +92,7 @@ ui <- dashboardPage(
                   title = "Filtros",
                   solidHeader = TRUE,
                   status = "primary",
+                  width = 3,
                   collapsible = TRUE,
                   selectInput("dataset_selector", "Selecione a Base de Dados:", 
                               choices = c("Base", "Final", "Semifinal", "Quarterfinal", "Octafinal")),
@@ -110,6 +112,7 @@ ui <- dashboardPage(
                   title = "Configuração do Dashboard",
                   solidHeader = TRUE,
                   status = "primary",
+                  width = 3,
                   selectInput("plot_type", "Selecione o tipo de Dashboard:",
                               choices = c("Finalistas", "Valores")),
                   uiOutput("liga_selector_dashboard"),
@@ -119,7 +122,7 @@ ui <- dashboardPage(
                   title = "Dashboard",
                   solidHeader = TRUE,
                   status = "primary",
-                  plotOutput("dashboard_plot"),
+                  plotlyOutput("dashboard_plot"),
                   uiOutput("dashboard_insight")
                 )
               )
@@ -193,48 +196,34 @@ server <- function(input, output, session) {
   })
 
   # Renderiza o plot do dashboard
-  output$dashboard_plot <- renderPlot({
+  output$dashboard_plot <- renderPlotly({
     req(input$plot_type)
     switch(input$plot_type,
-           "Finalistas" = {
-             finais_data <- data_finalbase
-             teams_in_finals <- c(finais_data$time_mandante, finais_data$time_visitante)
-             team_counts <- table(teams_in_finals)
-             plot_data <- data.frame(team = names(team_counts), count = as.integer(team_counts))
-             ggplot(data = plot_data, aes(x = team, y = count)) +
-               geom_bar(stat = "identity", fill = "blue") +
-               labs(title = "Number of times each team made it to the Finals",
-                    x = "Team", y = "Count")
-           },
-           "Valores" = {
-             # Usar o data_finalbase diretamente
-             data <- data_finalbase
-             # Converter a coluna 'temporada' para o ano inicial
-             data$ano <- as.numeric(substring(data$temporada, 1, 4))
-             ggplot(data, aes(x = ano)) +
-               geom_line(aes(y = valor_medio_equipe_titular_mandante, color = "Home Team")) +
-               geom_line(aes(y = valor_medio_equipe_titular_visitante, color = "Away Team")) +
-               scale_color_manual(values = c("Home Team" = "green", "Away Team" = "pink")) +
-               scale_y_continuous(labels = scales::comma) +
-               labs(title = "Comparison of Team Values Over Time",
-                    x = "Season", y = "Average Team Value")
-           },
-           "Estatísticas de Time" = {
-             req(input$liga_dashboard)
-             data <- get_data() %>%
-               filter(liga == input$liga_dashboard)
-             ggplot(data, aes(x = time_mandante)) +
-               geom_bar(fill = "blue") +
-               labs(title = "Distribuição dos Jogos por Time Mandante", x = "Time Mandante", y = "Contagem")
-           },
-           "Clusters de Desempenho" = {
-             req(input$relation_cluster)
-             data <- get_data()
-             ggplot(data, aes_string(x = "gols_mandante", y = "gols_visitante")) +
-               geom_point(color = "blue") +
-               labs(title = "Clusters de Desempenho", x = "Gols Mandante", y = "Gols Visitante")
-           }
-    )
+          "Finalistas" = {
+            finais_data <- data_finalbase
+            teams_in_finals <- c(finais_data$time_mandante, finais_data$time_visitante)
+            team_counts <- table(teams_in_finals)
+            plot_data <- data.frame(team = names(team_counts), count = as.integer(team_counts))
+            p <- ggplot(data = plot_data, aes(x = team, y = count)) +
+              geom_bar(stat = "identity", fill = "blue") +
+              labs(title = "Finalistas",
+                    x = "Time", y = "Quantidade")
+            ggplotly(p)
+          },
+          "Valores" = {
+            # Usar o data_finalbase diretamente
+            data <- data_finalbase
+            # Converter a coluna 'temporada' para o ano inicial
+            data$ano <- as.numeric(substring(data$temporada, 1, 4))
+            p <- ggplot(data, aes(x = ano)) +
+              geom_line(aes(y = valor_medio_equipe_titular_mandante, color = "Mandante")) +
+              geom_line(aes(y = valor_medio_equipe_titular_visitante, color = "Visitante")) +
+              scale_color_manual(values = c("Mandante" = "green", "Visitante" = "pink")) +
+              scale_y_continuous(labels = scales::comma) +
+              labs(title = "Valor médio dos times finalistas ao longo do tempo",
+                   x = "Temporada", y = "Média dos valores")
+            ggplotly(p)
+          })
   })
 
   observeEvent(input$full_df, {
@@ -261,8 +250,8 @@ server <- function(input, output, session) {
                plot_data <- data.frame(team = names(team_counts), count = as.integer(team_counts))
                ggplot(data = plot_data, aes(x = team, y = count)) +
                  geom_bar(stat = "identity", fill = "blue") +
-                 labs(title = "Number of times each team made it to the Finals",
-                      x = "Team", y = "Count")
+                 labs(title = "Finalistas",
+                      x = "Time", y = "Quantidade")
              },
              "Valores" = {
                # Usar o data_finalbase diretamente
@@ -274,7 +263,7 @@ server <- function(input, output, session) {
                  geom_line(aes(y = valor_medio_equipe_titular_visitante, color = "Visitante")) +
                  scale_color_manual(values = c("Mandante" = "green", "Visitante" = "pink")) +
                  scale_y_continuous(labels = scales::comma) +
-                 labs(title = "Valor dos finalistas ao longo do tempo",
+                 labs(title = "Valor médio dos times finalistas ao longo do tempo",
                       x = "Temporada", y = "Média dos valores")
              },
       )
@@ -288,5 +277,6 @@ server <- function(input, output, session) {
     })
   })
 }
+
 
 shiny::runApp(shinyApp(ui = ui, server = server), host = "127.0.0.1", port = 3838)
