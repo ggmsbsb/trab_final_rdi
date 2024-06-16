@@ -1,0 +1,2492 @@
+time_mandante,time_visitante,proporcao_sucesso_mandante,proporcao_sucesso_visitante,gols_mandante,gols_visitante
+Galatasaray,Juventus FC,1.61,1.85,2,0
+Galatasaray,Real Sociedad,1.61,1.61,1,2
+Galatasaray,Olympiacos Pireu,1.61,1.53,1,0
+PSV Eindhoven,AEK Atenas,1.6,1.58,2,0
+PSV Eindhoven,RC Deportivo de Corunha,1.6,1.59,3,2
+PSV Eindhoven,AS Mônaco,1.6,1.79,1,2
+AS Mônaco,Futebol Clube do Porto,1.79,2.02,0,3
+AS Mônaco,Lokomotiv Moscovo,1.79,1.81,1,0
+AS Mônaco,PSV Eindhoven,1.79,1.6,1,1
+AS Mônaco,Chelsea FC,1.79,1.68,3,1
+AS Mônaco,AEK Atenas,1.79,1.58,4,0
+AS Mônaco,Real Madrid CF,1.79,2.01,3,1
+AS Mônaco,RC Deportivo de Corunha,1.79,1.59,8,3
+FK Partizan Belgrado,Futebol Clube do Porto,1.81,2.02,1,1
+FK Partizan Belgrado,Olympique Marselha,1.81,1.59,1,1
+FK Partizan Belgrado,Real Madrid CF,1.81,2.01,0,0
+Club Brugge,AC Milan,1.69,1.54,0,1
+Club Brugge,AFC Ajax,1.69,1.48,2,1
+Club Brugge,Celta de Vigo,1.69,1.72,1,1
+AC Sparta Praga,AC Milan,1.9,1.54,0,0
+AC Sparta Praga,Besiktas JK,1.9,3,2,1
+AC Sparta Praga,SS Lazio,1.9,1.73,1,0
+AC Sparta Praga,Chelsea FC,1.9,1.68,0,1
+RSC Anderlecht,FC Bayern Munique,1.74,1.93,1,1
+RSC Anderlecht,Celtic FC,1.74,1.77,1,0
+RSC Anderlecht,Olympique Lyon,1.74,1.71,1,0
+Besiktas JK,AC Sparta Praga,3,1.9,1,0
+Besiktas JK,Chelsea FC,3,1.68,0,2
+Besiktas JK,SS Lazio,3,1.73,0,2
+Manchester United FC,Panathinaikos Atenas,2.09,1.84,5,0
+Manchester United FC,Rangers FC,2.09,1.85,3,0
+Manchester United FC,VfB Stuttgart,2.09,1.72,2,0
+Manchester United FC,Futebol Clube do Porto,2.09,2.02,1,1
+Olympique Lyon,Real Sociedad,1.71,1.61,1,0
+Olympique Lyon,FC Bayern Munique,1.71,1.93,1,1
+Olympique Lyon,RSC Anderlecht,1.71,1.74,1,0
+Olympique Lyon,Celtic FC,1.71,1.77,3,2
+Olympique Lyon,Futebol Clube do Porto,1.71,2.02,2,2
+FC Arsenal,Celta de Vigo,1.94,1.72,2,0
+FC Arsenal,Lokomotiv Moscovo,1.94,1.81,2,0
+FC Arsenal,Chelsea FC,1.94,1.68,1,2
+FC Arsenal,FC Internazionale,1.94,1.92,0,3
+FC Arsenal,Dínamo Kiev,1.94,1.93,1,0
+AC Milan,Celta de Vigo,1.54,1.72,1,2
+AC Milan,AC Sparta Praga,1.54,1.9,4,1
+AC Milan,RC Deportivo de Corunha,1.54,1.59,4,1
+AC Milan,AFC Ajax,1.54,1.48,1,0
+AC Milan,Club Brugge,1.54,1.69,0,1
+FC Bayern Munique,Real Madrid CF,1.93,2.01,1,1
+FC Bayern Munique,RSC Anderlecht,1.93,1.74,1,0
+FC Bayern Munique,Celtic FC,1.93,1.77,2,1
+FC Bayern Munique,Olympique Lyon,1.93,1.71,1,2
+RC Deportivo de Corunha,AEK Atenas,1.59,1.58,3,0
+RC Deportivo de Corunha,AC Milan,1.59,1.54,4,0
+RC Deportivo de Corunha,PSV Eindhoven,1.59,1.6,2,0
+RC Deportivo de Corunha,AS Mônaco,1.59,1.79,1,0
+RC Deportivo de Corunha,Juventus FC,1.59,1.85,1,0
+RC Deportivo de Corunha,Futebol Clube do Porto,1.59,2.02,0,1
+Panathinaikos Atenas,Rangers FC,1.84,1.85,1,1
+Panathinaikos Atenas,VfB Stuttgart,1.84,1.72,1,3
+Panathinaikos Atenas,Manchester United FC,1.84,2.09,0,1
+AFC Ajax,Club Brugge,1.48,1.69,2,0
+AFC Ajax,AC Milan,1.48,1.54,0,1
+AFC Ajax,Celta de Vigo,1.48,1.72,1,0
+SS Lazio,Besiktas JK,1.73,3,1,1
+SS Lazio,AC Sparta Praga,1.73,1.9,2,2
+SS Lazio,Chelsea FC,1.73,1.68,0,4
+Dínamo Kiev,Lokomotiv Moscovo,1.93,1.81,2,0
+Dínamo Kiev,FC Internazionale,1.93,1.92,1,1
+Dínamo Kiev,FC Arsenal,1.93,1.94,2,1
+FC Internazionale,FC Arsenal,1.92,1.94,1,5
+FC Internazionale,Lokomotiv Moscovo,1.92,1.81,1,1
+FC Internazionale,Dínamo Kiev,1.92,1.93,2,1
+Celtic FC,FC Bayern Munique,1.77,1.93,0,0
+Celtic FC,RSC Anderlecht,1.77,1.74,3,1
+Celtic FC,Olympique Lyon,1.77,1.71,2,0
+Real Madrid CF,Futebol Clube do Porto,2.01,2.02,1,1
+Real Madrid CF,Olympique Marselha,2.01,1.59,4,2
+Real Madrid CF,FC Bayern Munique,2.01,1.93,1,0
+Real Madrid CF,FK Partizan Belgrado,2.01,1.81,1,0
+Real Madrid CF,AS Mônaco,2.01,1.79,4,2
+Olympiacos Pireu,Real Sociedad,1.53,1.61,2,2
+Olympiacos Pireu,Galatasaray,1.53,1.61,3,0
+Olympiacos Pireu,Juventus FC,1.53,1.85,1,2
+Olympique Marselha,Futebol Clube do Porto,1.59,2.02,2,3
+Olympique Marselha,Real Madrid CF,1.59,2.01,1,2
+Olympique Marselha,FK Partizan Belgrado,1.59,1.81,3,0
+Real Sociedad,Juventus FC,1.61,1.85,0,0
+Real Sociedad,Olympiacos Pireu,1.61,1.53,1,0
+Real Sociedad,Olympique Lyon,1.61,1.71,0,1
+Real Sociedad,Galatasaray,1.61,1.61,1,1
+AEK Atenas,PSV Eindhoven,1.58,1.6,0,1
+AEK Atenas,RC Deportivo de Corunha,1.58,1.59,1,1
+AEK Atenas,AS Mônaco,1.58,1.79,0,0
+Celta de Vigo,AC Milan,1.72,1.54,0,0
+Celta de Vigo,Club Brugge,1.72,1.69,1,1
+Celta de Vigo,FC Arsenal,1.72,1.94,2,3
+Celta de Vigo,AFC Ajax,1.72,1.48,3,2
+Rangers FC,Panathinaikos Atenas,1.85,1.84,1,3
+Rangers FC,VfB Stuttgart,1.85,1.72,2,1
+Rangers FC,Manchester United FC,1.85,2.09,0,1
+VfB Stuttgart,Rangers FC,1.72,1.85,1,0
+VfB Stuttgart,Panathinaikos Atenas,1.72,1.84,2,0
+VfB Stuttgart,Manchester United FC,1.72,2.09,2,1
+VfB Stuttgart,Chelsea FC,1.72,1.68,0,1
+Chelsea FC,FC Arsenal,1.68,1.94,1,1
+Chelsea FC,AS Mônaco,1.68,1.79,2,2
+Chelsea FC,AC Sparta Praga,1.68,1.9,0,0
+Chelsea FC,VfB Stuttgart,1.68,1.72,0,0
+Chelsea FC,SS Lazio,1.68,1.73,2,1
+Chelsea FC,Besiktas JK,1.68,3,0,2
+Lokomotiv Moscovo,FC Internazionale,1.81,1.92,3,0
+Lokomotiv Moscovo,AS Mônaco,1.81,1.79,2,1
+Lokomotiv Moscovo,Dínamo Kiev,1.81,1.93,3,2
+Lokomotiv Moscovo,FC Arsenal,1.81,1.94,0,0
+Futebol Clube do Porto,RC Deportivo de Corunha,2.02,1.59,0,0
+Futebol Clube do Porto,Olympique Marselha,2.02,1.59,1,0
+Futebol Clube do Porto,Olympique Lyon,2.02,1.71,2,0
+Futebol Clube do Porto,FK Partizan Belgrado,2.02,1.81,2,1
+Futebol Clube do Porto,Manchester United FC,2.02,2.09,2,1
+Futebol Clube do Porto,Real Madrid CF,2.02,2.01,1,3
+Juventus FC,Galatasaray,1.85,1.61,2,1
+Juventus FC,Olympiacos Pireu,1.85,1.53,7,0
+Juventus FC,RC Deportivo de Corunha,1.85,1.59,0,1
+Juventus FC,Real Sociedad,1.85,1.61,4,2
+FC Barcelona,AC Milan,2.14,1.54,2,1
+FC Barcelona,Chelsea FC,2.14,1.68,2,1
+FC Barcelona,Celtic FC,2.14,1.77,1,1
+FC Barcelona,Shakhtar Donetsk,2.14,,3,0
+Werder Bremen,RSC Anderlecht,1.72,1.74,5,1
+Werder Bremen,FC Internazionale,1.72,1.92,1,1
+Werder Bremen,Olympique Lyon,1.72,1.71,0,3
+Werder Bremen,Valência CF,1.72,1.41,2,1
+PSV Eindhoven,FC Arsenal,1.6,1.94,1,1
+PSV Eindhoven,Rosenborg BK,1.6,1.45,1,0
+PSV Eindhoven,Olympique Lyon,1.6,1.71,4,2
+PSV Eindhoven,Panathinaikos Atenas,1.6,1.84,1,0
+PSV Eindhoven,AC Milan,1.6,1.54,3,1
+PSV Eindhoven,AS Mônaco,1.6,1.79,1,0
+AS Mônaco,RC Deportivo de Corunha,1.79,1.59,2,0
+AS Mônaco,Olympiacos Pireu,1.79,1.53,2,1
+AS Mônaco,PSV Eindhoven,1.79,1.6,0,2
+AS Mônaco,FC Liverpool,1.79,1.87,1,0
+Shakhtar Donetsk,AC Milan,,1.54,0,1
+Shakhtar Donetsk,Celtic FC,,1.77,3,0
+Shakhtar Donetsk,FC Barcelona,,2.14,2,0
+Bayer 04 Leverkusen,AS Roma,1.6,2.07,3,1
+Bayer 04 Leverkusen,Real Madrid CF,1.6,2.01,3,0
+Bayer 04 Leverkusen,FC Liverpool,1.6,1.87,1,3
+Bayer 04 Leverkusen,Dínamo Kiev,1.6,1.93,3,0
+AC Sparta Praga,Fenerbahce,1.9,1.69,0,1
+AC Sparta Praga,Olympique Lyon,1.9,1.71,1,2
+AC Sparta Praga,Manchester United FC,1.9,2.09,0,0
+RSC Anderlecht,FC Internazionale,1.74,1.92,1,3
+RSC Anderlecht,Werder Bremen,1.74,1.72,1,2
+RSC Anderlecht,Valência CF,1.74,1.41,1,2
+Manchester United FC,AC Sparta Praga,2.09,1.9,4,1
+Manchester United FC,AC Milan,2.09,1.54,0,1
+Manchester United FC,Olympique Lyon,2.09,1.71,2,1
+Manchester United FC,Fenerbahce,2.09,1.69,6,2
+Olympique Lyon,PSV Eindhoven,1.71,1.6,1,1
+Olympique Lyon,Manchester United FC,1.71,2.09,2,2
+Olympique Lyon,Werder Bremen,1.71,1.72,7,2
+Olympique Lyon,Fenerbahce,1.71,1.69,4,2
+Olympique Lyon,AC Sparta Praga,1.71,1.9,5,0
+FC Paris Saint-Germain,Futebol Clube do Porto,1.96,2.02,2,0
+FC Paris Saint-Germain,CSKA Moscovo,1.96,1.7,1,3
+FC Paris Saint-Germain,Chelsea FC,1.96,1.68,0,3
+FC Arsenal,Panathinaikos Atenas,1.94,1.84,1,1
+FC Arsenal,Rosenborg BK,1.94,1.45,5,1
+FC Arsenal,FC Bayern Munique,1.94,1.93,1,0
+FC Arsenal,PSV Eindhoven,1.94,1.6,1,0
+Maccabi Tel Aviv,AFC Ajax,2.25,1.48,2,1
+Maccabi Tel Aviv,Juventus FC,2.25,1.85,1,1
+Maccabi Tel Aviv,FC Bayern Munique,2.25,1.93,0,1
+Rosenborg BK,PSV Eindhoven,1.45,1.6,1,2
+Rosenborg BK,Panathinaikos Atenas,1.45,1.84,2,2
+Rosenborg BK,FC Arsenal,1.45,1.94,1,1
+Fenerbahce,AC Sparta Praga,1.69,1.9,1,0
+Fenerbahce,Manchester United FC,1.69,2.09,3,0
+Fenerbahce,Olympique Lyon,1.69,1.71,1,3
+FC Liverpool,Juventus FC,1.87,1.85,2,1
+FC Liverpool,Bayer 04 Leverkusen,1.87,1.6,3,1
+FC Liverpool,Olympiacos Pireu,1.87,1.53,3,1
+FC Liverpool,RC Deportivo de Corunha,1.87,1.59,0,0
+FC Liverpool,Chelsea FC,1.87,1.68,1,0
+FC Liverpool,AS Mônaco,1.87,1.79,2,0
+Valência CF,Werder Bremen,1.41,1.72,0,2
+Valência CF,FC Internazionale,1.41,1.92,1,5
+Valência CF,RSC Anderlecht,1.41,1.74,2,0
+AC Milan,PSV Eindhoven,1.54,1.6,2,0
+AC Milan,Celtic FC,1.54,1.77,3,1
+AC Milan,FC Internazionale,1.54,1.92,2,0
+AC Milan,Manchester United FC,1.54,2.09,1,0
+AC Milan,FC Barcelona,1.54,2.14,1,0
+AC Milan,Shakhtar Donetsk,1.54,,4,0
+AC Milan,FC Liverpool,1.54,1.87,5,6
+FC Bayern Munique,Maccabi Tel Aviv,1.93,2.25,5,1
+FC Bayern Munique,Chelsea FC,1.93,1.68,3,2
+FC Bayern Munique,FC Arsenal,1.93,1.94,3,1
+FC Bayern Munique,Juventus FC,1.93,1.85,0,1
+FC Bayern Munique,AFC Ajax,1.93,1.48,4,0
+RC Deportivo de Corunha,Olympiacos Pireu,1.59,1.53,0,0
+RC Deportivo de Corunha,AS Mônaco,1.59,1.79,0,5
+RC Deportivo de Corunha,FC Liverpool,1.59,1.87,0,1
+Panathinaikos Atenas,FC Arsenal,1.84,1.94,2,2
+Panathinaikos Atenas,Rosenborg BK,1.84,1.45,2,1
+Panathinaikos Atenas,PSV Eindhoven,1.84,1.6,4,1
+AS Roma,Bayer 04 Leverkusen,2.07,1.6,1,1
+AS Roma,Real Madrid CF,2.07,2.01,0,3
+AS Roma,Dínamo Kiev,2.07,1.93,0,3
+AFC Ajax,Juventus FC,1.48,1.85,0,1
+AFC Ajax,Maccabi Tel Aviv,1.48,2.25,3,0
+AFC Ajax,FC Bayern Munique,1.48,1.93,2,2
+Dínamo Kiev,AS Roma,1.93,2.07,2,0
+Dínamo Kiev,Bayer 04 Leverkusen,1.93,1.6,4,2
+Dínamo Kiev,Real Madrid CF,1.93,2.01,2,2
+FC Internazionale,AC Milan,1.92,1.54,0,3
+FC Internazionale,RSC Anderlecht,1.92,1.74,3,0
+FC Internazionale,Werder Bremen,1.92,1.72,2,0
+FC Internazionale,Futebol Clube do Porto,1.92,2.02,3,1
+FC Internazionale,Valência CF,1.92,1.41,0,0
+Celtic FC,Shakhtar Donetsk,1.77,,1,0
+Celtic FC,AC Milan,1.77,1.54,0,0
+Celtic FC,FC Barcelona,1.77,2.14,1,3
+Real Madrid CF,Bayer 04 Leverkusen,2.01,1.6,1,1
+Real Madrid CF,AS Roma,2.01,2.07,4,2
+Real Madrid CF,Dínamo Kiev,2.01,1.93,1,0
+Real Madrid CF,Juventus FC,2.01,1.85,1,0
+Olympiacos Pireu,FC Liverpool,1.53,1.87,1,0
+Olympiacos Pireu,AS Mônaco,1.53,1.79,1,0
+Olympiacos Pireu,RC Deportivo de Corunha,1.53,1.59,1,0
+CSKA Moscovo,Chelsea FC,1.7,1.68,0,1
+CSKA Moscovo,Futebol Clube do Porto,1.7,2.02,0,1
+CSKA Moscovo,FC Paris Saint-Germain,1.7,1.96,2,0
+Chelsea FC,Futebol Clube do Porto,1.68,2.02,3,1
+Chelsea FC,FC Liverpool,1.68,1.87,0,0
+Chelsea FC,FC Barcelona,1.68,2.14,4,2
+Chelsea FC,FC Paris Saint-Germain,1.68,1.96,0,0
+Chelsea FC,CSKA Moscovo,1.68,1.7,2,0
+Chelsea FC,FC Bayern Munique,1.68,1.93,4,2
+Futebol Clube do Porto,Chelsea FC,2.02,1.68,2,1
+Futebol Clube do Porto,FC Paris Saint-Germain,2.02,1.96,0,0
+Futebol Clube do Porto,CSKA Moscovo,2.02,1.7,0,0
+Futebol Clube do Porto,FC Internazionale,2.02,1.92,1,1
+Juventus FC,AFC Ajax,1.85,1.48,1,0
+Juventus FC,Real Madrid CF,1.85,2.01,2,0
+Juventus FC,FC Bayern Munique,1.85,1.93,1,0
+Juventus FC,FC Liverpool,1.85,1.87,0,0
+Juventus FC,Maccabi Tel Aviv,1.85,2.25,1,0
+FC Barcelona,Chelsea FC,2.14,1.68,1,1
+FC Barcelona,Werder Bremen,2.14,1.72,3,1
+FC Barcelona,Udinese Calcio,2.14,1.57,4,1
+FC Barcelona,Sport Lisboa e Benfica,2.14,1.92,2,0
+FC Barcelona,Panathinaikos Atenas,2.14,1.84,5,0
+FC Barcelona,AC Milan,2.14,1.54,0,0
+FC Barcelona,FC Arsenal,2.14,1.94,2,1
+FC Villarreal,FC Arsenal,1.55,1.94,0,0
+FC Villarreal,Rangers FC,1.55,1.85,1,1
+FC Villarreal,Sport Lisboa e Benfica,1.55,1.92,1,1
+FC Villarreal,Manchester United FC,1.55,2.09,0,0
+FC Villarreal,FC Internazionale,1.55,1.92,1,0
+FC Villarreal,LOSC Lille,1.55,1.93,1,0
+Werder Bremen,Juventus FC,1.72,1.85,3,2
+Werder Bremen,FC Barcelona,1.72,2.14,0,2
+Werder Bremen,Udinese Calcio,1.72,1.57,4,3
+Werder Bremen,Panathinaikos Atenas,1.72,1.84,5,1
+PSV Eindhoven,AC Milan,1.6,1.54,1,0
+PSV Eindhoven,Schalke 04,1.6,2.04,1,0
+PSV Eindhoven,Fenerbahce,1.6,1.69,2,0
+PSV Eindhoven,Olympique Lyon,1.6,1.71,0,1
+Club Brugge,FC Bayern Munique,1.69,1.93,1,1
+Club Brugge,Juventus FC,1.69,1.85,1,2
+Club Brugge,Rapid de Viena,1.69,1.72,3,2
+AC Sparta Praga,AFC Ajax,1.9,1.48,1,1
+AC Sparta Praga,FC Arsenal,1.9,1.94,0,2
+AC Sparta Praga,FC Thun,1.9,1.4,0,0
+RSC Anderlecht,FC Liverpool,1.74,1.87,0,1
+RSC Anderlecht,Real Bétis,1.74,1.69,0,1
+RSC Anderlecht,Chelsea FC,1.74,1.68,0,2
+Manchester United FC,FC Villarreal,2.09,1.55,0,0
+Manchester United FC,LOSC Lille,2.09,1.93,0,0
+Manchester United FC,Sport Lisboa e Benfica,2.09,1.92,2,1
+Olympique Lyon,Olympiacos Pireu,1.71,1.53,2,1
+Olympique Lyon,AC Milan,1.71,1.54,0,0
+Olympique Lyon,PSV Eindhoven,1.71,1.6,4,0
+Olympique Lyon,Rosenborg BK,1.71,1.45,2,1
+Olympique Lyon,Real Madrid CF,1.71,2.01,3,0
+FC Artmedia Bratislava,Rangers FC,1.5,1.85,2,2
+FC Artmedia Bratislava,FC Internazionale,1.5,1.92,0,1
+FC Artmedia Bratislava,Futebol Clube do Porto,1.5,2.02,0,0
+FC Arsenal,FC Thun,1.94,1.4,2,1
+FC Arsenal,AFC Ajax,1.94,1.48,0,0
+FC Arsenal,Real Madrid CF,1.94,2.01,0,0
+FC Arsenal,AC Sparta Praga,1.94,1.9,3,0
+FC Arsenal,Juventus FC,1.94,1.85,2,0
+FC Arsenal,FC Villarreal,1.94,1.55,1,0
+Rosenborg BK,Real Madrid CF,1.45,2.01,0,2
+Rosenborg BK,Olympique Lyon,1.45,1.71,0,1
+Rosenborg BK,Olympiacos Pireu,1.45,1.53,1,1
+Udinese Calcio,Panathinaikos Atenas,1.57,1.84,3,0
+Udinese Calcio,FC Barcelona,1.57,2.14,0,2
+Udinese Calcio,Werder Bremen,1.57,1.72,1,1
+Fenerbahce,Schalke 04,1.69,2.04,3,3
+Fenerbahce,PSV Eindhoven,1.69,1.6,3,0
+Fenerbahce,AC Milan,1.69,1.54,0,4
+FC Liverpool,Real Bétis,1.87,1.69,0,0
+FC Liverpool,RSC Anderlecht,1.87,1.74,3,0
+FC Liverpool,Sport Lisboa e Benfica,1.87,1.92,0,2
+FC Liverpool,Chelsea FC,1.87,1.68,0,0
+LOSC Lille,Sport Lisboa e Benfica,1.93,1.92,0,0
+LOSC Lille,FC Villarreal,1.93,1.55,0,0
+LOSC Lille,Manchester United FC,1.93,2.09,1,0
+Sport Lisboa e Benfica,FC Villarreal,1.92,1.55,0,1
+Sport Lisboa e Benfica,FC Barcelona,1.92,2.14,0,0
+Sport Lisboa e Benfica,FC Liverpool,1.92,1.87,1,0
+Sport Lisboa e Benfica,LOSC Lille,1.92,1.93,1,0
+Sport Lisboa e Benfica,Manchester United FC,1.92,2.09,2,1
+AC Milan,PSV Eindhoven,1.54,1.6,0,0
+AC Milan,Fenerbahce,1.54,1.69,3,1
+AC Milan,Schalke 04,1.54,2.04,3,2
+AC Milan,Olympique Lyon,1.54,1.71,3,1
+AC Milan,FC Barcelona,1.54,2.14,0,1
+AC Milan,FC Bayern Munique,1.54,1.93,4,1
+FC Bayern Munique,Rapid de Viena,1.93,1.72,4,0
+FC Bayern Munique,AC Milan,1.93,1.54,1,1
+FC Bayern Munique,Juventus FC,1.93,1.85,2,1
+FC Bayern Munique,Club Brugge,1.93,1.69,1,0
+Rapid de Viena,Club Brugge,1.72,1.69,0,1
+Rapid de Viena,Juventus FC,1.72,1.85,1,3
+Rapid de Viena,FC Bayern Munique,1.72,1.93,0,1
+Panathinaikos Atenas,Werder Bremen,1.84,1.72,2,1
+Panathinaikos Atenas,Udinese Calcio,1.84,1.57,1,2
+Panathinaikos Atenas,FC Barcelona,1.84,2.14,0,0
+Schalke 04,PSV Eindhoven,2.04,1.6,3,0
+Schalke 04,Fenerbahce,2.04,1.69,2,0
+Schalke 04,AC Milan,2.04,1.54,2,2
+AFC Ajax,FC Thun,1.48,1.4,2,0
+AFC Ajax,FC Internazionale,1.48,1.92,2,2
+AFC Ajax,AC Sparta Praga,1.48,1.9,2,1
+AFC Ajax,FC Arsenal,1.48,1.94,1,2
+FC Internazionale,FC Villarreal,1.92,1.55,2,1
+FC Internazionale,Rangers FC,1.92,1.85,1,0
+FC Internazionale,FC Artmedia Bratislava,1.92,1.5,4,0
+FC Internazionale,Futebol Clube do Porto,1.92,2.02,2,1
+FC Internazionale,AFC Ajax,1.92,1.48,1,0
+Real Madrid CF,FC Arsenal,2.01,1.94,0,1
+Real Madrid CF,Rosenborg BK,2.01,1.45,4,1
+Real Madrid CF,Olympiacos Pireu,2.01,1.53,2,1
+Real Madrid CF,Olympique Lyon,2.01,1.71,1,1
+Olympiacos Pireu,Rosenborg BK,1.53,1.45,1,3
+Olympiacos Pireu,Olympique Lyon,1.53,1.71,1,4
+Olympiacos Pireu,Real Madrid CF,1.53,2.01,2,1
+Rangers FC,Futebol Clube do Porto,1.85,2.02,3,2
+Rangers FC,FC Artmedia Bratislava,1.85,1.5,0,0
+Rangers FC,FC Internazionale,1.85,1.92,1,1
+Rangers FC,FC Villarreal,1.85,1.55,2,2
+Real Bétis,Chelsea FC,1.69,1.68,1,0
+Real Bétis,FC Liverpool,1.69,1.87,1,2
+Real Bétis,RSC Anderlecht,1.69,1.74,0,1
+FC Thun,AC Sparta Praga,1.4,1.9,1,0
+FC Thun,AFC Ajax,1.4,1.48,2,4
+FC Thun,FC Arsenal,1.4,1.94,0,1
+Chelsea FC,FC Barcelona,1.68,2.14,1,2
+Chelsea FC,RSC Anderlecht,1.68,1.74,1,0
+Chelsea FC,FC Liverpool,1.68,1.87,0,0
+Chelsea FC,Real Bétis,1.68,1.69,4,0
+Futebol Clube do Porto,Rangers FC,2.02,1.85,1,1
+Futebol Clube do Porto,FC Internazionale,2.02,1.92,2,0
+Futebol Clube do Porto,FC Artmedia Bratislava,2.02,1.5,2,3
+Juventus FC,FC Bayern Munique,1.85,1.93,2,1
+Juventus FC,Rapid de Viena,1.85,1.72,3,0
+Juventus FC,FC Arsenal,1.85,1.94,0,0
+Juventus FC,Werder Bremen,1.85,1.72,2,1
+Juventus FC,Club Brugge,1.85,1.69,1,0
+FC Barcelona,Werder Bremen,2.14,1.72,2,0
+FC Barcelona,Chelsea FC,2.14,1.68,2,2
+FC Barcelona,Levski Sofia,2.14,1.29,5,0
+FC Barcelona,FC Liverpool,2.14,1.87,1,2
+Galatasaray,FCG Bordeaux,1.61,2.08,0,0
+Galatasaray,PSV Eindhoven,1.61,1.6,1,2
+Galatasaray,FC Liverpool,1.61,1.87,3,2
+Werder Bremen,Levski Sofia,1.72,1.29,2,0
+Werder Bremen,Chelsea FC,1.72,1.68,1,0
+Werder Bremen,FC Barcelona,1.72,2.14,1,1
+PSV Eindhoven,Galatasaray,1.6,1.61,2,0
+PSV Eindhoven,FC Liverpool,1.6,1.87,0,0
+PSV Eindhoven,FC Arsenal,1.6,1.94,1,0
+PSV Eindhoven,FC Liverpool,1.6,1.87,0,3
+PSV Eindhoven,FCG Bordeaux,1.6,2.08,1,3
+Hamburger SV,CSKA Moscovo,1.88,1.7,3,2
+Hamburger SV,FC Arsenal,1.88,1.94,1,2
+Hamburger SV,Futebol Clube do Porto,1.88,2.02,1,3
+Shakhtar Donetsk,Valência CF,,1.41,2,2
+Shakhtar Donetsk,AS Roma,,2.07,1,0
+Shakhtar Donetsk,Olympiacos Pireu,,1.53,2,2
+FCG Bordeaux,FC Liverpool,2.08,1.87,0,1
+FCG Bordeaux,PSV Eindhoven,2.08,1.6,0,1
+FCG Bordeaux,Galatasaray,2.08,1.61,3,1
+RSC Anderlecht,AC Milan,1.74,1.54,0,1
+RSC Anderlecht,AEK Atenas,1.74,1.58,2,2
+RSC Anderlecht,LOSC Lille,1.74,1.93,1,1
+Manchester United FC,LOSC Lille,2.09,1.93,1,0
+Manchester United FC,Celtic FC,2.09,1.77,3,2
+Manchester United FC,Sport Lisboa e Benfica,2.09,1.92,3,1
+Manchester United FC,FC Copenhagen,2.09,1.92,3,0
+Manchester United FC,AC Milan,2.09,1.54,3,2
+Manchester United FC,AS Roma,2.09,2.07,7,1
+Olympique Lyon,AS Roma,1.71,2.07,0,2
+Olympique Lyon,Steaua Bukarest,1.71,1.55,1,1
+Olympique Lyon,Dínamo Kiev,1.71,1.93,1,0
+Olympique Lyon,Real Madrid CF,1.71,2.01,2,0
+FC Arsenal,CSKA Moscovo,1.94,1.7,0,0
+FC Arsenal,Hamburger SV,1.94,1.88,3,1
+FC Arsenal,PSV Eindhoven,1.94,1.6,1,1
+FC Arsenal,Futebol Clube do Porto,1.94,2.02,2,0
+FC Liverpool,PSV Eindhoven,1.87,1.6,1,0
+FC Liverpool,Galatasaray,1.87,1.61,3,2
+FC Liverpool,PSV Eindhoven,1.87,1.6,2,0
+FC Liverpool,AC Milan,1.87,1.54,1,2
+FC Liverpool,FC Barcelona,1.87,2.14,0,1
+FC Liverpool,Chelsea FC,1.87,1.68,4,1
+FC Liverpool,FCG Bordeaux,1.87,2.08,3,0
+LOSC Lille,RSC Anderlecht,1.93,1.74,2,2
+LOSC Lille,AC Milan,1.93,1.54,0,0
+LOSC Lille,AEK Atenas,1.93,1.58,3,1
+LOSC Lille,Manchester United FC,1.93,2.09,0,1
+Sport Lisboa e Benfica,Celtic FC,1.92,1.77,3,0
+Sport Lisboa e Benfica,FC Copenhagen,1.92,1.92,3,1
+Sport Lisboa e Benfica,Manchester United FC,1.92,2.09,0,1
+Valência CF,Chelsea FC,1.41,1.68,1,2
+Valência CF,FC Internazionale,1.41,1.92,0,0
+Valência CF,AS Roma,1.41,2.07,2,1
+Valência CF,Shakhtar Donetsk,1.41,,2,0
+Valência CF,Olympiacos Pireu,1.41,1.53,2,0
+Sporting CP,FC Internazionale,2.24,1.92,1,0
+Sporting CP,Spartak Moskovo,2.24,1.48,1,3
+Sporting CP,FC Bayern Munique,2.24,1.93,0,1
+AC Milan,Celtic FC,1.54,1.77,1,0
+AC Milan,RSC Anderlecht,1.54,1.74,4,1
+AC Milan,AEK Atenas,1.54,1.58,3,0
+AC Milan,FC Bayern Munique,1.54,1.93,2,2
+AC Milan,Manchester United FC,1.54,2.09,3,0
+AC Milan,LOSC Lille,1.54,1.93,0,2
+FC Bayern Munique,FC Internazionale,1.93,1.92,1,1
+FC Bayern Munique,Sporting CP,1.93,2.24,0,0
+FC Bayern Munique,AC Milan,1.93,1.54,0,2
+FC Bayern Munique,Real Madrid CF,1.93,2.01,2,1
+FC Bayern Munique,Spartak Moskovo,1.93,1.48,4,0
+FC Copenhagen,Manchester United FC,1.92,2.09,1,0
+FC Copenhagen,Sport Lisboa e Benfica,1.92,1.92,0,0
+FC Copenhagen,Celtic FC,1.92,1.77,3,1
+AS Roma,Olympiacos Pireu,2.07,1.53,1,1
+AS Roma,Shakhtar Donetsk,2.07,,4,0
+AS Roma,Olympique Lyon,2.07,1.71,0,0
+AS Roma,Manchester United FC,2.07,2.09,2,1
+AS Roma,Valência CF,2.07,1.41,1,0
+Dínamo Kiev,Real Madrid CF,1.93,2.01,2,2
+Dínamo Kiev,Steaua Bukarest,1.93,1.55,1,4
+Dínamo Kiev,Olympique Lyon,1.93,1.71,0,3
+Levski Sofia,Werder Bremen,1.29,1.72,0,3
+Levski Sofia,FC Barcelona,1.29,2.14,0,2
+Levski Sofia,Chelsea FC,1.29,1.68,1,3
+FC Internazionale,FC Bayern Munique,1.92,1.93,0,2
+FC Internazionale,Spartak Moskovo,1.92,1.48,2,1
+FC Internazionale,Sporting CP,1.92,2.24,1,0
+FC Internazionale,Valência CF,1.92,1.41,2,2
+Celtic FC,Sport Lisboa e Benfica,1.77,1.92,3,0
+Celtic FC,AC Milan,1.77,1.54,0,0
+Celtic FC,FC Copenhagen,1.77,1.92,1,0
+Celtic FC,Manchester United FC,1.77,2.09,1,0
+Real Madrid CF,Steaua Bukarest,2.01,1.55,1,0
+Real Madrid CF,FC Bayern Munique,2.01,1.93,3,2
+Real Madrid CF,Dínamo Kiev,2.01,1.93,5,1
+Real Madrid CF,Olympique Lyon,2.01,1.71,2,2
+Olympiacos Pireu,Valência CF,1.53,1.41,2,4
+Olympiacos Pireu,Shakhtar Donetsk,1.53,,1,1
+Olympiacos Pireu,AS Roma,1.53,2.07,0,1
+AEK Atenas,LOSC Lille,1.58,1.93,1,0
+AEK Atenas,RSC Anderlecht,1.58,1.74,1,1
+AEK Atenas,AC Milan,1.58,1.54,1,0
+CSKA Moscovo,Futebol Clube do Porto,1.7,2.02,0,2
+CSKA Moscovo,Hamburger SV,1.7,1.88,1,0
+CSKA Moscovo,FC Arsenal,1.7,1.94,1,0
+Spartak Moskovo,FC Internazionale,1.48,1.92,0,1
+Spartak Moskovo,Sporting CP,1.48,2.24,1,1
+Spartak Moskovo,FC Bayern Munique,1.48,1.93,2,2
+Steaua Bukarest,Dínamo Kiev,1.55,1.93,1,1
+Steaua Bukarest,Real Madrid CF,1.55,2.01,1,4
+Steaua Bukarest,Olympique Lyon,1.55,1.71,0,3
+Chelsea FC,FC Liverpool,1.68,1.87,1,0
+Chelsea FC,Levski Sofia,1.68,1.29,2,0
+Chelsea FC,FC Barcelona,1.68,2.14,1,0
+Chelsea FC,Futebol Clube do Porto,1.68,2.02,2,1
+Chelsea FC,Werder Bremen,1.68,1.72,2,0
+Chelsea FC,Valência CF,1.68,1.41,1,1
+Futebol Clube do Porto,Chelsea FC,2.02,1.68,1,1
+Futebol Clube do Porto,FC Arsenal,2.02,1.94,0,0
+Futebol Clube do Porto,Hamburger SV,2.02,1.88,4,1
+Futebol Clube do Porto,CSKA Moscovo,2.02,1.7,0,0
+FC Barcelona,VfB Stuttgart,2.14,1.72,3,1
+FC Barcelona,Rangers FC,2.14,1.85,2,0
+FC Barcelona,Manchester United FC,2.14,2.09,0,0
+FC Barcelona,Olympique Lyon,2.14,1.71,3,0
+FC Barcelona,Schalke 04,2.14,2.04,1,0
+FC Barcelona,Celtic FC,2.14,1.77,1,0
+Werder Bremen,Olympiacos Pireu,1.72,1.53,1,3
+Werder Bremen,SS Lazio,1.72,1.73,2,1
+Werder Bremen,Real Madrid CF,1.72,2.01,3,2
+PSV Eindhoven,Fenerbahce,1.6,1.69,0,0
+PSV Eindhoven,CSKA Moscovo,1.6,1.7,2,1
+PSV Eindhoven,FC Internazionale,1.6,1.92,0,1
+Shakhtar Donetsk,Sport Lisboa e Benfica,,1.92,1,2
+Shakhtar Donetsk,Celtic FC,,1.77,2,0
+Shakhtar Donetsk,AC Milan,,1.54,0,3
+Besiktas JK,FC Liverpool,3,1.87,2,1
+Besiktas JK,Olympique Marselha,3,1.59,2,1
+Besiktas JK,Futebol Clube do Porto,3,2.02,0,1
+Sevilla FC,SK Slavia Praga,1.53,2.01,4,2
+Sevilla FC,Steaua Bukarest,1.53,1.55,2,1
+Sevilla FC,FC Arsenal,1.53,1.94,3,1
+Sevilla FC,Fenerbahce,1.53,1.69,5,5
+Manchester United FC,Chelsea FC,2.09,1.68,6,5
+Manchester United FC,FC Barcelona,2.09,2.14,1,0
+Manchester United FC,Dínamo Kiev,2.09,1.93,4,0
+Manchester United FC,AS Roma,2.09,2.07,1,0
+Manchester United FC,Sporting CP,2.09,2.24,2,1
+Manchester United FC,AS Roma,2.09,2.07,1,0
+Manchester United FC,Olympique Lyon,2.09,1.71,1,0
+Olympique Lyon,Rangers FC,1.71,1.85,0,3
+Olympique Lyon,FC Barcelona,1.71,2.14,2,2
+Olympique Lyon,VfB Stuttgart,1.71,1.72,4,2
+Olympique Lyon,Manchester United FC,1.71,2.09,1,1
+FC Arsenal,FC Liverpool,1.94,1.87,1,1
+FC Arsenal,Sevilla FC,1.94,1.53,3,0
+FC Arsenal,SK Slavia Praga,1.94,2.01,7,0
+FC Arsenal,Steaua Bukarest,1.94,1.55,2,1
+FC Arsenal,AC Milan,1.94,1.54,0,0
+Rosenborg BK,Valência CF,1.45,1.41,2,0
+Rosenborg BK,Chelsea FC,1.45,1.68,0,4
+Rosenborg BK,Schalke 04,1.45,2.04,0,2
+Fenerbahce,CSKA Moscovo,1.69,1.7,3,1
+Fenerbahce,Chelsea FC,1.69,1.68,2,1
+Fenerbahce,Sevilla FC,1.69,1.53,3,2
+Fenerbahce,FC Internazionale,1.69,1.92,1,0
+Fenerbahce,PSV Eindhoven,1.69,1.6,2,0
+FC Liverpool,Futebol Clube do Porto,1.87,2.02,4,1
+FC Liverpool,FC Arsenal,1.87,1.94,4,2
+FC Liverpool,FC Internazionale,1.87,1.92,2,0
+FC Liverpool,Besiktas JK,1.87,3,8,0
+FC Liverpool,Chelsea FC,1.87,1.68,1,1
+FC Liverpool,Olympique Marselha,1.87,1.59,0,1
+Sport Lisboa e Benfica,Shakhtar Donetsk,1.92,,0,1
+Sport Lisboa e Benfica,AC Milan,1.92,1.54,1,1
+Sport Lisboa e Benfica,Celtic FC,1.92,1.77,1,0
+Valência CF,Rosenborg BK,1.41,1.45,0,2
+Valência CF,Chelsea FC,1.41,1.68,1,2
+Valência CF,Schalke 04,1.41,2.04,0,0
+Sporting CP,Manchester United FC,2.24,2.09,0,1
+Sporting CP,AS Roma,2.24,2.07,2,2
+Sporting CP,Dínamo Kiev,2.24,1.93,3,0
+AC Milan,FC Arsenal,1.54,1.94,0,2
+AC Milan,Celtic FC,1.54,1.77,1,0
+AC Milan,Sport Lisboa e Benfica,1.54,1.92,2,1
+AC Milan,Shakhtar Donetsk,1.54,,4,1
+AS Roma,Dínamo Kiev,2.07,1.93,2,0
+AS Roma,Real Madrid CF,2.07,2.01,2,1
+AS Roma,Manchester United FC,2.07,2.09,0,2
+AS Roma,Manchester United FC,2.07,2.09,1,1
+AS Roma,Sporting CP,2.07,2.24,2,1
+Schalke 04,Futebol Clube do Porto,2.04,2.02,1,0
+Schalke 04,FC Barcelona,2.04,2.14,0,1
+Schalke 04,Valência CF,2.04,1.41,0,1
+Schalke 04,Rosenborg BK,2.04,1.45,3,1
+Schalke 04,Chelsea FC,2.04,1.68,0,0
+SS Lazio,Olympiacos Pireu,1.73,1.53,1,2
+SS Lazio,Werder Bremen,1.73,1.72,2,1
+SS Lazio,Real Madrid CF,1.73,2.01,2,2
+Dínamo Kiev,Manchester United FC,1.93,2.09,2,4
+Dínamo Kiev,AS Roma,1.93,2.07,1,4
+Dínamo Kiev,Sporting CP,1.93,2.24,1,2
+FC Internazionale,PSV Eindhoven,1.92,1.6,2,0
+FC Internazionale,CSKA Moscovo,1.92,1.7,4,2
+FC Internazionale,FC Liverpool,1.92,1.87,0,1
+FC Internazionale,Fenerbahce,1.92,1.69,3,0
+Celtic FC,Shakhtar Donetsk,1.77,,2,1
+Celtic FC,Sport Lisboa e Benfica,1.77,1.92,1,0
+Celtic FC,FC Barcelona,1.77,2.14,2,3
+Celtic FC,AC Milan,1.77,1.54,2,1
+Real Madrid CF,Olympiacos Pireu,2.01,1.53,4,2
+Real Madrid CF,AS Roma,2.01,2.07,1,2
+Real Madrid CF,Werder Bremen,2.01,1.72,2,1
+Real Madrid CF,SS Lazio,2.01,1.73,3,1
+Olympiacos Pireu,Werder Bremen,1.53,1.72,3,0
+Olympiacos Pireu,SS Lazio,1.53,1.73,1,1
+Olympiacos Pireu,Chelsea FC,1.53,1.68,0,0
+Olympiacos Pireu,Real Madrid CF,1.53,2.01,0,0
+Olympique Marselha,Besiktas JK,1.59,3,2,0
+Olympique Marselha,FC Liverpool,1.59,1.87,0,4
+Olympique Marselha,Futebol Clube do Porto,1.59,2.02,1,1
+Rangers FC,VfB Stuttgart,1.85,1.72,2,1
+Rangers FC,FC Barcelona,1.85,2.14,0,0
+Rangers FC,Olympique Lyon,1.85,1.71,0,3
+CSKA Moscovo,PSV Eindhoven,1.7,1.6,0,1
+CSKA Moscovo,Fenerbahce,1.7,1.69,2,2
+VfB Stuttgart,FC Barcelona,1.72,2.14,0,2
+VfB Stuttgart,Rangers FC,1.72,1.85,3,2
+VfB Stuttgart,Olympique Lyon,1.72,1.71,0,2
+Steaua Bukarest,FC Arsenal,1.55,1.94,0,1
+Steaua Bukarest,SK Slavia Praga,1.55,2.01,1,1
+Steaua Bukarest,Sevilla FC,1.55,1.53,0,2
+SK Slavia Praga,FC Arsenal,2.01,1.94,0,0
+SK Slavia Praga,Sevilla FC,2.01,1.53,0,3
+SK Slavia Praga,Steaua Bukarest,2.01,1.55,2,1
+Chelsea FC,Fenerbahce,1.68,1.69,2,0
+Chelsea FC,Valência CF,1.68,1.41,0,0
+Chelsea FC,Schalke 04,1.68,2.04,2,0
+Chelsea FC,FC Liverpool,1.68,1.87,3,2
+Chelsea FC,Rosenborg BK,1.68,1.45,1,1
+Chelsea FC,Olympiacos Pireu,1.68,1.53,3,0
+Futebol Clube do Porto,Besiktas JK,2.02,3,2,0
+Futebol Clube do Porto,Olympique Marselha,2.02,1.59,2,1
+Futebol Clube do Porto,Schalke 04,2.02,2.04,2,4
+Futebol Clube do Porto,FC Liverpool,2.02,1.87,1,1
+FC Barcelona,Olympique Lyon,2.14,1.71,5,2
+FC Barcelona,Shakhtar Donetsk,2.14,,2,3
+FC Barcelona,FC Bayern Munique,2.14,1.93,4,0
+FC Barcelona,Sporting CP,2.14,2.24,3,1
+FC Barcelona,Chelsea FC,2.14,1.68,0,0
+FC Barcelona,FC Basel,2.14,1.52,1,1
+FC Barcelona,Manchester United FC,2.14,2.09,2,0
+FC Villarreal,Panathinaikos Atenas,1.55,1.84,1,1
+FC Villarreal,Celtic FC,1.55,1.77,1,0
+FC Villarreal,Manchester United FC,1.55,2.09,0,0
+FC Villarreal,FC Arsenal,1.55,1.94,1,1
+FC Villarreal,Aalborg BK,1.55,1.62,6,3
+Werder Bremen,Panathinaikos Atenas,1.72,1.84,0,3
+Werder Bremen,Anorthosis Famagusta,1.72,1.41,0,0
+Werder Bremen,FC Internazionale,1.72,1.92,2,1
+PSV Eindhoven,FC Liverpool,1.6,1.87,1,3
+PSV Eindhoven,Atlético de Madrid,1.6,1.91,0,3
+PSV Eindhoven,Olympique Marselha,1.6,1.59,2,0
+Shakhtar Donetsk,Sporting CP,,2.24,0,1
+Shakhtar Donetsk,FC Basel,,1.52,5,0
+Shakhtar Donetsk,FC Barcelona,,2.14,1,2
+FC Basel,Sporting CP,1.52,2.24,0,1
+FC Basel,FC Barcelona,1.52,2.14,0,5
+FC Basel,Shakhtar Donetsk,1.52,,1,2
+FCG Bordeaux,CFR Cluj,2.08,1.62,1,0
+FCG Bordeaux,Chelsea FC,2.08,1.68,1,1
+FCG Bordeaux,AS Roma,2.08,2.07,1,3
+Manchester United FC,FC Arsenal,2.09,1.94,1,0
+Manchester United FC,Aalborg BK,2.09,1.62,2,2
+Manchester United FC,Celtic FC,2.09,1.77,3,0
+Manchester United FC,Futebol Clube do Porto,2.09,2.02,2,2
+Manchester United FC,FC Internazionale,2.09,1.92,2,0
+Manchester United FC,FC Villarreal,2.09,1.55,0,0
+Olympique Lyon,Steaua Bukarest,1.71,1.55,2,0
+Olympique Lyon,ACF Fiorentina,1.71,1.62,2,2
+Olympique Lyon,FC Barcelona,1.71,2.14,1,1
+Olympique Lyon,FC Bayern Munique,1.71,1.93,2,3
+FC Arsenal,Futebol Clube do Porto,1.94,2.02,4,0
+FC Arsenal,FC Villarreal,1.94,1.55,3,0
+FC Arsenal,Manchester United FC,1.94,2.09,1,3
+FC Arsenal,Dínamo Kiev,1.94,1.93,1,0
+FC Arsenal,Fenerbahce,1.94,1.69,0,0
+FC Arsenal,AS Roma,1.94,2.07,1,0
+Zenit São Petersburgo,Juventus FC,1.91,1.85,0,0
+Zenit São Petersburgo,Real Madrid CF,1.91,2.01,1,2
+Zenit São Petersburgo,FK BATE Borisov,1.91,1.83,1,1
+Anorthosis Famagusta,Panathinaikos Atenas,1.41,1.84,3,1
+Anorthosis Famagusta,FC Internazionale,1.41,1.92,3,3
+Anorthosis Famagusta,Werder Bremen,1.41,1.72,2,2
+Atlético de Madrid,FC Liverpool,1.91,1.87,1,1
+Atlético de Madrid,Olympique Marselha,1.91,1.59,2,1
+Atlético de Madrid,Futebol Clube do Porto,1.91,2.02,2,2
+Atlético de Madrid,PSV Eindhoven,1.91,1.6,2,1
+Fenerbahce,Dínamo Kiev,1.69,1.93,0,0
+Fenerbahce,Futebol Clube do Porto,1.69,2.02,1,2
+Fenerbahce,FC Arsenal,1.69,1.94,2,5
+FC Liverpool,Real Madrid CF,1.87,2.01,4,0
+FC Liverpool,PSV Eindhoven,1.87,1.6,3,1
+FC Liverpool,Atlético de Madrid,1.87,1.91,1,1
+FC Liverpool,Olympique Marselha,1.87,1.59,1,0
+FC Liverpool,Chelsea FC,1.87,1.68,1,3
+Sporting CP,FC Barcelona,2.24,2.14,2,5
+Sporting CP,Shakhtar Donetsk,2.24,,1,0
+Sporting CP,FC Bayern Munique,2.24,1.93,0,5
+Sporting CP,FC Basel,2.24,1.52,2,0
+FC Bayern Munique,Olympique Lyon,1.93,1.71,1,1
+FC Bayern Munique,Steaua Bukarest,1.93,1.55,3,0
+FC Bayern Munique,Sporting CP,1.93,2.24,7,1
+FC Bayern Munique,FC Barcelona,1.93,2.14,1,1
+FC Bayern Munique,ACF Fiorentina,1.93,1.62,3,0
+Panathinaikos Atenas,Werder Bremen,1.84,1.72,2,2
+Panathinaikos Atenas,FC Villarreal,1.84,1.55,1,2
+Panathinaikos Atenas,FC Internazionale,1.84,1.92,0,2
+Panathinaikos Atenas,Anorthosis Famagusta,1.84,1.41,1,0
+AS Roma,CFR Cluj,2.07,1.62,1,2
+AS Roma,FC Arsenal,2.07,1.94,7,7
+AS Roma,FCG Bordeaux,2.07,2.08,2,0
+AS Roma,Chelsea FC,2.07,1.68,3,1
+Dínamo Kiev,FC Arsenal,1.93,1.94,1,1
+Dínamo Kiev,Fenerbahce,1.93,1.69,1,0
+Dínamo Kiev,Futebol Clube do Porto,1.93,2.02,1,2
+FC Internazionale,Anorthosis Famagusta,1.92,1.41,1,0
+FC Internazionale,Manchester United FC,1.92,2.09,0,0
+FC Internazionale,Panathinaikos Atenas,1.92,1.84,0,1
+FC Internazionale,Werder Bremen,1.92,1.72,1,1
+Celtic FC,FC Villarreal,1.77,1.55,2,0
+Celtic FC,Aalborg BK,1.77,1.62,0,0
+Celtic FC,Manchester United FC,1.77,2.09,1,1
+Real Madrid CF,FC Liverpool,2.01,1.87,0,1
+Real Madrid CF,FK BATE Borisov,2.01,1.83,2,0
+Real Madrid CF,Juventus FC,2.01,1.85,0,2
+Real Madrid CF,Zenit São Petersburgo,2.01,1.91,3,0
+Olympique Marselha,Atlético de Madrid,1.59,1.91,0,0
+Olympique Marselha,PSV Eindhoven,1.59,1.6,3,0
+Olympique Marselha,FC Liverpool,1.59,1.87,1,2
+Aalborg BK,FC Villarreal,1.62,1.55,2,2
+Aalborg BK,Manchester United FC,1.62,2.09,0,3
+Aalborg BK,Celtic FC,1.62,1.77,2,1
+CFR Cluj,Chelsea FC,1.62,1.68,0,0
+CFR Cluj,FCG Bordeaux,1.62,2.08,1,2
+CFR Cluj,AS Roma,1.62,2.07,1,3
+FK BATE Borisov,Zenit São Petersburgo,1.83,1.91,0,2
+FK BATE Borisov,Real Madrid CF,1.83,2.01,0,1
+FK BATE Borisov,Juventus FC,1.83,1.85,2,2
+ACF Fiorentina,Steaua Bukarest,1.62,1.55,0,0
+ACF Fiorentina,Olympique Lyon,1.62,1.71,1,2
+ACF Fiorentina,FC Bayern Munique,1.62,1.93,1,1
+Steaua Bukarest,Olympique Lyon,1.55,1.71,3,5
+Steaua Bukarest,ACF Fiorentina,1.55,1.62,0,1
+Steaua Bukarest,FC Bayern Munique,1.55,1.93,0,1
+Chelsea FC,FC Barcelona,1.68,2.14,1,1
+Chelsea FC,CFR Cluj,1.68,1.62,2,1
+Chelsea FC,AS Roma,1.68,2.07,1,0
+Chelsea FC,FCG Bordeaux,1.68,2.08,4,0
+Chelsea FC,FC Liverpool,1.68,1.87,4,4
+Chelsea FC,Juventus FC,1.68,1.85,1,0
+Futebol Clube do Porto,Dínamo Kiev,2.02,1.93,0,1
+Futebol Clube do Porto,Fenerbahce,2.02,1.69,3,1
+Futebol Clube do Porto,FC Arsenal,2.02,1.94,2,0
+Futebol Clube do Porto,Atlético de Madrid,2.02,1.91,0,0
+Futebol Clube do Porto,Manchester United FC,2.02,2.09,0,1
+Juventus FC,FK BATE Borisov,1.85,1.83,0,0
+Juventus FC,Real Madrid CF,1.85,2.01,2,1
+Juventus FC,Zenit São Petersburgo,1.85,1.91,1,0
+Juventus FC,Chelsea FC,1.85,1.68,2,2
+Unirea Urziceni ( - 2011),Sevilla FC,,,1,0
+Sevilla FC,Unirea Urziceni ( - 2011),,,2,0
+VfB Stuttgart,Unirea Urziceni ( - 2011),,,3,1
+Unirea Urziceni ( - 2011),VfB Stuttgart,,,1,1
+Unirea Urziceni ( - 2011),Rangers FC,,,1,1
+Rangers FC,Unirea Urziceni ( - 2011),,,1,4
+FC Barcelona,VfB Stuttgart,2.14,1.72,4,0
+FC Barcelona,FC Arsenal,2.14,1.94,4,1
+FC Barcelona,Rubin Kazan,2.14,1.35,1,2
+FC Barcelona,FC Internazionale,2.14,1.92,2,0
+FC Barcelona,Dínamo Kiev,2.14,1.93,2,0
+FC Barcelona,FC Internazionale,2.14,1.92,1,0
+VfL Wolfsburg,Manchester United FC,1.8,2.09,1,3
+VfL Wolfsburg,CSKA Moscovo,1.8,1.7,3,1
+VfL Wolfsburg,Besiktas JK,1.8,3,0,0
+Maccabi Haifa,FC Bayern Munique,1.31,1.93,0,3
+Maccabi Haifa,Juventus FC,1.31,1.85,0,1
+Maccabi Haifa,FCG Bordeaux,1.31,2.08,0,1
+FCG Bordeaux,FC Bayern Munique,2.08,1.93,2,1
+FCG Bordeaux,Juventus FC,2.08,1.85,2,0
+FCG Bordeaux,Olympique Lyon,2.08,1.71,1,0
+FCG Bordeaux,Olympiacos Pireu,2.08,1.53,2,1
+FCG Bordeaux,Maccabi Haifa,2.08,1.31,1,0
+FC Zürich,AC Milan,1.48,1.54,1,1
+FC Zürich,Real Madrid CF,1.48,2.01,2,5
+FC Zürich,Olympique Marselha,1.48,1.59,0,1
+Besiktas JK,Manchester United FC,3,2.09,0,1
+Besiktas JK,VfL Wolfsburg,3,1.8,0,3
+Besiktas JK,CSKA Moscovo,3,1.7,1,2
+Sevilla FC,VfB Stuttgart,1.53,1.72,1,1
+Sevilla FC,CSKA Moscovo,1.53,1.7,1,2
+Sevilla FC,Rangers FC,1.53,1.85,1,0
+Manchester United FC,VfL Wolfsburg,2.09,1.8,2,1
+Manchester United FC,FC Bayern Munique,2.09,1.93,3,2
+Manchester United FC,Besiktas JK,2.09,3,0,1
+Manchester United FC,AC Milan,2.09,1.54,4,0
+Manchester United FC,CSKA Moscovo,2.09,1.7,3,3
+Olympique Lyon,Real Madrid CF,1.71,2.01,1,0
+Olympique Lyon,FC Bayern Munique,1.71,1.93,0,3
+Olympique Lyon,FC Liverpool,1.71,1.87,1,1
+Olympique Lyon,ACF Fiorentina,1.71,1.62,1,0
+Olympique Lyon,FCG Bordeaux,1.71,2.08,3,1
+Olympique Lyon,Debreceni VSC,1.71,1.51,4,0
+FC Arsenal,Standard de Liège,1.94,1.73,2,0
+FC Arsenal,Futebol Clube do Porto,1.94,2.02,5,0
+FC Arsenal,FC Barcelona,1.94,2.14,2,2
+FC Arsenal,AZ Alkmaar,1.94,1.86,4,1
+FC Arsenal,Olympiacos Pireu,1.94,1.53,2,0
+Standard de Liège,Olympiacos Pireu,1.73,1.53,2,0
+Standard de Liège,FC Arsenal,1.73,1.94,2,3
+Standard de Liège,AZ Alkmaar,1.73,1.86,1,1
+Atlético de Madrid,Futebol Clube do Porto,1.91,2.02,0,3
+Atlético de Madrid,APOEL Nicósia,1.91,1.61,0,0
+Atlético de Madrid,Chelsea FC,1.91,1.68,2,2
+FC Liverpool,Debreceni VSC,1.87,1.51,1,0
+FC Liverpool,ACF Fiorentina,1.87,1.62,1,2
+FC Liverpool,Olympique Lyon,1.87,1.71,1,2
+AZ Alkmaar,FC Arsenal,1.86,1.94,1,1
+AZ Alkmaar,Olympiacos Pireu,1.86,1.53,0,0
+AZ Alkmaar,Standard de Liège,1.86,1.73,1,1
+AC Milan,Olympique Marselha,1.54,1.59,1,1
+AC Milan,Manchester United FC,1.54,2.09,2,3
+AC Milan,Real Madrid CF,1.54,2.01,1,1
+AC Milan,FC Zürich,1.54,1.48,0,1
+FC Bayern Munique,Manchester United FC,1.93,2.09,2,1
+FC Bayern Munique,Olympique Lyon,1.93,1.71,1,0
+FC Bayern Munique,FCG Bordeaux,1.93,2.08,0,2
+FC Bayern Munique,ACF Fiorentina,1.93,1.62,2,1
+FC Bayern Munique,Juventus FC,1.93,1.85,0,0
+FC Bayern Munique,Maccabi Haifa,1.93,1.31,1,0
+Dínamo Kiev,Rubin Kazan,1.93,1.35,3,1
+Dínamo Kiev,FC Barcelona,1.93,2.14,1,2
+Dínamo Kiev,FC Internazionale,1.93,1.92,1,2
+FC Internazionale,FC Barcelona,1.92,2.14,3,1
+FC Internazionale,CSKA Moscovo,1.92,1.7,1,0
+FC Internazionale,Dínamo Kiev,1.92,1.93,2,2
+FC Internazionale,FC Bayern Munique,1.92,1.93,2,0
+FC Internazionale,Chelsea FC,1.92,1.68,2,1
+FC Internazionale,Rubin Kazan,1.92,1.35,2,0
+FC Internazionale,FC Barcelona,1.92,2.14,0,0
+Real Madrid CF,FC Zürich,2.01,1.48,1,0
+Real Madrid CF,Olympique Lyon,2.01,1.71,1,1
+Real Madrid CF,AC Milan,2.01,1.54,2,3
+Real Madrid CF,Olympique Marselha,2.01,1.59,3,0
+Olympiacos Pireu,FCG Bordeaux,1.53,2.08,0,1
+Olympiacos Pireu,Standard de Liège,1.53,1.73,2,1
+Olympiacos Pireu,AZ Alkmaar,1.53,1.86,1,0
+Olympiacos Pireu,FC Arsenal,1.53,1.94,1,0
+Olympique Marselha,Real Madrid CF,1.59,2.01,1,3
+Olympique Marselha,AC Milan,1.59,1.54,1,2
+Olympique Marselha,FC Zürich,1.59,1.48,6,1
+Rubin Kazan,Dínamo Kiev,1.35,1.93,0,0
+Rubin Kazan,FC Internazionale,1.35,1.92,1,1
+Rubin Kazan,FC Barcelona,1.35,2.14,0,0
+Rangers FC,Sevilla FC,1.85,1.53,1,4
+Rangers FC,VfB Stuttgart,1.85,1.72,0,2
+CSKA Moscovo,Manchester United FC,1.7,2.09,0,1
+CSKA Moscovo,VfL Wolfsburg,1.7,1.8,2,1
+CSKA Moscovo,FC Internazionale,1.7,1.92,0,1
+CSKA Moscovo,Besiktas JK,1.7,3,2,1
+CSKA Moscovo,Sevilla FC,1.7,1.53,1,1
+APOEL Nicósia,Chelsea FC,1.61,1.68,0,1
+APOEL Nicósia,Atlético de Madrid,1.61,1.91,1,1
+APOEL Nicósia,Futebol Clube do Porto,1.61,2.02,0,1
+VfB Stuttgart,Sevilla FC,1.72,1.53,1,3
+VfB Stuttgart,Rangers FC,1.72,1.85,1,1
+VfB Stuttgart,FC Barcelona,1.72,2.14,1,1
+Debreceni VSC,FC Liverpool,1.51,1.87,0,1
+Debreceni VSC,ACF Fiorentina,1.51,1.62,3,4
+Debreceni VSC,Olympique Lyon,1.51,1.71,0,4
+ACF Fiorentina,Debreceni VSC,1.62,1.51,5,2
+ACF Fiorentina,FC Liverpool,1.62,1.87,2,0
+ACF Fiorentina,FC Bayern Munique,1.62,1.93,3,2
+ACF Fiorentina,Olympique Lyon,1.62,1.71,1,0
+Chelsea FC,Atlético de Madrid,1.68,1.91,4,0
+Chelsea FC,APOEL Nicósia,1.68,1.61,2,2
+Chelsea FC,Futebol Clube do Porto,1.68,2.02,1,0
+Chelsea FC,FC Internazionale,1.68,1.92,0,1
+Futebol Clube do Porto,Atlético de Madrid,2.02,1.91,2,0
+Futebol Clube do Porto,FC Arsenal,2.02,1.94,2,1
+Futebol Clube do Porto,Chelsea FC,2.02,1.68,0,1
+Futebol Clube do Porto,APOEL Nicósia,2.02,1.61,2,1
+Juventus FC,FC Bayern Munique,1.85,1.93,1,4
+Juventus FC,Maccabi Haifa,1.85,1.31,1,0
+Juventus FC,FCG Bordeaux,1.85,2.08,1,1
+Manchester United FC,Bursaspor,,,1,0
+FK Partizan Belgrado,Shakhtar Donetsk,,,0,3
+Shakhtar Donetsk,AS Roma,,,3,0
+Bursaspor,Manchester United FC,,,0,3
+Rangers FC,Bursaspor,,,1,0
+Sporting Clube de Braga,Shakhtar Donetsk,,,0,3
+Bursaspor,Rangers FC,,,1,1
+Shakhtar Donetsk,FC Arsenal,,,2,1
+AS Roma,Shakhtar Donetsk,,,2,3
+FC Arsenal,Shakhtar Donetsk,,,5,1
+Shakhtar Donetsk,Sporting Clube de Braga,,,2,0
+Bursaspor,Valência CF,,,0,4
+Shakhtar Donetsk,FK Partizan Belgrado,,,1,0
+FC Barcelona,Shakhtar Donetsk,,,5,1
+Valência CF,Bursaspor,,,6,1
+Shakhtar Donetsk,FC Barcelona,,,0,1
+FC Barcelona,FC Arsenal,2.14,1.94,3,1
+FC Barcelona,Rubin Kazan,2.14,1.35,2,0
+FC Barcelona,Real Madrid CF,2.14,2.01,1,1
+FC Barcelona,FC Copenhagen,2.14,1.92,2,0
+FC Barcelona,Panathinaikos Atenas,2.14,1.84,5,1
+FC Barcelona,Manchester United FC,2.14,2.09,3,1
+Werder Bremen,FC Twente,1.72,1.53,0,2
+Werder Bremen,FC Internazionale,1.72,1.92,3,0
+Werder Bremen,"Tottenham Hotspur ",1.72,1.81,2,2
+Sporting Clube de Braga,FC Arsenal,1.94,1.94,2,0
+Sporting Clube de Braga,FK Partizan Belgrado,1.94,1.81,2,0
+FC Basel,AS Roma,1.52,2.07,2,3
+FC Basel,CFR Cluj,1.52,1.62,1,0
+FC Basel,FC Bayern Munique,1.52,1.93,1,2
+FK Partizan Belgrado,Sporting Clube de Braga,1.81,1.94,0,1
+FK Partizan Belgrado,FC Arsenal,1.81,1.94,1,3
+Manchester United FC,Olympique Marselha,2.09,1.59,2,1
+Manchester United FC,Chelsea FC,2.09,1.68,2,1
+Manchester United FC,Valência CF,2.09,1.41,1,1
+Manchester United FC,Schalke 04,2.09,2.04,4,1
+Manchester United FC,Rangers FC,2.09,1.85,0,0
+Olympique Lyon,Sport Lisboa e Benfica,1.71,1.92,2,0
+Olympique Lyon,Schalke 04,1.71,2.04,1,0
+Olympique Lyon,Real Madrid CF,1.71,2.01,1,1
+Olympique Lyon,Hapoel Tel Aviv,1.71,1.05,2,2
+FC Arsenal,FK Partizan Belgrado,1.94,1.81,3,1
+FC Arsenal,FC Barcelona,1.94,2.14,2,1
+FC Arsenal,Sporting Clube de Braga,1.94,1.94,6,0
+Sport Lisboa e Benfica,Schalke 04,1.92,2.04,1,2
+Sport Lisboa e Benfica,Hapoel Tel Aviv,1.92,1.05,2,0
+Sport Lisboa e Benfica,Olympique Lyon,1.92,1.71,4,3
+Valência CF,Manchester United FC,1.41,2.09,0,1
+Valência CF,Schalke 04,1.41,2.04,1,1
+Valência CF,Rangers FC,1.41,1.85,3,0
+AC Milan,AJ Auxerre,1.54,1.34,2,0
+AC Milan,Real Madrid CF,1.54,2.01,2,2
+AC Milan,"Tottenham Hotspur ",1.54,1.81,0,1
+AC Milan,AFC Ajax,1.54,1.48,0,2
+FC Bayern Munique,AS Roma,1.93,2.07,2,0
+FC Bayern Munique,FC Internazionale,1.93,1.92,2,3
+FC Bayern Munique,FC Basel,1.93,1.52,3,0
+FC Bayern Munique,CFR Cluj,1.93,1.62,3,2
+Panathinaikos Atenas,FC Barcelona,1.84,2.14,0,3
+Panathinaikos Atenas,Rubin Kazan,1.84,1.35,0,0
+Panathinaikos Atenas,FC Copenhagen,1.84,1.92,0,2
+FC Copenhagen,FC Barcelona,1.92,2.14,1,1
+FC Copenhagen,Chelsea FC,1.92,1.68,0,2
+FC Copenhagen,Panathinaikos Atenas,1.92,1.84,3,1
+FC Copenhagen,Rubin Kazan,1.92,1.35,1,0
+MSK Zilina,Chelsea FC,1.36,1.68,1,4
+MSK Zilina,Olympique Marselha,1.36,1.59,0,7
+MSK Zilina,Spartak Moskovo,1.36,1.48,1,2
+FC Twente,Werder Bremen,1.53,1.72,1,1
+FC Twente,"Tottenham Hotspur ",1.53,1.81,3,3
+FC Twente,FC Internazionale,1.53,1.92,2,2
+AS Roma,FC Bayern Munique,2.07,1.93,3,2
+AS Roma,CFR Cluj,2.07,1.62,2,1
+AS Roma,FC Basel,2.07,1.52,1,3
+Schalke 04,Olympique Lyon,2.04,1.71,3,0
+Schalke 04,Manchester United FC,2.04,2.09,0,2
+Schalke 04,Valência CF,2.04,1.41,3,1
+Schalke 04,Sport Lisboa e Benfica,2.04,1.92,2,0
+Schalke 04,Hapoel Tel Aviv,2.04,1.05,3,1
+Schalke 04,FC Internazionale,2.04,1.92,2,1
+AFC Ajax,AJ Auxerre,1.48,1.34,2,1
+AFC Ajax,Real Madrid CF,1.48,2.01,0,4
+AFC Ajax,AC Milan,1.48,1.54,1,1
+FC Internazionale,FC Twente,1.92,1.53,1,0
+FC Internazionale,FC Bayern Munique,1.92,1.93,0,1
+FC Internazionale,"Tottenham Hotspur ",1.92,1.81,4,3
+FC Internazionale,Schalke 04,1.92,2.04,2,5
+FC Internazionale,Werder Bremen,1.92,1.72,4,0
+Real Madrid CF,Olympique Lyon,2.01,1.71,3,0
+Real Madrid CF,"Tottenham Hotspur ",2.01,1.81,4,0
+Real Madrid CF,AC Milan,2.01,1.54,2,0
+Real Madrid CF,AJ Auxerre,2.01,1.34,4,0
+Real Madrid CF,AFC Ajax,2.01,1.48,2,0
+Real Madrid CF,FC Barcelona,2.01,2.14,0,2
+Olympique Marselha,Spartak Moskovo,1.59,1.48,0,1
+Olympique Marselha,Manchester United FC,1.59,2.09,0,0
+Olympique Marselha,Chelsea FC,1.59,1.68,1,0
+Olympique Marselha,MSK Zilina,1.59,1.36,1,0
+Rubin Kazan,Panathinaikos Atenas,1.35,1.84,0,0
+Rubin Kazan,FC Copenhagen,1.35,1.92,1,0
+Rubin Kazan,FC Barcelona,1.35,2.14,1,1
+"Tottenham Hotspur ",Real Madrid CF,1.81,2.01,0,1
+"Tottenham Hotspur ",Werder Bremen,1.81,1.72,3,0
+"Tottenham Hotspur ",FC Twente,1.81,1.53,4,1
+"Tottenham Hotspur ",AC Milan,1.81,1.54,0,0
+"Tottenham Hotspur ",FC Internazionale,1.81,1.92,3,1
+Hapoel Tel Aviv,Olympique Lyon,1.05,1.71,1,3
+Hapoel Tel Aviv,Schalke 04,1.05,2.04,0,0
+Hapoel Tel Aviv,Sport Lisboa e Benfica,1.05,1.92,3,0
+Rangers FC,Valência CF,1.85,1.41,1,1
+Rangers FC,Manchester United FC,1.85,2.09,0,1
+CFR Cluj,FC Basel,1.62,1.52,2,1
+CFR Cluj,FC Bayern Munique,1.62,1.93,0,4
+CFR Cluj,AS Roma,1.62,2.07,1,1
+Spartak Moskovo,MSK Zilina,1.48,1.36,3,0
+Spartak Moskovo,Olympique Marselha,1.48,1.59,0,3
+Spartak Moskovo,Chelsea FC,1.48,1.68,0,2
+Chelsea FC,Manchester United FC,1.68,2.09,0,1
+Chelsea FC,MSK Zilina,1.68,1.36,2,1
+Chelsea FC,FC Copenhagen,1.68,1.92,0,0
+Chelsea FC,Olympique Marselha,1.68,1.59,2,0
+Chelsea FC,Spartak Moskovo,1.68,1.48,4,1
+AJ Auxerre,AC Milan,1.34,1.54,0,2
+AJ Auxerre,Real Madrid CF,1.34,2.01,0,1
+AJ Auxerre,AFC Ajax,1.34,1.48,2,1
+Zenit São Petersburgo,Shakhtar Donetsk,,,1,0
+Shakhtar Donetsk,APOEL Nicósia,,,1,1
+Shakhtar Donetsk,Zenit São Petersburgo,,,2,2
+APOEL Nicósia,Shakhtar Donetsk,,,0,2
+Shakhtar Donetsk,Futebol Clube do Porto,,,0,2
+Futebol Clube do Porto,Shakhtar Donetsk,,,2,1
+FC Barcelona,AC Milan,2.14,1.54,3,1
+FC Barcelona,Bayer 04 Leverkusen,2.14,1.6,7,1
+FC Barcelona,AC Milan,2.14,1.54,2,2
+FC Barcelona,Chelsea FC,2.14,1.68,2,2
+FC Barcelona,FC Viktoria Plzen,2.14,1.49,2,0
+FC Barcelona,FK BATE Borisov,2.14,1.83,4,0
+FC Villarreal,Napoli,1.55,1.73,0,2
+FC Villarreal,FC Bayern Munique,1.55,1.93,0,2
+FC Villarreal,Manchester City FC,1.55,2.35,0,3
+Borussia Dortmund,FC Arsenal,2.01,1.94,1,1
+Borussia Dortmund,Olympique Marselha,2.01,1.59,2,3
+Borussia Dortmund,Olympiacos Pireu,2.01,1.53,1,0
+FC Basel,Otelul Galati,1.52,1.46,2,1
+FC Basel,Sport Lisboa e Benfica,1.52,1.92,0,2
+FC Basel,FC Bayern Munique,1.52,1.93,1,0
+FC Basel,Manchester United FC,1.52,2.09,2,1
+Napoli,Manchester City FC,1.73,2.35,2,1
+Napoli,FC Villarreal,1.73,1.55,2,0
+Napoli,FC Bayern Munique,1.73,1.93,1,1
+Napoli,Chelsea FC,1.73,1.68,3,1
+Bayer 04 Leverkusen,KRC Genk,1.6,1.75,2,0
+Bayer 04 Leverkusen,Valência CF,1.6,1.41,2,1
+Bayer 04 Leverkusen,FC Barcelona,1.6,2.14,1,3
+Bayer 04 Leverkusen,Chelsea FC,1.6,1.68,2,1
+Manchester United FC,Sport Lisboa e Benfica,2.09,1.92,2,2
+Manchester United FC,Otelul Galati,2.09,1.46,2,0
+Manchester United FC,FC Basel,2.09,1.52,3,3
+Olympique Lyon,APOEL Nicósia,1.71,1.61,1,0
+Olympique Lyon,GNK Dinamo Zagreb,1.71,1.91,2,0
+Olympique Lyon,AFC Ajax,1.71,1.48,0,0
+Olympique Lyon,Real Madrid CF,1.71,2.01,0,2
+FC Arsenal,Olympiacos Pireu,1.94,1.53,2,1
+FC Arsenal,AC Milan,1.94,1.54,3,0
+FC Arsenal,Borussia Dortmund,1.94,2.01,2,1
+FC Arsenal,Olympique Marselha,1.94,1.59,0,0
+Zenit São Petersburgo,Futebol Clube do Porto,1.91,2.02,3,1
+Zenit São Petersburgo,Sport Lisboa e Benfica,1.91,1.92,3,2
+Zenit São Petersburgo,APOEL Nicósia,1.91,1.61,0,0
+Trabzonspor,CSKA Moscovo,1.7,1.7,0,0
+Trabzonspor,LOSC Lille,1.7,1.93,1,1
+Trabzonspor,FC Internazionale,1.7,1.92,1,1
+LOSC Lille,FC Internazionale,1.93,1.92,0,1
+LOSC Lille,Trabzonspor,1.93,1.7,0,0
+LOSC Lille,CSKA Moscovo,1.93,1.7,2,2
+Manchester City FC,Napoli,2.35,1.73,1,1
+Manchester City FC,FC Villarreal,2.35,1.55,2,1
+Manchester City FC,FC Bayern Munique,2.35,1.93,2,0
+Sport Lisboa e Benfica,Zenit São Petersburgo,1.92,1.91,2,0
+Sport Lisboa e Benfica,Manchester United FC,1.92,2.09,1,1
+Sport Lisboa e Benfica,Otelul Galati,1.92,1.46,1,0
+Sport Lisboa e Benfica,FC Basel,1.92,1.52,1,1
+Sport Lisboa e Benfica,Chelsea FC,1.92,1.68,0,1
+Valência CF,KRC Genk,1.41,1.75,7,0
+Valência CF,Bayer 04 Leverkusen,1.41,1.6,3,1
+Valência CF,Chelsea FC,1.41,1.68,1,1
+AC Milan,FC Arsenal,1.54,1.94,4,0
+AC Milan,FK BATE Borisov,1.54,1.83,2,0
+AC Milan,FC Viktoria Plzen,1.54,1.49,2,0
+AC Milan,FC Barcelona,1.54,2.14,2,3
+AC Milan,FC Barcelona,1.54,2.14,0,0
+FC Bayern Munique,FC Basel,1.93,1.52,7,0
+FC Bayern Munique,Napoli,1.93,1.73,3,2
+FC Bayern Munique,FC Villarreal,1.93,1.55,3,1
+FC Bayern Munique,Olympique Marselha,1.93,1.59,2,0
+FC Bayern Munique,Chelsea FC,1.93,1.68,4,5
+FC Bayern Munique,Manchester City FC,1.93,2.35,2,0
+FC Bayern Munique,Real Madrid CF,1.93,2.01,2,1
+AFC Ajax,GNK Dinamo Zagreb,1.48,1.91,4,0
+AFC Ajax,Olympique Lyon,1.48,1.71,0,0
+AFC Ajax,Real Madrid CF,1.48,2.01,0,3
+FC Internazionale,CSKA Moscovo,1.92,1.7,1,2
+FC Internazionale,Olympique Marselha,1.92,1.59,2,1
+FC Internazionale,LOSC Lille,1.92,1.93,2,1
+FC Internazionale,Trabzonspor,1.92,1.7,0,1
+Real Madrid CF,CSKA Moscovo,2.01,1.7,4,1
+Real Madrid CF,Olympique Lyon,2.01,1.71,4,0
+Real Madrid CF,FC Bayern Munique,2.01,1.93,3,4
+Real Madrid CF,AFC Ajax,2.01,1.48,3,0
+Real Madrid CF,GNK Dinamo Zagreb,2.01,1.91,6,2
+Real Madrid CF,APOEL Nicósia,2.01,1.61,5,2
+Olympiacos Pireu,Borussia Dortmund,1.53,2.01,3,1
+Olympiacos Pireu,FC Arsenal,1.53,1.94,3,1
+Olympiacos Pireu,Olympique Marselha,1.53,1.59,0,1
+Olympique Marselha,FC Bayern Munique,1.59,1.93,0,2
+Olympique Marselha,Borussia Dortmund,1.59,2.01,3,0
+Olympique Marselha,FC Internazionale,1.59,1.92,1,0
+Olympique Marselha,FC Arsenal,1.59,1.94,0,1
+Olympique Marselha,Olympiacos Pireu,1.59,1.53,0,1
+FC Viktoria Plzen,FC Barcelona,1.49,2.14,0,4
+FC Viktoria Plzen,AC Milan,1.49,1.54,2,2
+FC Viktoria Plzen,FK BATE Borisov,1.49,1.83,1,1
+KRC Genk,Bayer 04 Leverkusen,1.75,1.6,1,1
+KRC Genk,Chelsea FC,1.75,1.68,1,1
+KRC Genk,Valência CF,1.75,1.41,0,0
+Otelul Galati,FC Basel,1.46,1.52,2,3
+Otelul Galati,Sport Lisboa e Benfica,1.46,1.92,0,1
+Otelul Galati,Manchester United FC,1.46,2.09,0,2
+GNK Dinamo Zagreb,AFC Ajax,1.91,1.48,0,2
+GNK Dinamo Zagreb,Real Madrid CF,1.91,2.01,0,1
+GNK Dinamo Zagreb,Olympique Lyon,1.91,1.71,1,7
+CSKA Moscovo,Trabzonspor,1.7,1.7,3,0
+CSKA Moscovo,FC Internazionale,1.7,1.92,2,3
+CSKA Moscovo,Real Madrid CF,1.7,2.01,1,1
+CSKA Moscovo,LOSC Lille,1.7,1.93,0,2
+FK BATE Borisov,FC Barcelona,1.83,2.14,0,5
+FK BATE Borisov,FC Viktoria Plzen,1.83,1.49,0,1
+FK BATE Borisov,AC Milan,1.83,1.54,1,1
+APOEL Nicósia,Futebol Clube do Porto,1.61,2.02,2,1
+APOEL Nicósia,Olympique Lyon,1.61,1.71,5,3
+APOEL Nicósia,Real Madrid CF,1.61,2.01,0,3
+APOEL Nicósia,Zenit São Petersburgo,1.61,1.91,2,1
+Chelsea FC,KRC Genk,1.68,1.75,5,0
+Chelsea FC,Valência CF,1.68,1.41,3,0
+Chelsea FC,FC Barcelona,1.68,2.14,1,0
+Chelsea FC,Napoli,1.68,1.73,4,1
+Chelsea FC,Bayer 04 Leverkusen,1.68,1.6,2,0
+Chelsea FC,Sport Lisboa e Benfica,1.68,1.92,2,1
+Futebol Clube do Porto,Zenit São Petersburgo,2.02,1.91,0,0
+Futebol Clube do Porto,APOEL Nicósia,2.02,1.61,1,1
+Shakhtar Donetsk,Borussia Dortmund,,,2,2
+FC Nordsjaelland,Shakhtar Donetsk,,,2,5
+Shakhtar Donetsk,Juventus FC,,,0,1
+Borussia Dortmund,Shakhtar Donetsk,,,3,0
+Shakhtar Donetsk,FC Nordsjaelland,,,2,0
+Chelsea FC,Shakhtar Donetsk,,,3,2
+Shakhtar Donetsk,Chelsea FC,,,2,1
+Juventus FC,Shakhtar Donetsk,,,1,1
+FC Barcelona,Celtic FC,2.14,1.77,2,1
+FC Barcelona,FC Bayern Munique,2.14,1.93,0,3
+FC Barcelona,Spartak Moskovo,2.14,1.48,3,2
+FC Barcelona,FC Paris Saint-Germain,2.14,1.96,1,1
+FC Barcelona,AC Milan,2.14,1.54,4,0
+FC Barcelona,Sport Lisboa e Benfica,2.14,1.92,0,0
+Galatasaray,Real Madrid CF,1.61,2.01,3,2
+Galatasaray,CFR Cluj,1.61,1.62,1,1
+Galatasaray,Manchester United FC,1.61,2.09,1,0
+Galatasaray,Sporting Clube de Braga,1.61,1.94,0,2
+Galatasaray,Schalke 04,1.61,2.04,1,1
+Sporting Clube de Braga,Manchester United FC,1.94,2.09,1,3
+Sporting Clube de Braga,Galatasaray,1.94,1.61,1,2
+Sporting Clube de Braga,CFR Cluj,1.94,1.62,0,2
+Borussia Dortmund,Real Madrid CF,2.01,2.01,4,1
+Borussia Dortmund,Real Madrid CF,2.01,2.01,2,1
+Borussia Dortmund,Málaga CF,2.01,1.31,3,2
+Borussia Dortmund,Manchester City FC,2.01,2.35,1,0
+Borussia Dortmund,AFC Ajax,2.01,1.48,1,0
+Borussia Dortmund,FC Bayern Munique,2.01,1.93,1,2
+RSC Anderlecht,Málaga CF,1.74,1.31,0,3
+RSC Anderlecht,Zenit São Petersburgo,1.74,1.91,1,0
+RSC Anderlecht,AC Milan,1.74,1.54,1,3
+Manchester United FC,Sporting Clube de Braga,2.09,1.94,3,2
+Manchester United FC,Galatasaray,2.09,1.61,1,0
+Manchester United FC,Real Madrid CF,2.09,2.01,1,2
+Manchester United FC,CFR Cluj,2.09,1.62,0,1
+FC Paris Saint-Germain,Valência CF,1.96,1.41,1,1
+FC Paris Saint-Germain,Dínamo Kiev,1.96,1.93,4,1
+FC Paris Saint-Germain,FC Barcelona,1.96,2.14,2,2
+FC Paris Saint-Germain,Futebol Clube do Porto,1.96,2.02,2,1
+FC Paris Saint-Germain,GNK Dinamo Zagreb,1.96,1.91,4,0
+FC Arsenal,Montpellier HSC,1.94,1.44,2,0
+FC Arsenal,Olympiacos Pireu,1.94,1.53,3,1
+FC Arsenal,FC Bayern Munique,1.94,1.93,1,3
+FC Arsenal,Schalke 04,1.94,2.04,0,2
+Zenit São Petersburgo,Málaga CF,1.91,1.31,2,2
+Zenit São Petersburgo,RSC Anderlecht,1.91,1.74,1,0
+Zenit São Petersburgo,AC Milan,1.91,1.54,2,3
+LOSC Lille,Valência CF,1.93,1.41,0,1
+LOSC Lille,FC Bayern Munique,1.93,1.93,0,1
+LOSC Lille,FK BATE Borisov,1.93,1.83,1,3
+Manchester City FC,Real Madrid CF,2.35,2.01,1,1
+Manchester City FC,Borussia Dortmund,2.35,2.01,1,1
+Manchester City FC,AFC Ajax,2.35,1.48,2,2
+Sport Lisboa e Benfica,FC Barcelona,1.92,2.14,0,2
+Sport Lisboa e Benfica,Celtic FC,1.92,1.77,2,1
+Sport Lisboa e Benfica,Spartak Moskovo,1.92,1.48,2,0
+Valência CF,FC Bayern Munique,1.41,1.93,1,1
+Valência CF,FK BATE Borisov,1.41,1.83,4,2
+Valência CF,LOSC Lille,1.41,1.93,2,0
+Valência CF,FC Paris Saint-Germain,1.41,1.96,1,2
+AC Milan,Málaga CF,1.54,1.31,1,1
+AC Milan,RSC Anderlecht,1.54,1.74,0,0
+AC Milan,FC Barcelona,1.54,2.14,2,0
+AC Milan,Zenit São Petersburgo,1.54,1.91,0,1
+FC Bayern Munique,FK BATE Borisov,1.93,1.83,4,1
+FC Bayern Munique,Juventus FC,1.93,1.85,2,0
+FC Bayern Munique,FC Arsenal,1.93,1.94,0,2
+FC Bayern Munique,Valência CF,1.93,1.41,2,1
+FC Bayern Munique,FC Barcelona,1.93,2.14,4,0
+FC Bayern Munique,LOSC Lille,1.93,1.93,6,1
+Schalke 04,Montpellier HSC,2.04,1.44,2,2
+Schalke 04,Galatasaray,2.04,1.61,2,3
+Schalke 04,Olympiacos Pireu,2.04,1.53,1,0
+Schalke 04,FC Arsenal,2.04,1.94,2,2
+AFC Ajax,Borussia Dortmund,1.48,2.01,1,4
+AFC Ajax,Manchester City FC,1.48,2.35,3,1
+AFC Ajax,Real Madrid CF,1.48,2.01,1,4
+Dínamo Kiev,FC Paris Saint-Germain,1.93,1.96,0,2
+Dínamo Kiev,Futebol Clube do Porto,1.93,2.02,0,0
+Dínamo Kiev,GNK Dinamo Zagreb,1.93,1.91,2,0
+Celtic FC,Sport Lisboa e Benfica,1.77,1.92,0,0
+Celtic FC,Spartak Moskovo,1.77,1.48,2,1
+Celtic FC,Juventus FC,1.77,1.85,0,3
+Celtic FC,FC Barcelona,1.77,2.14,2,1
+Real Madrid CF,Galatasaray,2.01,1.61,3,0
+Real Madrid CF,Manchester City FC,2.01,2.35,3,2
+Real Madrid CF,Borussia Dortmund,2.01,2.01,2,0
+Real Madrid CF,Manchester United FC,2.01,2.09,1,1
+Real Madrid CF,AFC Ajax,2.01,1.48,4,1
+Real Madrid CF,Borussia Dortmund,2.01,2.01,2,2
+Olympiacos Pireu,Montpellier HSC,1.53,1.44,3,1
+Olympiacos Pireu,Schalke 04,1.53,2.04,1,2
+Olympiacos Pireu,FC Arsenal,1.53,1.94,2,1
+FC Nordsjaelland,Juventus FC,1.76,1.85,1,1
+FC Nordsjaelland,Chelsea FC,1.76,1.68,0,4
+Málaga CF,Zenit São Petersburgo,1.31,1.91,3,0
+Málaga CF,AC Milan,1.31,1.54,1,0
+Málaga CF,RSC Anderlecht,1.31,1.74,2,2
+Málaga CF,Borussia Dortmund,1.31,2.01,0,0
+Málaga CF,Futebol Clube do Porto,1.31,2.02,2,0
+GNK Dinamo Zagreb,FC Paris Saint-Germain,1.91,1.96,0,2
+GNK Dinamo Zagreb,Futebol Clube do Porto,1.91,2.02,0,2
+GNK Dinamo Zagreb,Dínamo Kiev,1.91,1.93,1,1
+CFR Cluj,Sporting Clube de Braga,1.62,1.94,3,1
+CFR Cluj,Galatasaray,1.62,1.61,1,3
+CFR Cluj,Manchester United FC,1.62,2.09,1,2
+Spartak Moskovo,Sport Lisboa e Benfica,1.48,1.92,2,1
+Spartak Moskovo,Celtic FC,1.48,1.77,2,3
+Spartak Moskovo,FC Barcelona,1.48,2.14,0,3
+FK BATE Borisov,Valência CF,1.83,1.41,0,3
+FK BATE Borisov,LOSC Lille,1.83,1.93,0,2
+FK BATE Borisov,FC Bayern Munique,1.83,1.93,3,1
+Chelsea FC,Juventus FC,1.68,1.85,2,2
+Chelsea FC,FC Nordsjaelland,1.68,1.76,6,1
+Montpellier HSC,Schalke 04,1.44,2.04,1,1
+Montpellier HSC,FC Arsenal,1.44,1.94,1,2
+Montpellier HSC,Olympiacos Pireu,1.44,1.53,1,2
+Futebol Clube do Porto,GNK Dinamo Zagreb,2.02,1.91,3,0
+Futebol Clube do Porto,FC Paris Saint-Germain,2.02,1.96,1,0
+Futebol Clube do Porto,Dínamo Kiev,2.02,1.93,3,2
+Futebol Clube do Porto,Málaga CF,2.02,1.31,1,0
+Juventus FC,Celtic FC,1.85,1.77,2,0
+Juventus FC,Chelsea FC,1.85,1.68,3,0
+Juventus FC,FC Bayern Munique,1.85,1.93,0,2
+Juventus FC,FC Nordsjaelland,1.85,1.76,4,0
+FC Barcelona,AC Milan,2.14,1.54,3,1
+FC Barcelona,Atlético de Madrid,2.14,1.91,1,1
+FC Barcelona,Manchester City FC,2.14,2.35,2,1
+FC Barcelona,AFC Ajax,2.14,1.48,4,0
+FC Barcelona,Celtic FC,2.14,1.77,6,1
+Galatasaray,Juventus FC,1.61,1.85,1,0
+Galatasaray,Chelsea FC,1.61,1.68,1,1
+Galatasaray,FC Copenhagen,1.61,1.92,3,1
+Galatasaray,Real Madrid CF,1.61,2.01,1,6
+Borussia Dortmund,Zenit São Petersburgo,2.01,1.91,1,2
+Borussia Dortmund,Olympique Marselha,2.01,1.59,3,0
+Borussia Dortmund,Napoli,2.01,1.73,3,1
+Borussia Dortmund,Real Madrid CF,2.01,2.01,2,0
+Borussia Dortmund,FC Arsenal,2.01,1.94,0,1
+FC Basel,Schalke 04,1.52,2.04,0,1
+FC Basel,Steaua Bukarest,1.52,1.55,1,1
+FC Basel,Chelsea FC,1.52,1.68,1,0
+Napoli,Borussia Dortmund,1.73,2.01,2,1
+Napoli,Olympique Marselha,1.73,1.59,3,2
+Napoli,FC Arsenal,1.73,1.94,2,0
+Bayer 04 Leverkusen,FC Paris Saint-Germain,1.6,1.96,0,4
+Bayer 04 Leverkusen,Shakhtar Donetsk,1.6,2.08,4,0
+Bayer 04 Leverkusen,Real Sociedad,1.6,1.61,2,1
+Bayer 04 Leverkusen,Manchester United FC,1.6,2.09,0,5
+RSC Anderlecht,Sport Lisboa e Benfica,1.74,1.92,2,3
+RSC Anderlecht,Olympiacos Pireu,1.74,1.53,0,3
+RSC Anderlecht,FC Paris Saint-Germain,1.74,1.96,0,5
+Manchester United FC,Olympiacos Pireu,2.09,1.53,3,0
+Manchester United FC,Shakhtar Donetsk,2.09,2.08,1,0
+Manchester United FC,Bayer 04 Leverkusen,2.09,1.6,4,2
+Manchester United FC,FC Bayern Munique,2.09,1.93,1,1
+Manchester United FC,Real Sociedad,2.09,1.61,1,0
+FC Paris Saint-Germain,Chelsea FC,1.96,1.68,3,1
+FC Paris Saint-Germain,RSC Anderlecht,1.96,1.74,1,1
+FC Paris Saint-Germain,Sport Lisboa e Benfica,1.96,1.92,3,0
+FC Paris Saint-Germain,Olympiacos Pireu,1.96,1.53,2,1
+FC Paris Saint-Germain,Bayer 04 Leverkusen,1.96,1.6,2,1
+FC Arsenal,Napoli,1.94,1.73,2,0
+FC Arsenal,Borussia Dortmund,1.94,2.01,1,2
+FC Arsenal,Olympique Marselha,1.94,1.59,2,0
+Zenit São Petersburgo,Atlético de Madrid,1.91,1.91,1,1
+Zenit São Petersburgo,Borussia Dortmund,1.91,2.01,2,4
+Zenit São Petersburgo,Áustria Viena,1.91,1.37,0,0
+Zenit São Petersburgo,Futebol Clube do Porto,1.91,2.02,1,1
+Atlético de Madrid,Chelsea FC,1.91,1.68,0,0
+Atlético de Madrid,Áustria Viena,1.91,1.37,4,0
+Atlético de Madrid,Zenit São Petersburgo,1.91,1.91,3,1
+Atlético de Madrid,FC Barcelona,1.91,2.14,1,0
+Atlético de Madrid,AC Milan,1.91,1.54,4,1
+Atlético de Madrid,Futebol Clube do Porto,1.91,2.02,2,0
+Manchester City FC,CSKA Moscovo,2.35,1.7,5,2
+Manchester City FC,FC Barcelona,2.35,2.14,0,2
+Manchester City FC,FC Viktoria Plzen,2.35,1.49,4,2
+Manchester City FC,FC Bayern Munique,2.35,1.93,1,3
+Sport Lisboa e Benfica,FC Paris Saint-Germain,1.92,1.96,2,1
+Sport Lisboa e Benfica,RSC Anderlecht,1.92,1.74,2,0
+Sport Lisboa e Benfica,Olympiacos Pireu,1.92,1.53,1,1
+AC Milan,Celtic FC,1.54,1.77,2,0
+AC Milan,AFC Ajax,1.54,1.48,0,0
+AC Milan,Atlético de Madrid,1.54,1.91,0,1
+AC Milan,FC Barcelona,1.54,2.14,1,1
+FC Bayern Munique,Manchester City FC,1.93,2.35,2,3
+FC Bayern Munique,CSKA Moscovo,1.93,1.7,3,0
+FC Bayern Munique,FC Arsenal,1.93,1.94,1,1
+FC Bayern Munique,Real Madrid CF,1.93,2.01,0,4
+FC Bayern Munique,FC Viktoria Plzen,1.93,1.49,5,0
+FC Bayern Munique,Manchester United FC,1.93,2.09,3,1
+FC Copenhagen,Juventus FC,1.92,1.85,1,1
+FC Copenhagen,Galatasaray,1.92,1.61,1,0
+FC Copenhagen,Real Madrid CF,1.92,2.01,0,2
+Schalke 04,FC Basel,2.04,1.52,2,0
+Schalke 04,Real Madrid CF,2.04,2.01,1,6
+Schalke 04,Chelsea FC,2.04,1.68,0,3
+Schalke 04,Steaua Bukarest,2.04,1.55,3,0
+AFC Ajax,Celtic FC,1.48,1.77,1,0
+AFC Ajax,FC Barcelona,1.48,2.14,2,1
+AFC Ajax,AC Milan,1.48,1.54,1,1
+Áustria Viena,Zenit São Petersburgo,1.37,1.91,4,1
+Áustria Viena,Atlético de Madrid,1.37,1.91,0,3
+Áustria Viena,Futebol Clube do Porto,1.37,2.02,0,1
+Celtic FC,FC Barcelona,1.77,2.14,0,1
+Celtic FC,AFC Ajax,1.77,1.48,2,1
+Celtic FC,AC Milan,1.77,1.54,0,3
+Real Madrid CF,Schalke 04,2.01,2.04,3,1
+Real Madrid CF,Juventus FC,2.01,1.85,2,1
+Real Madrid CF,Atlético de Madrid,2.01,1.91,4,1
+Real Madrid CF,Galatasaray,2.01,1.61,4,1
+Real Madrid CF,Borussia Dortmund,2.01,2.01,3,0
+Real Madrid CF,FC Bayern Munique,2.01,1.93,1,0
+Real Madrid CF,FC Copenhagen,2.01,1.92,4,0
+Olympiacos Pireu,Sport Lisboa e Benfica,1.53,1.92,1,0
+Olympiacos Pireu,Manchester United FC,1.53,2.09,2,0
+Olympiacos Pireu,FC Paris Saint-Germain,1.53,1.96,1,4
+Olympiacos Pireu,RSC Anderlecht,1.53,1.74,3,1
+Olympique Marselha,Napoli,1.59,1.73,1,2
+Olympique Marselha,FC Arsenal,1.59,1.94,1,2
+Olympique Marselha,Borussia Dortmund,1.59,2.01,1,2
+Real Sociedad,Shakhtar Donetsk,1.61,2.08,0,2
+Real Sociedad,Manchester United FC,1.61,2.09,0,0
+Real Sociedad,Bayer 04 Leverkusen,1.61,1.6,0,1
+FC Viktoria Plzen,FC Bayern Munique,1.49,1.93,0,1
+FC Viktoria Plzen,Manchester City FC,1.49,2.35,0,3
+FC Viktoria Plzen,CSKA Moscovo,1.49,1.7,2,1
+CSKA Moscovo,FC Bayern Munique,1.7,1.93,1,3
+CSKA Moscovo,FC Viktoria Plzen,1.7,1.49,3,2
+CSKA Moscovo,Manchester City FC,1.7,2.35,1,2
+Steaua Bukarest,Chelsea FC,1.55,1.68,0,4
+Steaua Bukarest,FC Basel,1.55,1.52,1,1
+Steaua Bukarest,Schalke 04,1.55,2.04,0,0
+Chelsea FC,Galatasaray,1.68,1.61,2,0
+Chelsea FC,Steaua Bukarest,1.68,1.55,1,0
+Chelsea FC,FC Paris Saint-Germain,1.68,1.96,2,0
+Chelsea FC,FC Basel,1.68,1.52,1,2
+Chelsea FC,Atlético de Madrid,1.68,1.91,1,3
+Chelsea FC,Schalke 04,1.68,2.04,3,0
+Shakhtar Donetsk,Real Sociedad,2.08,1.61,4,0
+Shakhtar Donetsk,Manchester United FC,2.08,2.09,1,1
+Shakhtar Donetsk,Bayer 04 Leverkusen,2.08,1.6,0,0
+Futebol Clube do Porto,Zenit São Petersburgo,2.02,1.91,0,1
+Futebol Clube do Porto,Atlético de Madrid,2.02,1.91,1,2
+Futebol Clube do Porto,Áustria Viena,2.02,1.37,1,1
+Juventus FC,Real Madrid CF,1.85,2.01,2,2
+Juventus FC,FC Copenhagen,1.85,1.92,3,1
+Juventus FC,Galatasaray,1.85,1.61,2,2
+Athletic Bilbao,Shakhtar Donetsk,,,0,0
+Shakhtar Donetsk,Athletic Bilbao,,,0,1
+Shakhtar Donetsk,Futebol Clube do Porto,,,2,2
+Shakhtar Donetsk,FK BATE Borisov,,,5,0
+Futebol Clube do Porto,Shakhtar Donetsk,,,1,1
+Shakhtar Donetsk,FC Bayern Munique,,,0,0
+FC Bayern Munique,Shakhtar Donetsk,,,7,0
+FK BATE Borisov,Shakhtar Donetsk,,,0,7
+FC Barcelona,FC Paris Saint-Germain,2.14,1.96,2,0
+FC Barcelona,FC Paris Saint-Germain,2.14,1.96,3,1
+FC Barcelona,FC Bayern Munique,2.14,1.93,3,0
+FC Barcelona,APOEL Nicósia,2.14,1.61,1,0
+FC Barcelona,Manchester City FC,2.14,2.35,1,0
+FC Barcelona,AFC Ajax,2.14,1.48,3,1
+Galatasaray,RSC Anderlecht,1.61,1.74,1,1
+Galatasaray,FC Arsenal,1.61,1.94,1,4
+Galatasaray,Borussia Dortmund,1.61,2.01,0,4
+AS Mônaco,Bayer 04 Leverkusen,1.79,1.6,1,0
+AS Mônaco,FC Arsenal,1.79,1.94,0,2
+AS Mônaco,Zenit São Petersburgo,1.79,1.91,2,0
+AS Mônaco,Sport Lisboa e Benfica,1.79,1.92,0,0
+AS Mônaco,Juventus FC,1.79,1.85,0,0
+Borussia Dortmund,Galatasaray,2.01,1.61,4,1
+Borussia Dortmund,FC Arsenal,2.01,1.94,2,0
+Borussia Dortmund,Juventus FC,2.01,1.85,0,3
+Borussia Dortmund,RSC Anderlecht,2.01,1.74,1,1
+FC Basel,Ludogorets Razgrad,1.52,1.88,4,0
+FC Basel,FC Liverpool,1.52,1.87,1,0
+FC Basel,Real Madrid CF,1.52,2.01,0,1
+FC Basel,Futebol Clube do Porto,1.52,2.02,1,1
+Bayer 04 Leverkusen,Sport Lisboa e Benfica,1.6,1.92,3,1
+Bayer 04 Leverkusen,Atlético de Madrid,1.6,1.91,1,0
+Bayer 04 Leverkusen,AS Mônaco,1.6,1.79,0,1
+Bayer 04 Leverkusen,Zenit São Petersburgo,1.6,1.91,2,0
+RSC Anderlecht,Galatasaray,1.74,1.61,2,0
+RSC Anderlecht,FC Arsenal,1.74,1.94,1,2
+RSC Anderlecht,Borussia Dortmund,1.74,2.01,0,3
+Ludogorets Razgrad,FC Basel,1.88,1.52,1,0
+Ludogorets Razgrad,Real Madrid CF,1.88,2.01,1,2
+Ludogorets Razgrad,FC Liverpool,1.88,1.87,2,2
+FC Paris Saint-Germain,Chelsea FC,1.96,1.68,1,1
+FC Paris Saint-Germain,AFC Ajax,1.96,1.48,3,1
+FC Paris Saint-Germain,APOEL Nicósia,1.96,1.61,1,0
+FC Paris Saint-Germain,FC Barcelona,1.96,2.14,1,3
+FC Paris Saint-Germain,FC Barcelona,1.96,2.14,3,2
+FC Arsenal,AS Mônaco,1.94,1.79,1,3
+FC Arsenal,RSC Anderlecht,1.94,1.74,3,3
+FC Arsenal,Galatasaray,1.94,1.61,4,1
+FC Arsenal,Borussia Dortmund,1.94,2.01,2,0
+Zenit São Petersburgo,AS Mônaco,1.91,1.79,0,0
+Zenit São Petersburgo,Sport Lisboa e Benfica,1.91,1.92,1,0
+Zenit São Petersburgo,Bayer 04 Leverkusen,1.91,1.6,1,2
+NK Maribor,Sporting CP,1.78,2.24,1,1
+NK Maribor,Schalke 04,1.78,2.04,0,1
+NK Maribor,Chelsea FC,1.78,1.68,1,1
+Atlético de Madrid,Olympiacos Pireu,1.91,1.53,4,0
+Atlético de Madrid,Real Madrid CF,1.91,2.01,0,0
+Atlético de Madrid,Bayer 04 Leverkusen,1.91,1.6,4,2
+Atlético de Madrid,Juventus FC,1.91,1.85,1,0
+Atlético de Madrid,Malmö FF,1.91,1.64,5,0
+FC Liverpool,FC Basel,1.87,1.52,1,1
+FC Liverpool,Ludogorets Razgrad,1.87,1.88,2,1
+FC Liverpool,Real Madrid CF,1.87,2.01,0,3
+Manchester City FC,FC Bayern Munique,2.35,1.93,3,2
+Manchester City FC,CSKA Moscovo,2.35,1.7,1,2
+Manchester City FC,FC Barcelona,2.35,2.14,1,2
+Manchester City FC,AS Roma,2.35,2.07,1,1
+Sport Lisboa e Benfica,AS Mônaco,1.92,1.79,1,0
+Sport Lisboa e Benfica,Bayer 04 Leverkusen,1.92,1.6,0,0
+Sport Lisboa e Benfica,Zenit São Petersburgo,1.92,1.91,0,2
+Sporting CP,Schalke 04,2.24,2.04,4,2
+Sporting CP,NK Maribor,2.24,1.78,3,1
+Sporting CP,Chelsea FC,2.24,1.68,0,1
+FC Bayern Munique,Futebol Clube do Porto,1.93,2.02,6,1
+FC Bayern Munique,Manchester City FC,1.93,2.35,1,0
+FC Bayern Munique,AS Roma,1.93,2.07,2,0
+FC Bayern Munique,CSKA Moscovo,1.93,1.7,3,0
+FC Bayern Munique,FC Barcelona,1.93,2.14,3,2
+AS Roma,CSKA Moscovo,2.07,1.7,5,1
+AS Roma,Manchester City FC,2.07,2.35,0,2
+AS Roma,FC Bayern Munique,2.07,1.93,1,7
+Schalke 04,Sporting CP,2.04,2.24,4,3
+Schalke 04,Chelsea FC,2.04,1.68,0,5
+Schalke 04,NK Maribor,2.04,1.78,1,1
+Schalke 04,Real Madrid CF,2.04,2.01,0,2
+AFC Ajax,FC Barcelona,1.48,2.14,0,2
+AFC Ajax,FC Paris Saint-Germain,1.48,1.96,1,1
+AFC Ajax,APOEL Nicósia,1.48,1.61,4,0
+Real Madrid CF,Schalke 04,2.01,2.04,3,4
+Real Madrid CF,Juventus FC,2.01,1.85,1,1
+Real Madrid CF,Atlético de Madrid,2.01,1.91,1,0
+Real Madrid CF,FC Liverpool,2.01,1.87,1,0
+Real Madrid CF,FC Basel,2.01,1.52,5,1
+Real Madrid CF,Ludogorets Razgrad,2.01,1.88,4,0
+Olympiacos Pireu,Atlético de Madrid,1.53,1.91,3,2
+Olympiacos Pireu,Juventus FC,1.53,1.85,1,0
+Olympiacos Pireu,Malmö FF,1.53,1.64,4,2
+Athletic Bilbao,FK BATE Borisov,1.79,1.83,2,0
+Athletic Bilbao,Futebol Clube do Porto,1.79,2.02,0,2
+Malmö FF,Olympiacos Pireu,1.64,1.53,2,0
+Malmö FF,Atlético de Madrid,1.64,1.91,0,2
+Malmö FF,Juventus FC,1.64,1.85,0,2
+CSKA Moscovo,AS Roma,1.7,2.07,1,1
+CSKA Moscovo,Manchester City FC,1.7,2.35,2,2
+CSKA Moscovo,FC Bayern Munique,1.7,1.93,0,1
+FK BATE Borisov,Futebol Clube do Porto,1.83,2.02,0,3
+FK BATE Borisov,Athletic Bilbao,1.83,1.79,2,1
+APOEL Nicósia,FC Barcelona,1.61,2.14,0,4
+APOEL Nicósia,FC Paris Saint-Germain,1.61,1.96,0,1
+APOEL Nicósia,AFC Ajax,1.61,1.48,1,1
+Chelsea FC,NK Maribor,1.68,1.78,6,0
+Chelsea FC,Sporting CP,1.68,2.24,3,1
+Chelsea FC,Schalke 04,1.68,2.04,1,1
+Chelsea FC,FC Paris Saint-Germain,1.68,1.96,2,2
+Futebol Clube do Porto,FC Bayern Munique,2.02,1.93,3,1
+Futebol Clube do Porto,FK BATE Borisov,2.02,1.83,6,0
+Futebol Clube do Porto,Athletic Bilbao,2.02,1.79,2,1
+Futebol Clube do Porto,FC Basel,2.02,1.52,4,0
+Juventus FC,AS Mônaco,1.85,1.79,1,0
+Juventus FC,Atlético de Madrid,1.85,1.91,0,0
+Juventus FC,Olympiacos Pireu,1.85,1.53,3,2
+Juventus FC,Borussia Dortmund,1.85,2.01,2,1
+Juventus FC,FC Barcelona,1.85,2.14,1,3
+Juventus FC,Real Madrid CF,1.85,2.01,2,1
+Juventus FC,Malmö FF,1.85,1.64,2,0
+Shakhtar Donetsk,FC Paris Saint-Germain,,,0,3
+Real Madrid CF,Shakhtar Donetsk,,,4,0
+Shakhtar Donetsk,Malmö FF,,,4,0
+FC Paris Saint-Germain,Shakhtar Donetsk,,,2,0
+Malmö FF,Shakhtar Donetsk,,,1,0
+Shakhtar Donetsk,Real Madrid CF,,,3,4
+FC Barcelona,AS Roma,2.14,2.07,6,1
+FC Barcelona,Atlético de Madrid,2.14,1.91,2,1
+FC Barcelona,FC Arsenal,2.14,1.94,3,1
+FC Barcelona,Bayer 04 Leverkusen,2.14,1.6,2,1
+FC Barcelona,FK BATE Borisov,2.14,1.83,3,0
+VfL Wolfsburg,Manchester United FC,1.8,2.09,3,2
+VfL Wolfsburg,Real Madrid CF,1.8,2.01,2,0
+VfL Wolfsburg,KAA Gent,1.8,1.61,1,0
+VfL Wolfsburg,CSKA Moscovo,1.8,1.7,1,0
+VfL Wolfsburg,PSV Eindhoven,1.8,1.6,2,0
+Galatasaray,Atlético de Madrid,1.61,1.91,0,2
+Galatasaray,Sport Lisboa e Benfica,1.61,1.92,2,1
+Galatasaray,FC Astana,1.61,1.98,1,1
+PSV Eindhoven,Manchester United FC,1.6,2.09,2,1
+PSV Eindhoven,CSKA Moscovo,1.6,1.7,2,1
+PSV Eindhoven,VfL Wolfsburg,1.6,1.8,2,0
+PSV Eindhoven,Atlético de Madrid,1.6,1.91,0,0
+Bayer 04 Leverkusen,FC Barcelona,1.6,2.14,1,1
+Bayer 04 Leverkusen,FK BATE Borisov,1.6,1.83,4,1
+Bayer 04 Leverkusen,AS Roma,1.6,2.07,4,4
+Sevilla FC,Borussia Mönchengladbach,1.53,1.9,3,0
+Sevilla FC,Juventus FC,1.53,1.85,1,0
+Sevilla FC,Manchester City FC,1.53,2.35,1,3
+Manchester United FC,PSV Eindhoven,2.09,1.6,0,0
+Manchester United FC,CSKA Moscovo,2.09,1.7,1,0
+Manchester United FC,VfL Wolfsburg,2.09,1.8,2,1
+Olympique Lyon,KAA Gent,1.71,1.61,1,2
+Olympique Lyon,Zenit São Petersburgo,1.71,1.91,0,2
+Olympique Lyon,Valência CF,1.71,1.41,0,1
+FC Paris Saint-Germain,Manchester City FC,1.96,2.35,2,2
+FC Paris Saint-Germain,Chelsea FC,1.96,1.68,2,1
+FC Paris Saint-Germain,Malmö FF,1.96,1.64,2,0
+FC Paris Saint-Germain,Real Madrid CF,1.96,2.01,0,0
+FC Arsenal,Olympiacos Pireu,1.94,1.53,2,3
+FC Arsenal,FC Barcelona,1.94,2.14,0,2
+FC Arsenal,FC Bayern Munique,1.94,1.93,2,0
+FC Arsenal,GNK Dinamo Zagreb,1.94,1.91,3,0
+Maccabi Tel Aviv,Dínamo Kiev,2.25,1.93,0,2
+Maccabi Tel Aviv,Chelsea FC,2.25,1.68,0,4
+Maccabi Tel Aviv,Futebol Clube do Porto,2.25,2.02,1,3
+Zenit São Petersburgo,KAA Gent,1.91,1.61,2,1
+Zenit São Petersburgo,Olympique Lyon,1.91,1.71,3,1
+Zenit São Petersburgo,Sport Lisboa e Benfica,1.91,1.92,1,2
+Zenit São Petersburgo,Valência CF,1.91,1.41,2,0
+Atlético de Madrid,Galatasaray,1.91,1.61,2,0
+Atlético de Madrid,FC Barcelona,1.91,2.14,2,0
+Atlético de Madrid,Sport Lisboa e Benfica,1.91,1.92,1,2
+Atlético de Madrid,FC Bayern Munique,1.91,1.93,1,0
+Atlético de Madrid,FC Astana,1.91,1.98,4,0
+Atlético de Madrid,PSV Eindhoven,1.91,1.6,8,7
+Manchester City FC,Dínamo Kiev,2.35,1.93,0,0
+Manchester City FC,FC Paris Saint-Germain,2.35,1.96,1,0
+Manchester City FC,Borussia Mönchengladbach,2.35,1.9,4,2
+Manchester City FC,Juventus FC,2.35,1.85,1,2
+Manchester City FC,Sevilla FC,2.35,1.53,2,1
+Manchester City FC,Real Madrid CF,2.35,2.01,0,0
+Sport Lisboa e Benfica,FC Bayern Munique,1.92,1.93,2,2
+Sport Lisboa e Benfica,FC Astana,1.92,1.98,2,0
+Sport Lisboa e Benfica,Zenit São Petersburgo,1.92,1.91,1,0
+Sport Lisboa e Benfica,Galatasaray,1.92,1.61,2,1
+Sport Lisboa e Benfica,Atlético de Madrid,1.92,1.91,1,2
+Valência CF,Olympique Lyon,1.41,1.71,0,2
+Valência CF,KAA Gent,1.41,1.61,2,1
+Valência CF,Zenit São Petersburgo,1.41,1.91,2,3
+FC Bayern Munique,Olympiacos Pireu,1.93,1.53,4,0
+FC Bayern Munique,Atlético de Madrid,1.93,1.91,2,1
+FC Bayern Munique,Juventus FC,1.93,1.85,4,2
+FC Bayern Munique,Sport Lisboa e Benfica,1.93,1.92,1,0
+FC Bayern Munique,FC Arsenal,1.93,1.94,5,1
+FC Bayern Munique,GNK Dinamo Zagreb,1.93,1.91,5,0
+Borussia Mönchengladbach,Manchester City FC,1.9,2.35,1,2
+Borussia Mönchengladbach,Sevilla FC,1.9,1.53,4,2
+Borussia Mönchengladbach,Juventus FC,1.9,1.85,1,1
+AS Roma,FC Barcelona,2.07,2.14,1,1
+AS Roma,Bayer 04 Leverkusen,2.07,1.6,3,2
+AS Roma,Real Madrid CF,2.07,2.01,0,2
+AS Roma,FK BATE Borisov,2.07,1.83,0,0
+Dínamo Kiev,Maccabi Tel Aviv,1.93,2.25,1,0
+Dínamo Kiev,Chelsea FC,1.93,1.68,0,0
+Dínamo Kiev,Manchester City FC,1.93,2.35,1,3
+Dínamo Kiev,Futebol Clube do Porto,1.93,2.02,2,2
+Real Madrid CF,Manchester City FC,2.01,2.35,1,0
+Real Madrid CF,AS Roma,2.01,2.07,2,0
+Real Madrid CF,Atlético de Madrid,2.01,1.91,6,4
+Real Madrid CF,Malmö FF,2.01,1.64,8,0
+Real Madrid CF,VfL Wolfsburg,2.01,1.8,3,0
+Real Madrid CF,FC Paris Saint-Germain,2.01,1.96,1,0
+Olympiacos Pireu,FC Bayern Munique,1.53,1.93,0,3
+Olympiacos Pireu,GNK Dinamo Zagreb,1.53,1.91,2,1
+Olympiacos Pireu,FC Arsenal,1.53,1.94,0,3
+FC Astana,Atlético de Madrid,1.98,1.91,0,0
+FC Astana,Sport Lisboa e Benfica,1.98,1.92,2,2
+FC Astana,Galatasaray,1.98,1.61,2,2
+Malmö FF,FC Paris Saint-Germain,1.64,1.96,0,5
+Malmö FF,Real Madrid CF,1.64,2.01,0,2
+GNK Dinamo Zagreb,Olympiacos Pireu,1.91,1.53,0,1
+GNK Dinamo Zagreb,FC Arsenal,1.91,1.94,2,1
+GNK Dinamo Zagreb,FC Bayern Munique,1.91,1.93,0,2
+CSKA Moscovo,Manchester United FC,1.7,2.09,1,1
+CSKA Moscovo,VfL Wolfsburg,1.7,1.8,0,2
+CSKA Moscovo,PSV Eindhoven,1.7,1.6,3,2
+FK BATE Borisov,FC Barcelona,1.83,2.14,0,2
+FK BATE Borisov,AS Roma,1.83,2.07,3,2
+FK BATE Borisov,Bayer 04 Leverkusen,1.83,1.6,1,1
+KAA Gent,Zenit São Petersburgo,1.61,1.91,2,1
+KAA Gent,VfL Wolfsburg,1.61,1.8,2,3
+KAA Gent,Valência CF,1.61,1.41,1,0
+KAA Gent,Olympique Lyon,1.61,1.71,1,1
+Chelsea FC,Maccabi Tel Aviv,1.68,2.25,4,0
+Chelsea FC,FC Paris Saint-Germain,1.68,1.96,1,2
+Chelsea FC,Dínamo Kiev,1.68,1.93,2,1
+Chelsea FC,Futebol Clube do Porto,1.68,2.02,2,0
+Futebol Clube do Porto,Chelsea FC,2.02,1.68,2,1
+Futebol Clube do Porto,Dínamo Kiev,2.02,1.93,0,2
+Futebol Clube do Porto,Maccabi Tel Aviv,2.02,2.25,2,0
+Juventus FC,Borussia Mönchengladbach,1.85,1.9,0,0
+Juventus FC,Sevilla FC,1.85,1.53,2,0
+Juventus FC,Manchester City FC,1.85,2.35,1,0
+Juventus FC,FC Bayern Munique,1.85,1.93,2,2
+FC Barcelona,Borussia Mönchengladbach,2.14,1.9,4,0
+FC Barcelona,Juventus FC,2.14,1.85,0,0
+FC Barcelona,FC Paris Saint-Germain,2.14,1.96,6,1
+FC Barcelona,Manchester City FC,2.14,2.35,4,0
+FC Barcelona,Celtic FC,2.14,1.77,7,0
+PSV Eindhoven,FC Bayern Munique,1.6,1.93,1,2
+PSV Eindhoven,FK Rostov,1.6,1.51,0,0
+PSV Eindhoven,Atlético de Madrid,1.6,1.91,0,1
+AS Mônaco,Juventus FC,1.79,1.85,0,2
+AS Mônaco,Bayer 04 Leverkusen,1.79,1.6,1,1
+AS Mônaco,"Tottenham Hotspur ",1.79,1.81,2,1
+AS Mônaco,Borussia Dortmund,1.79,2.01,3,1
+AS Mônaco,Manchester City FC,1.79,2.35,3,1
+AS Mônaco,CSKA Moscovo,1.79,1.7,3,0
+Borussia Dortmund,Real Madrid CF,2.01,2.01,2,2
+Borussia Dortmund,Legia de Varsóvia,2.01,1.63,8,4
+Borussia Dortmund,Sport Lisboa e Benfica,2.01,1.92,4,0
+Borussia Dortmund,Sporting CP,2.01,2.24,1,0
+Borussia Dortmund,AS Mônaco,2.01,1.79,2,3
+FC Basel,FC Paris Saint-Germain,1.52,1.96,1,2
+FC Basel,Ludogorets Razgrad,1.52,1.88,1,1
+FC Basel,FC Arsenal,1.52,1.94,1,4
+Club Brugge,Futebol Clube do Porto,1.69,2.02,1,2
+Club Brugge,Leicester City FC,1.69,2.05,0,3
+Club Brugge,FC Copenhagen,1.69,1.92,0,2
+Napoli,Besiktas JK,1.73,3,2,3
+Napoli,Sport Lisboa e Benfica,1.73,1.92,4,2
+Napoli,Real Madrid CF,1.73,2.01,1,3
+Napoli,Dínamo Kiev,1.73,1.93,0,0
+Bayer 04 Leverkusen,Atlético de Madrid,1.6,1.91,2,4
+Bayer 04 Leverkusen,CSKA Moscovo,1.6,1.7,2,2
+Bayer 04 Leverkusen,AS Mônaco,1.6,1.79,3,0
+Bayer 04 Leverkusen,"Tottenham Hotspur ",1.6,1.81,0,0
+Besiktas JK,Dínamo Kiev,3,1.93,1,1
+Besiktas JK,Sport Lisboa e Benfica,3,1.92,3,3
+Besiktas JK,Napoli,3,1.73,1,1
+Sevilla FC,Juventus FC,1.53,1.85,1,3
+Sevilla FC,Leicester City FC,1.53,2.05,2,1
+Sevilla FC,Olympique Lyon,1.53,1.71,1,0
+Sevilla FC,GNK Dinamo Zagreb,1.53,1.91,4,0
+Leicester City FC,Club Brugge,2.05,1.69,2,1
+Leicester City FC,Atlético de Madrid,2.05,1.91,1,1
+Leicester City FC,Sevilla FC,2.05,1.53,2,0
+Leicester City FC,Futebol Clube do Porto,2.05,2.02,1,0
+Leicester City FC,FC Copenhagen,2.05,1.92,1,0
+Olympique Lyon,Juventus FC,1.71,1.85,0,1
+Olympique Lyon,Sevilla FC,1.71,1.53,0,0
+Olympique Lyon,GNK Dinamo Zagreb,1.71,1.91,3,0
+Ludogorets Razgrad,FC Basel,1.88,1.52,0,0
+Ludogorets Razgrad,FC Paris Saint-Germain,1.88,1.96,1,3
+Ludogorets Razgrad,FC Arsenal,1.88,1.94,2,3
+FC Paris Saint-Germain,Ludogorets Razgrad,1.96,1.88,2,2
+FC Paris Saint-Germain,FC Basel,1.96,1.52,3,0
+FC Paris Saint-Germain,FC Barcelona,1.96,2.14,4,0
+FC Paris Saint-Germain,FC Arsenal,1.96,1.94,1,1
+FC Arsenal,FC Basel,1.94,1.52,2,0
+FC Arsenal,Ludogorets Razgrad,1.94,1.88,6,0
+FC Arsenal,FC Bayern Munique,1.94,1.93,1,5
+FC Arsenal,FC Paris Saint-Germain,1.94,1.96,2,2
+Atlético de Madrid,Leicester City FC,1.91,2.05,1,0
+Atlético de Madrid,FC Bayern Munique,1.91,1.93,1,0
+Atlético de Madrid,FK Rostov,1.91,1.51,2,1
+Atlético de Madrid,Bayer 04 Leverkusen,1.91,1.6,0,0
+Atlético de Madrid,PSV Eindhoven,1.91,1.6,2,0
+Atlético de Madrid,Real Madrid CF,1.91,2.01,2,1
+Legia de Varsóvia,Borussia Dortmund,1.63,2.01,0,6
+Legia de Varsóvia,Sporting CP,1.63,2.24,1,0
+Legia de Varsóvia,Real Madrid CF,1.63,2.01,3,3
+Manchester City FC,Celtic FC,2.35,1.77,1,1
+Manchester City FC,AS Mônaco,2.35,1.79,5,3
+Manchester City FC,Borussia Mönchengladbach,2.35,1.9,4,0
+Manchester City FC,FC Barcelona,2.35,2.14,3,1
+Sport Lisboa e Benfica,Besiktas JK,1.92,3,1,1
+Sport Lisboa e Benfica,Borussia Dortmund,1.92,2.01,1,0
+Sport Lisboa e Benfica,Napoli,1.92,1.73,1,2
+Sport Lisboa e Benfica,Dínamo Kiev,1.92,1.93,1,0
+Sporting CP,Legia de Varsóvia,2.24,1.63,2,0
+Sporting CP,Borussia Dortmund,2.24,2.01,1,2
+Sporting CP,Real Madrid CF,2.24,2.01,1,2
+FC Bayern Munique,Real Madrid CF,1.93,2.01,1,2
+FC Bayern Munique,PSV Eindhoven,1.93,1.6,4,1
+FC Bayern Munique,Atlético de Madrid,1.93,1.91,1,0
+FC Bayern Munique,FC Arsenal,1.93,1.94,5,1
+FC Bayern Munique,FK Rostov,1.93,1.51,5,0
+Borussia Mönchengladbach,FC Barcelona,1.9,2.14,1,2
+Borussia Mönchengladbach,Celtic FC,1.9,1.77,1,1
+Borussia Mönchengladbach,Manchester City FC,1.9,2.35,1,1
+FC Copenhagen,Leicester City FC,1.92,2.05,0,0
+FC Copenhagen,Futebol Clube do Porto,1.92,2.02,0,0
+FC Copenhagen,Club Brugge,1.92,1.69,4,0
+Dínamo Kiev,Sport Lisboa e Benfica,1.93,1.92,0,2
+Dínamo Kiev,Besiktas JK,1.93,3,6,0
+Dínamo Kiev,Napoli,1.93,1.73,1,2
+FK Rostov,PSV Eindhoven,1.51,1.6,2,2
+FK Rostov,Atlético de Madrid,1.51,1.91,0,1
+FK Rostov,FC Bayern Munique,1.51,1.93,3,2
+Celtic FC,Manchester City FC,1.77,2.35,3,3
+Celtic FC,FC Barcelona,1.77,2.14,0,2
+Celtic FC,Borussia Mönchengladbach,1.77,1.9,0,2
+Real Madrid CF,Atlético de Madrid,2.01,1.91,3,0
+Real Madrid CF,FC Bayern Munique,2.01,1.93,4,2
+Real Madrid CF,Napoli,2.01,1.73,3,1
+Real Madrid CF,Borussia Dortmund,2.01,2.01,2,2
+Real Madrid CF,Sporting CP,2.01,2.24,2,1
+Real Madrid CF,Legia de Varsóvia,2.01,1.63,5,1
+"Tottenham Hotspur ",Bayer 04 Leverkusen,1.81,1.6,0,1
+"Tottenham Hotspur ",CSKA Moscovo,1.81,1.7,3,1
+"Tottenham Hotspur ",AS Mônaco,1.81,1.79,1,2
+GNK Dinamo Zagreb,Sevilla FC,1.91,1.53,0,1
+GNK Dinamo Zagreb,Olympique Lyon,1.91,1.71,0,1
+GNK Dinamo Zagreb,Juventus FC,1.91,1.85,0,4
+CSKA Moscovo,"Tottenham Hotspur ",1.7,1.81,0,1
+CSKA Moscovo,AS Mônaco,1.7,1.79,1,1
+CSKA Moscovo,Bayer 04 Leverkusen,1.7,1.6,1,1
+Futebol Clube do Porto,Leicester City FC,2.02,2.05,5,0
+Futebol Clube do Porto,FC Copenhagen,2.02,1.92,1,1
+Futebol Clube do Porto,Club Brugge,2.02,1.69,1,0
+Futebol Clube do Porto,Juventus FC,2.02,1.85,0,2
+Juventus FC,Sevilla FC,1.85,1.53,0,0
+Juventus FC,Futebol Clube do Porto,1.85,2.02,1,0
+Juventus FC,Olympique Lyon,1.85,1.71,1,1
+Juventus FC,AS Mônaco,1.85,1.79,2,1
+Juventus FC,Real Madrid CF,1.85,2.01,1,4
+Juventus FC,GNK Dinamo Zagreb,1.85,1.91,2,0
+Juventus FC,FC Barcelona,1.85,2.14,3,0
+Real Madrid CF,Juventus FC,,,1,3
+Manchester United FC,FC Basel,,,3,0
+AS Roma,FC Liverpool,,,4,2
+AS Roma,FC Barcelona,,,3,0
+FC Liverpool,AS Roma,,,5,2
+Besiktas JK,FC Bayern Munique,,,1,3
+Sport Lisboa e Benfica,CSKA Moscovo,,,1,2
+Shakhtar Donetsk,AS Roma,,,2,1
+Manchester City FC,FC Basel,,,1,2
+Sevilla FC,Manchester United FC,,,0,0
+Manchester City FC,FC Liverpool,,,1,2
+Juventus FC,Real Madrid CF,,,0,3
+FC Barcelona,AS Roma,,,4,1
+FC Basel,Manchester City FC,,,0,4
+FC Liverpool,Futebol Clube do Porto,,,0,0
+"Tottenham Hotspur ",Juventus FC,,,1,2
+Juventus FC,"Tottenham Hotspur ",,,2,2
+FC Basel,CSKA Moscovo,,,1,2
+Sevilla FC,FC Bayern Munique,,,1,2
+AS Roma,Shakhtar Donetsk,,,1,0
+FC Liverpool,Manchester City FC,,,3,0
+Futebol Clube do Porto,FC Liverpool,,,0,5
+Sport Lisboa e Benfica,Manchester United FC,,,0,1
+CSKA Moscovo,FC Basel,,,0,2
+Chelsea FC,FC Barcelona,,,1,1
+FC Basel,Sport Lisboa e Benfica,,,5,0
+FC Bayern Munique,Sevilla FC,,,0,0
+Manchester United FC,Sevilla FC,,,1,2
+FC Paris Saint-Germain,Real Madrid CF,,,1,2
+FC Bayern Munique,Besiktas JK,,,5,0
+FC Bayern Munique,Real Madrid CF,,,1,2
+Real Madrid CF,FC Bayern Munique,,,2,2
+CSKA Moscovo,Manchester United FC,,,1,4
+Real Madrid CF,FC Liverpool,,,3,1
+FC Barcelona,Chelsea FC,,,3,0
+Real Madrid CF,FC Paris Saint-Germain,,,3,1
+FC Barcelona,Sporting CP,2.14,2.24,2,0
+FC Barcelona,Juventus FC,2.14,1.85,3,0
+FC Barcelona,Olympiacos Pireu,2.14,1.53,3,1
+Feyenoord,Napoli,2.05,1.73,2,1
+Feyenoord,Manchester City FC,2.05,2.35,0,4
+Feyenoord,Shakhtar Donetsk,2.05,2.08,1,2
+RB Leipzig,Besiktas JK,2.04,3,1,2
+RB Leipzig,AS Mônaco,2.04,1.79,1,1
+RB Leipzig,Futebol Clube do Porto,2.04,2.02,3,2
+AS Mônaco,Besiktas JK,1.79,3,1,2
+AS Mônaco,RB Leipzig,1.79,2.04,1,4
+AS Mônaco,Futebol Clube do Porto,1.79,2.02,0,3
+Borussia Dortmund,APOEL Nicósia,2.01,1.61,1,1
+Borussia Dortmund,Real Madrid CF,2.01,2.01,1,3
+Borussia Dortmund,"Tottenham Hotspur ",2.01,1.81,1,2
+FC Basel,Manchester United FC,1.52,2.09,1,0
+Napoli,Shakhtar Donetsk,1.73,2.08,3,0
+Napoli,Feyenoord,1.73,2.05,3,1
+Napoli,Manchester City FC,1.73,2.35,2,4
+RSC Anderlecht,Celtic FC,1.74,1.77,0,3
+RSC Anderlecht,FC Bayern Munique,1.74,1.93,1,2
+RSC Anderlecht,FC Paris Saint-Germain,1.74,1.96,0,4
+Besiktas JK,Futebol Clube do Porto,3,2.02,1,1
+Besiktas JK,AS Mônaco,3,1.79,1,1
+Besiktas JK,RB Leipzig,3,2.04,2,0
+Sevilla FC,Spartak Moskovo,1.53,1.48,2,1
+Sevilla FC,NK Maribor,1.53,1.78,3,0
+Sevilla FC,FC Liverpool,1.53,1.87,3,3
+Manchester United FC,Sport Lisboa e Benfica,2.09,1.92,2,0
+Manchester United FC,CSKA Moscovo,2.09,1.7,2,1
+FC Paris Saint-Germain,FC Bayern Munique,1.96,1.93,3,0
+FC Paris Saint-Germain,RSC Anderlecht,1.96,1.74,5,0
+FC Paris Saint-Germain,Celtic FC,1.96,1.77,7,1
+NK Maribor,FC Liverpool,1.78,1.87,0,7
+NK Maribor,Spartak Moskovo,1.78,1.48,1,1
+NK Maribor,Sevilla FC,1.78,1.53,1,1
+Atlético de Madrid,AS Roma,1.91,2.07,2,0
+Atlético de Madrid,Chelsea FC,1.91,1.68,1,2
+Atlético de Madrid,Qarabağ FK,1.91,1.96,1,1
+FC Liverpool,NK Maribor,1.87,1.78,3,0
+FC Liverpool,Sevilla FC,1.87,1.53,2,2
+FC Liverpool,Spartak Moskovo,1.87,1.48,7,0
+Manchester City FC,Shakhtar Donetsk,2.35,2.08,2,0
+Manchester City FC,Napoli,2.35,1.73,2,1
+Manchester City FC,Feyenoord,2.35,2.05,1,0
+Sport Lisboa e Benfica,FC Basel,1.92,1.52,0,2
+Sporting CP,Juventus FC,2.24,1.85,1,1
+Sporting CP,Olympiacos Pireu,2.24,1.53,3,1
+Sporting CP,FC Barcelona,2.24,2.14,0,1
+FC Bayern Munique,FC Paris Saint-Germain,1.93,1.96,3,1
+FC Bayern Munique,Celtic FC,1.93,1.77,3,0
+FC Bayern Munique,RSC Anderlecht,1.93,1.74,3,0
+AS Roma,Chelsea FC,2.07,1.68,3,0
+AS Roma,Atlético de Madrid,2.07,1.91,0,0
+AS Roma,Qarabağ FK,2.07,1.96,1,0
+Celtic FC,FC Bayern Munique,1.77,1.93,1,2
+Celtic FC,FC Paris Saint-Germain,1.77,1.96,0,5
+Celtic FC,RSC Anderlecht,1.77,1.74,0,1
+Real Madrid CF,APOEL Nicósia,2.01,1.61,3,0
+Real Madrid CF,Borussia Dortmund,2.01,2.01,3,2
+Real Madrid CF,"Tottenham Hotspur ",2.01,1.81,1,1
+Olympiacos Pireu,Juventus FC,1.53,1.85,0,2
+Olympiacos Pireu,FC Barcelona,1.53,2.14,0,0
+Olympiacos Pireu,Sporting CP,1.53,2.24,2,3
+Qarabağ FK,AS Roma,1.96,2.07,1,2
+Qarabağ FK,Chelsea FC,1.96,1.68,0,4
+Qarabağ FK,Atlético de Madrid,1.96,1.91,0,0
+"Tottenham Hotspur ",APOEL Nicósia,1.81,1.61,3,0
+"Tottenham Hotspur ",Borussia Dortmund,1.81,2.01,3,1
+"Tottenham Hotspur ",Real Madrid CF,1.81,2.01,3,1
+CSKA Moscovo,Sport Lisboa e Benfica,1.7,1.92,2,0
+Spartak Moskovo,Sevilla FC,1.48,1.53,5,1
+Spartak Moskovo,FC Liverpool,1.48,1.87,1,1
+Spartak Moskovo,NK Maribor,1.48,1.78,1,1
+APOEL Nicósia,Real Madrid CF,1.61,2.01,0,6
+APOEL Nicósia,Borussia Dortmund,1.61,2.01,1,1
+APOEL Nicósia,"Tottenham Hotspur ",1.61,1.81,0,3
+Chelsea FC,Qarabağ FK,1.68,1.96,6,0
+Chelsea FC,Atlético de Madrid,1.68,1.91,1,1
+Chelsea FC,AS Roma,1.68,2.07,3,3
+Shakhtar Donetsk,Feyenoord,2.08,2.05,3,1
+Shakhtar Donetsk,Manchester City FC,2.08,2.35,2,1
+Shakhtar Donetsk,Napoli,2.08,1.73,2,1
+Futebol Clube do Porto,RB Leipzig,2.02,2.04,3,1
+Futebol Clube do Porto,Besiktas JK,2.02,3,1,3
+Futebol Clube do Porto,AS Mônaco,2.02,1.79,5,2
+Juventus FC,Olympiacos Pireu,1.85,1.53,2,0
+Juventus FC,Sporting CP,1.85,2.24,2,1
+Juventus FC,FC Barcelona,1.85,2.14,0,0
+FC Barcelona,Manchester United FC,2.14,2.09,3,0
+FC Barcelona,Olympique Lyon,2.14,1.71,5,1
+FC Barcelona,FC Liverpool,2.14,1.87,3,0
+FC Barcelona,"Tottenham Hotspur ",2.14,1.81,1,1
+FC Barcelona,Inter de Milão,2.14,1.92,2,0
+FC Barcelona,PSV Eindhoven,2.14,1.6,4,0
+Galatasaray,Schalke 04,1.61,2.04,0,0
+Galatasaray,Futebol Clube do Porto,1.61,2.02,2,3
+Galatasaray,Lokomotiv Moscovo,1.61,1.81,3,0
+PSV Eindhoven,Inter de Milão,1.6,1.92,1,2
+PSV Eindhoven,FC Barcelona,1.6,2.14,1,2
+PSV Eindhoven,"Tottenham Hotspur ",1.6,1.81,2,2
+AS Mônaco,Club Brugge,1.79,1.69,0,4
+AS Mônaco,Borussia Dortmund,1.79,2.01,0,2
+AS Mônaco,Atlético de Madrid,1.79,1.91,1,2
+Borussia Dortmund,"Tottenham Hotspur ",2.01,1.81,0,1
+Borussia Dortmund,Club Brugge,2.01,1.69,0,0
+Borussia Dortmund,Atlético de Madrid,2.01,1.91,4,0
+Borussia Dortmund,AS Mônaco,2.01,1.79,3,0
+Club Brugge,AS Mônaco,1.69,1.79,1,1
+Club Brugge,Borussia Dortmund,1.69,2.01,0,1
+Club Brugge,Atlético de Madrid,1.69,1.91,0,0
+Napoli,FC Liverpool,1.73,1.87,1,0
+Napoli,Estrela Vermelha de Belgrado,1.73,1.93,3,1
+Napoli,FC Paris Saint-Germain,1.73,1.96,1,1
+Estrela Vermelha de Belgrado,FC Liverpool,1.93,1.87,2,0
+Estrela Vermelha de Belgrado,Napoli,1.93,1.73,0,0
+Estrela Vermelha de Belgrado,FC Paris Saint-Germain,1.93,1.96,1,4
+Manchester United FC,Valência CF,2.09,1.41,0,0
+Manchester United FC,FC Paris Saint-Germain,2.09,1.96,0,2
+Manchester United FC,FC Barcelona,2.09,2.14,0,1
+Manchester United FC,BSC Young Boys,2.09,1.78,1,0
+Manchester United FC,Juventus FC,2.09,1.85,0,1
+Olympique Lyon,Shakhtar Donetsk,1.71,2.08,2,2
+Olympique Lyon,Manchester City FC,1.71,2.35,2,2
+Olympique Lyon,TSG 1899 Hoffenheim,1.71,1.41,2,2
+Olympique Lyon,FC Barcelona,1.71,2.14,0,0
+FC Paris Saint-Germain,Manchester United FC,1.96,2.09,1,3
+FC Paris Saint-Germain,Napoli,1.96,1.73,2,2
+FC Paris Saint-Germain,Estrela Vermelha de Belgrado,1.96,1.93,6,1
+FC Paris Saint-Germain,FC Liverpool,1.96,1.87,2,1
+Atlético de Madrid,Juventus FC,1.91,1.85,2,0
+Atlético de Madrid,Club Brugge,1.91,1.69,3,1
+Atlético de Madrid,AS Mônaco,1.91,1.79,2,0
+Atlético de Madrid,Borussia Dortmund,1.91,2.01,2,0
+FC Liverpool,Futebol Clube do Porto,1.87,2.02,2,0
+FC Liverpool,FC Bayern Munique,1.87,1.93,0,0
+FC Liverpool,Estrela Vermelha de Belgrado,1.87,1.93,4,0
+FC Liverpool,FC Paris Saint-Germain,1.87,1.96,3,2
+FC Liverpool,FC Barcelona,1.87,2.14,4,0
+FC Liverpool,Napoli,1.87,1.73,1,0
+Manchester City FC,Schalke 04,2.35,2.04,7,0
+Manchester City FC,"Tottenham Hotspur ",2.35,1.81,4,3
+Manchester City FC,Olympique Lyon,2.35,1.71,1,2
+Manchester City FC,TSG 1899 Hoffenheim,2.35,1.41,2,1
+Manchester City FC,Shakhtar Donetsk,2.35,2.08,6,0
+BSC Young Boys,Juventus FC,1.78,1.85,2,1
+BSC Young Boys,Manchester United FC,1.78,2.09,0,3
+BSC Young Boys,Valência CF,1.78,1.41,1,1
+Sport Lisboa e Benfica,FC Bayern Munique,1.92,1.93,0,2
+Sport Lisboa e Benfica,AFC Ajax,1.92,1.48,1,1
+Sport Lisboa e Benfica,AEK Atenas,1.92,1.58,1,0
+Valência CF,Manchester United FC,1.41,2.09,2,1
+Valência CF,BSC Young Boys,1.41,1.78,3,1
+Valência CF,Juventus FC,1.41,1.85,0,2
+FC Bayern Munique,FC Liverpool,1.93,1.87,1,3
+FC Bayern Munique,AEK Atenas,1.93,1.58,2,0
+FC Bayern Munique,AFC Ajax,1.93,1.48,1,1
+FC Bayern Munique,Sport Lisboa e Benfica,1.93,1.92,5,1
+AS Roma,Real Madrid CF,2.07,2.01,0,2
+AS Roma,CSKA Moscovo,2.07,1.7,3,0
+AS Roma,Futebol Clube do Porto,2.07,2.02,2,1
+AS Roma,FC Viktoria Plzen,2.07,1.49,5,0
+Schalke 04,Manchester City FC,2.04,2.35,2,3
+Schalke 04,Lokomotiv Moscovo,2.04,1.81,1,0
+Schalke 04,Futebol Clube do Porto,2.04,2.02,1,1
+Schalke 04,Galatasaray,2.04,1.61,2,0
+AFC Ajax,"Tottenham Hotspur ",1.48,1.81,2,3
+AFC Ajax,FC Bayern Munique,1.48,1.93,3,3
+AFC Ajax,AEK Atenas,1.48,1.58,3,0
+AFC Ajax,Juventus FC,1.48,1.85,1,1
+AFC Ajax,Real Madrid CF,1.48,2.01,1,2
+AFC Ajax,Sport Lisboa e Benfica,1.48,1.92,1,0
+Inter de Milão,"Tottenham Hotspur ",1.92,1.81,2,1
+Inter de Milão,PSV Eindhoven,1.92,1.6,1,1
+Inter de Milão,FC Barcelona,1.92,2.14,1,1
+Real Madrid CF,FC Viktoria Plzen,2.01,1.49,2,1
+Real Madrid CF,CSKA Moscovo,2.01,1.7,0,3
+Real Madrid CF,AFC Ajax,2.01,1.48,1,4
+Real Madrid CF,AS Roma,2.01,2.07,3,0
+AEK Atenas,AFC Ajax,1.58,1.48,0,2
+AEK Atenas,Sport Lisboa e Benfica,1.58,1.92,2,3
+AEK Atenas,FC Bayern Munique,1.58,1.93,0,2
+FC Viktoria Plzen,Real Madrid CF,1.49,2.01,0,5
+FC Viktoria Plzen,AS Roma,1.49,2.07,2,1
+FC Viktoria Plzen,CSKA Moscovo,1.49,1.7,2,2
+"Tottenham Hotspur ",Manchester City FC,1.81,2.35,1,0
+"Tottenham Hotspur ",AFC Ajax,1.81,1.48,0,1
+"Tottenham Hotspur ",FC Liverpool,1.81,1.87,0,2
+"Tottenham Hotspur ",PSV Eindhoven,1.81,1.6,2,1
+"Tottenham Hotspur ",Borussia Dortmund,1.81,2.01,3,0
+"Tottenham Hotspur ",FC Barcelona,1.81,2.14,2,4
+"Tottenham Hotspur ",Inter de Milão,1.81,1.92,1,0
+CSKA Moscovo,AS Roma,1.7,2.07,1,2
+CSKA Moscovo,Real Madrid CF,1.7,2.01,1,0
+CSKA Moscovo,FC Viktoria Plzen,1.7,1.49,1,2
+Lokomotiv Moscovo,Schalke 04,1.81,2.04,0,1
+Lokomotiv Moscovo,Futebol Clube do Porto,1.81,2.02,1,3
+Lokomotiv Moscovo,Galatasaray,1.81,1.61,2,0
+Shakhtar Donetsk,TSG 1899 Hoffenheim,2.08,1.41,2,2
+Shakhtar Donetsk,Olympique Lyon,2.08,1.71,1,1
+Shakhtar Donetsk,Manchester City FC,2.08,2.35,0,3
+Futebol Clube do Porto,AS Roma,2.02,2.07,3,1
+Futebol Clube do Porto,Galatasaray,2.02,1.61,1,0
+Futebol Clube do Porto,Schalke 04,2.02,2.04,3,1
+Futebol Clube do Porto,Lokomotiv Moscovo,2.02,1.81,4,1
+Futebol Clube do Porto,FC Liverpool,2.02,1.87,1,4
+Juventus FC,AFC Ajax,1.85,1.48,1,2
+Juventus FC,Atlético de Madrid,1.85,1.91,3,0
+Juventus FC,Valência CF,1.85,1.41,1,0
+Juventus FC,BSC Young Boys,1.85,1.78,3,0
+Juventus FC,Manchester United FC,1.85,2.09,1,2
+TSG 1899 Hoffenheim,Manchester City FC,1.41,2.35,1,2
+TSG 1899 Hoffenheim,Shakhtar Donetsk,1.41,2.08,2,3
+TSG 1899 Hoffenheim,Olympique Lyon,1.41,1.71,3,3
+FC Barcelona,Napoli,2.14,1.73,3,1
+FC Barcelona,Inter de Milão,2.14,1.92,2,1
+FC Barcelona,FC Bayern Munique,2.14,1.93,2,8
+FC Barcelona,Borussia Dortmund,2.14,2.01,3,1
+FC Barcelona,SK Slavia Praga,2.14,2.01,0,0
+RB Leipzig,"Tottenham Hotspur ",2.04,1.81,3,0
+RB Leipzig,Atlético de Madrid,2.04,1.91,2,1
+RB Leipzig,Olympique Lyon,2.04,1.71,0,2
+RB Leipzig,FC Paris Saint-Germain,2.04,1.96,0,3
+RB Leipzig,Sport Lisboa e Benfica,2.04,1.92,2,2
+RB Leipzig,Zenit São Petersburgo,2.04,1.91,2,1
+Galatasaray,Club Brugge,1.61,1.69,1,1
+Galatasaray,FC Paris Saint-Germain,1.61,1.96,0,1
+Galatasaray,Real Madrid CF,1.61,2.01,0,1
+Borussia Dortmund,FC Barcelona,2.01,2.14,0,0
+Borussia Dortmund,Inter de Milão,2.01,1.92,3,2
+Borussia Dortmund,FC Paris Saint-Germain,2.01,1.96,2,1
+Borussia Dortmund,SK Slavia Praga,2.01,2.01,2,1
+Club Brugge,Real Madrid CF,1.69,2.01,1,3
+Club Brugge,FC Paris Saint-Germain,1.69,1.96,0,5
+Club Brugge,Galatasaray,1.69,1.61,0,0
+Napoli,Red Bull Salzburg,1.73,1.49,1,1
+Napoli,KRC Genk,1.73,1.75,4,0
+Napoli,FC Liverpool,1.73,1.87,2,0
+Napoli,FC Barcelona,1.73,2.14,1,1
+Bayer 04 Leverkusen,Lokomotiv Moscovo,1.6,1.81,1,2
+Bayer 04 Leverkusen,Juventus FC,1.6,1.85,0,2
+Bayer 04 Leverkusen,Atlético de Madrid,1.6,1.91,2,1
+Estrela Vermelha de Belgrado,FC Bayern Munique,1.93,1.93,0,6
+Estrela Vermelha de Belgrado,Olympiacos Pireu,1.93,1.53,3,1
+Estrela Vermelha de Belgrado,"Tottenham Hotspur ",1.93,1.81,0,4
+Olympique Lyon,FC Bayern Munique,1.71,1.93,0,3
+Olympique Lyon,Zenit São Petersburgo,1.71,1.91,1,1
+Olympique Lyon,Sport Lisboa e Benfica,1.71,1.92,3,1
+Olympique Lyon,Juventus FC,1.71,1.85,1,0
+Olympique Lyon,RB Leipzig,1.71,2.04,2,2
+FC Paris Saint-Germain,Borussia Dortmund,1.96,2.01,2,0
+FC Paris Saint-Germain,Club Brugge,1.96,1.69,1,0
+FC Paris Saint-Germain,Galatasaray,1.96,1.61,5,0
+FC Paris Saint-Germain,FC Bayern Munique,1.96,1.93,0,1
+FC Paris Saint-Germain,Real Madrid CF,1.96,2.01,3,0
+Zenit São Petersburgo,Sport Lisboa e Benfica,1.91,1.92,3,1
+Zenit São Petersburgo,Olympique Lyon,1.91,1.71,2,0
+Zenit São Petersburgo,RB Leipzig,1.91,2.04,0,2
+Atlético de Madrid,Juventus FC,1.91,1.85,2,2
+Atlético de Madrid,Lokomotiv Moscovo,1.91,1.81,2,0
+Atlético de Madrid,FC Liverpool,1.91,1.87,1,0
+Atlético de Madrid,Bayer 04 Leverkusen,1.91,1.6,1,0
+FC Liverpool,Atlético de Madrid,1.87,1.91,2,3
+FC Liverpool,Napoli,1.87,1.73,1,1
+FC Liverpool,KRC Genk,1.87,1.75,2,1
+FC Liverpool,Red Bull Salzburg,1.87,1.49,4,3
+LOSC Lille,Valência CF,1.93,1.41,1,1
+LOSC Lille,AFC Ajax,1.93,1.48,0,2
+LOSC Lille,Chelsea FC,1.93,1.68,1,2
+Manchester City FC,Atalanta BC,2.35,1.59,5,1
+Manchester City FC,Real Madrid CF,2.35,2.01,2,1
+Manchester City FC,Shakhtar Donetsk,2.35,2.08,1,1
+Manchester City FC,GNK Dinamo Zagreb,2.35,1.91,2,0
+Manchester City FC,Olympique Lyon,2.35,1.71,1,3
+Sport Lisboa e Benfica,RB Leipzig,1.92,2.04,1,2
+Sport Lisboa e Benfica,Olympique Lyon,1.92,1.71,2,1
+Sport Lisboa e Benfica,Zenit São Petersburgo,1.92,1.91,3,0
+Valência CF,Atalanta BC,1.41,1.59,3,4
+Valência CF,AFC Ajax,1.41,1.48,0,3
+Valência CF,LOSC Lille,1.41,1.93,4,1
+Valência CF,Chelsea FC,1.41,1.68,2,2
+FC Bayern Munique,Estrela Vermelha de Belgrado,1.93,1.93,3,0
+FC Bayern Munique,Olympiacos Pireu,1.93,1.53,2,0
+FC Bayern Munique,Chelsea FC,1.93,1.68,4,1
+FC Bayern Munique,"Tottenham Hotspur ",1.93,1.81,3,1
+AFC Ajax,LOSC Lille,1.48,1.93,3,0
+AFC Ajax,Chelsea FC,1.48,1.68,0,1
+AFC Ajax,Valência CF,1.48,1.41,0,1
+Inter de Milão,FC Barcelona,1.92,2.14,1,2
+Inter de Milão,Borussia Dortmund,1.92,2.01,2,0
+Inter de Milão,SK Slavia Praga,1.92,2.01,1,1
+Real Madrid CF,Galatasaray,2.01,1.61,6,0
+Real Madrid CF,Club Brugge,2.01,1.69,2,2
+Real Madrid CF,FC Paris Saint-Germain,2.01,1.96,2,2
+Real Madrid CF,Manchester City FC,2.01,2.35,1,2
+Olympiacos Pireu,Estrela Vermelha de Belgrado,1.53,1.93,1,0
+Olympiacos Pireu,FC Bayern Munique,1.53,1.93,2,3
+Olympiacos Pireu,"Tottenham Hotspur ",1.53,1.81,2,2
+Red Bull Salzburg,KRC Genk,1.49,1.75,6,2
+Red Bull Salzburg,Napoli,1.49,1.73,2,3
+Red Bull Salzburg,FC Liverpool,1.49,1.87,0,2
+KRC Genk,Red Bull Salzburg,1.75,1.49,1,4
+KRC Genk,FC Liverpool,1.75,1.87,1,4
+KRC Genk,Napoli,1.75,1.73,0,0
+"Tottenham Hotspur ",RB Leipzig,1.81,2.04,0,1
+"Tottenham Hotspur ",Olympiacos Pireu,1.81,1.53,4,2
+"Tottenham Hotspur ",FC Bayern Munique,1.81,1.93,2,7
+"Tottenham Hotspur ",Estrela Vermelha de Belgrado,1.81,1.93,5,0
+GNK Dinamo Zagreb,Atalanta BC,1.91,1.59,4,0
+GNK Dinamo Zagreb,Manchester City FC,1.91,2.35,1,4
+GNK Dinamo Zagreb,Shakhtar Donetsk,1.91,2.08,3,3
+SK Slavia Praga,FC Barcelona,2.01,2.14,1,2
+SK Slavia Praga,Borussia Dortmund,2.01,2.01,0,2
+SK Slavia Praga,Inter de Milão,2.01,1.92,1,3
+Chelsea FC,AFC Ajax,1.68,1.48,4,4
+Chelsea FC,LOSC Lille,1.68,1.93,2,1
+Chelsea FC,FC Bayern Munique,1.68,1.93,0,3
+Chelsea FC,Valência CF,1.68,1.41,0,1
+Lokomotiv Moscovo,Juventus FC,1.81,1.85,1,2
+Lokomotiv Moscovo,Atlético de Madrid,1.81,1.91,0,2
+Lokomotiv Moscovo,Bayer 04 Leverkusen,1.81,1.6,0,2
+Shakhtar Donetsk,Manchester City FC,2.08,2.35,0,3
+Shakhtar Donetsk,Atalanta BC,2.08,1.59,0,3
+Shakhtar Donetsk,GNK Dinamo Zagreb,2.08,1.91,2,2
+Atalanta BC,FC Paris Saint-Germain,1.59,1.96,1,2
+Atalanta BC,Manchester City FC,1.59,2.35,1,1
+Atalanta BC,GNK Dinamo Zagreb,1.59,1.91,2,0
+Atalanta BC,Shakhtar Donetsk,1.59,2.08,1,2
+Atalanta BC,Valência CF,1.59,1.41,4,1
+Juventus FC,Bayer 04 Leverkusen,1.85,1.6,3,0
+Juventus FC,Olympique Lyon,1.85,1.71,2,1
+Juventus FC,Lokomotiv Moscovo,1.85,1.81,2,1
+Juventus FC,Atlético de Madrid,1.85,1.91,1,0
+FC Barcelona,Ferencvárosi TC,2.14,2.15,5,1
+FC Barcelona,Dínamo Kiev,2.14,1.93,2,1
+FC Barcelona,FC Paris Saint-Germain,2.14,1.96,1,4
+FC Barcelona,Juventus FC,2.14,1.85,0,3
+RB Leipzig,Basaksehir FK,2.04,1.47,2,0
+RB Leipzig,FC Paris Saint-Germain,2.04,1.96,2,1
+RB Leipzig,Manchester United FC,2.04,2.09,3,2
+RB Leipzig,FC Liverpool,2.04,1.87,0,2
+Basaksehir FK,FC Paris Saint-Germain,1.47,1.96,0,2
+Basaksehir FK,Manchester United FC,1.47,2.09,2,1
+Basaksehir FK,RB Leipzig,1.47,2.04,3,4
+Borussia Dortmund,Club Brugge,2.01,1.69,3,0
+Borussia Dortmund,Manchester City FC,2.01,2.35,1,2
+Borussia Dortmund,Zenit São Petersburgo,2.01,1.91,2,0
+Borussia Dortmund,SS Lazio,2.01,1.73,1,1
+Borussia Dortmund,Sevilla FC,2.01,1.53,2,2
+Club Brugge,Borussia Dortmund,1.69,2.01,0,3
+Club Brugge,SS Lazio,1.69,1.73,1,1
+Club Brugge,Zenit São Petersburgo,1.69,1.91,3,0
+Sevilla FC,Stade Rennais FC,1.53,1.83,1,0
+Sevilla FC,Chelsea FC,1.53,1.68,0,4
+Sevilla FC,Borussia Dortmund,1.53,2.01,2,3
+Sevilla FC,FK Krasnodar,1.53,2.1,3,2
+Manchester United FC,RB Leipzig,2.09,2.04,5,0
+Manchester United FC,Basaksehir FK,2.09,1.47,4,1
+Manchester United FC,FC Paris Saint-Germain,2.09,1.96,1,3
+FC Paris Saint-Germain,FC Barcelona,1.96,2.14,1,1
+FC Paris Saint-Germain,Basaksehir FK,1.96,1.47,5,1
+FC Paris Saint-Germain,FC Bayern Munique,1.96,1.93,0,1
+FC Paris Saint-Germain,Manchester United FC,1.96,2.09,1,2
+FC Paris Saint-Germain,RB Leipzig,1.96,2.04,1,0
+FC Paris Saint-Germain,Manchester City FC,1.96,2.35,1,2
+Zenit São Petersburgo,SS Lazio,1.91,1.73,1,1
+Zenit São Petersburgo,Club Brugge,1.91,1.69,1,2
+Zenit São Petersburgo,Borussia Dortmund,1.91,2.01,1,2
+Atlético de Madrid,Lokomotiv Moscovo,1.91,1.81,0,0
+Atlético de Madrid,Chelsea FC,1.91,1.68,0,1
+Atlético de Madrid,Red Bull Salzburg,1.91,1.49,3,2
+Atlético de Madrid,FC Bayern Munique,1.91,1.93,1,1
+FC Liverpool,FC Midtjylland,1.87,1.49,2,0
+FC Liverpool,RB Leipzig,1.87,2.04,2,0
+FC Liverpool,Atalanta BC,1.87,1.59,0,2
+FC Liverpool,Real Madrid CF,1.87,2.01,0,0
+FC Liverpool,AFC Ajax,1.87,1.48,1,0
+Manchester City FC,Futebol Clube do Porto,2.35,2.02,3,1
+Manchester City FC,Olympique Marselha,2.35,1.59,3,0
+Manchester City FC,Olympiacos Pireu,2.35,1.53,3,0
+Manchester City FC,Borussia Dortmund,2.35,2.01,2,1
+Manchester City FC,Borussia Mönchengladbach,2.35,1.9,2,0
+Manchester City FC,FC Paris Saint-Germain,2.35,1.96,2,0
+Manchester City FC,Chelsea FC,2.35,1.68,0,1
+FC Bayern Munique,Red Bull Salzburg,1.93,1.49,3,1
+FC Bayern Munique,SS Lazio,1.93,1.73,2,1
+FC Bayern Munique,Atlético de Madrid,1.93,1.91,4,0
+FC Bayern Munique,FC Paris Saint-Germain,1.93,1.96,2,3
+FC Bayern Munique,Lokomotiv Moscovo,1.93,1.81,2,0
+FK Krasnodar,Stade Rennais FC,2.1,1.83,1,0
+FK Krasnodar,Sevilla FC,2.1,1.53,1,2
+FK Krasnodar,Chelsea FC,2.1,1.68,0,4
+Borussia Mönchengladbach,Inter de Milão,1.9,1.92,2,3
+Borussia Mönchengladbach,Real Madrid CF,1.9,2.01,2,2
+Borussia Mönchengladbach,Manchester City FC,1.9,2.35,0,2
+Borussia Mönchengladbach,Shakhtar Donetsk,1.9,2.08,4,0
+AFC Ajax,Atalanta BC,1.48,1.59,0,1
+AFC Ajax,FC Liverpool,1.48,1.87,0,1
+AFC Ajax,FC Midtjylland,1.48,1.49,3,1
+SS Lazio,Zenit São Petersburgo,1.73,1.91,3,1
+SS Lazio,FC Bayern Munique,1.73,1.93,1,4
+SS Lazio,Borussia Dortmund,1.73,2.01,3,1
+SS Lazio,Club Brugge,1.73,1.69,2,2
+Dínamo Kiev,Ferencvárosi TC,1.93,2.15,1,0
+Dínamo Kiev,Juventus FC,1.93,1.85,0,2
+Dínamo Kiev,FC Barcelona,1.93,2.14,0,4
+Inter de Milão,Real Madrid CF,1.92,2.01,0,2
+Inter de Milão,Shakhtar Donetsk,1.92,2.08,0,0
+Inter de Milão,Borussia Mönchengladbach,1.92,1.9,2,2
+Stade Rennais FC,Chelsea FC,1.83,1.68,1,2
+Stade Rennais FC,FK Krasnodar,1.83,2.1,1,1
+Stade Rennais FC,Sevilla FC,1.83,1.53,1,3
+Real Madrid CF,Chelsea FC,2.01,1.68,1,1
+Real Madrid CF,Atalanta BC,2.01,1.59,3,1
+Real Madrid CF,Borussia Mönchengladbach,2.01,1.9,2,0
+Real Madrid CF,Inter de Milão,2.01,1.92,3,2
+Real Madrid CF,Shakhtar Donetsk,2.01,2.08,2,3
+Real Madrid CF,FC Liverpool,2.01,1.87,3,1
+Ferencvárosi TC,Dínamo Kiev,2.15,1.93,2,2
+Ferencvárosi TC,FC Barcelona,2.15,2.14,0,3
+Ferencvárosi TC,Juventus FC,2.15,1.85,1,4
+Olympiacos Pireu,Olympique Marselha,1.53,1.59,1,0
+Olympiacos Pireu,Manchester City FC,1.53,2.35,0,1
+Olympiacos Pireu,Futebol Clube do Porto,1.53,2.02,0,2
+Olympique Marselha,Manchester City FC,1.59,2.35,0,3
+Olympique Marselha,Futebol Clube do Porto,1.59,2.02,0,2
+Olympique Marselha,Olympiacos Pireu,1.59,1.53,2,1
+Red Bull Salzburg,Lokomotiv Moscovo,1.49,1.81,2,2
+Red Bull Salzburg,Atlético de Madrid,1.49,1.91,0,2
+Red Bull Salzburg,FC Bayern Munique,1.49,1.93,2,6
+FC Midtjylland,Atalanta BC,1.49,1.59,0,4
+FC Midtjylland,AFC Ajax,1.49,1.48,1,2
+FC Midtjylland,FC Liverpool,1.49,1.87,1,1
+Chelsea FC,Futebol Clube do Porto,1.68,2.02,0,1
+Chelsea FC,FK Krasnodar,1.68,2.1,1,1
+Chelsea FC,Stade Rennais FC,1.68,1.83,3,0
+Chelsea FC,Atlético de Madrid,1.68,1.91,2,0
+Chelsea FC,Sevilla FC,1.68,1.53,0,0
+Chelsea FC,Real Madrid CF,1.68,2.01,2,0
+Lokomotiv Moscovo,Atlético de Madrid,1.81,1.91,1,1
+Lokomotiv Moscovo,Red Bull Salzburg,1.81,1.49,1,3
+Lokomotiv Moscovo,FC Bayern Munique,1.81,1.93,1,2
+Shakhtar Donetsk,Inter de Milão,2.08,1.92,0,0
+Shakhtar Donetsk,Borussia Mönchengladbach,2.08,1.9,0,6
+Shakhtar Donetsk,Real Madrid CF,2.08,2.01,2,0
+Futebol Clube do Porto,Chelsea FC,2.02,1.68,0,2
+Futebol Clube do Porto,Manchester City FC,2.02,2.35,0,0
+Futebol Clube do Porto,Olympiacos Pireu,2.02,1.53,2,0
+Futebol Clube do Porto,Juventus FC,2.02,1.85,2,1
+Futebol Clube do Porto,Olympique Marselha,2.02,1.59,3,0
+Atalanta BC,FC Liverpool,1.59,1.87,0,5
+Atalanta BC,Real Madrid CF,1.59,2.01,0,1
+Atalanta BC,AFC Ajax,1.59,1.48,2,2
+Atalanta BC,FC Midtjylland,1.59,1.49,1,1
+Juventus FC,Futebol Clube do Porto,1.85,2.02,3,2
+Juventus FC,FC Barcelona,1.85,2.14,0,2
+Juventus FC,Ferencvárosi TC,1.85,2.15,2,1
+Juventus FC,Dínamo Kiev,1.85,1.93,3,0
+FC Barcelona,Sport Lisboa e Benfica,2.14,1.92,0,0
+FC Barcelona,Dínamo Kiev,2.14,1.93,1,0
+FC Barcelona,FC Bayern Munique,2.14,1.93,0,3
+FC Villarreal,Atalanta BC,1.55,1.59,2,2
+FC Villarreal,FC Bayern Munique,1.55,1.93,1,0
+FC Villarreal,BSC Young Boys,1.55,1.78,2,0
+FC Villarreal,Juventus FC,1.55,1.85,1,1
+FC Villarreal,Manchester United FC,1.55,2.09,0,2
+FC Villarreal,FC Liverpool,1.55,1.87,2,3
+RB Leipzig,Club Brugge,2.04,1.69,1,2
+RB Leipzig,Manchester City FC,2.04,2.35,2,1
+RB Leipzig,FC Paris Saint-Germain,2.04,1.96,2,2
+VfL Wolfsburg,Sevilla FC,1.8,1.53,1,1
+VfL Wolfsburg,LOSC Lille,1.8,1.93,1,3
+VfL Wolfsburg,Red Bull Salzburg,1.8,1.49,2,1
+Borussia Dortmund,Sporting CP,2.01,2.24,1,0
+Borussia Dortmund,AFC Ajax,2.01,1.48,1,3
+Borussia Dortmund,Besiktas JK,2.01,3,5,0
+Club Brugge,Manchester City FC,1.69,2.35,1,5
+Club Brugge,FC Paris Saint-Germain,1.69,1.96,1,1
+Club Brugge,RB Leipzig,1.69,2.04,0,5
+Besiktas JK,Borussia Dortmund,3,2.01,1,2
+Besiktas JK,AFC Ajax,3,1.48,1,2
+Besiktas JK,Sporting CP,3,2.24,1,4
+Sevilla FC,LOSC Lille,1.53,1.93,1,2
+Sevilla FC,Red Bull Salzburg,1.53,1.49,1,1
+Sevilla FC,VfL Wolfsburg,1.53,1.8,2,0
+Manchester United FC,BSC Young Boys,2.09,1.78,1,1
+Manchester United FC,Atalanta BC,2.09,1.59,3,2
+Manchester United FC,FC Villarreal,2.09,1.55,2,1
+Manchester United FC,Atlético de Madrid,2.09,1.91,0,1
+FC Paris Saint-Germain,Real Madrid CF,1.96,2.01,1,0
+FC Paris Saint-Germain,RB Leipzig,1.96,2.04,3,2
+FC Paris Saint-Germain,Club Brugge,1.96,1.69,4,1
+FC Paris Saint-Germain,Manchester City FC,1.96,2.35,2,0
+Zenit São Petersburgo,Chelsea FC,1.91,1.68,3,3
+Zenit São Petersburgo,Malmö FF,1.91,1.64,4,0
+Zenit São Petersburgo,Juventus FC,1.91,1.85,0,1
+Atlético de Madrid,Manchester City FC,1.91,2.35,0,0
+Atlético de Madrid,FC Liverpool,1.91,1.87,2,3
+Atlético de Madrid,AC Milan,1.91,1.54,0,1
+Atlético de Madrid,Futebol Clube do Porto,1.91,2.02,0,0
+Atlético de Madrid,Manchester United FC,1.91,2.09,1,1
+FC Liverpool,Real Madrid CF,1.87,2.01,0,1
+FC Liverpool,Inter de Milão,1.87,1.92,0,1
+FC Liverpool,Futebol Clube do Porto,1.87,2.02,2,0
+FC Liverpool,Atlético de Madrid,1.87,1.91,2,0
+FC Liverpool,FC Villarreal,1.87,1.55,2,0
+FC Liverpool,Sport Lisboa e Benfica,1.87,1.92,3,3
+FC Liverpool,AC Milan,1.87,1.54,3,2
+LOSC Lille,Red Bull Salzburg,1.93,1.49,1,0
+LOSC Lille,Chelsea FC,1.93,1.68,1,2
+LOSC Lille,VfL Wolfsburg,1.93,1.8,0,0
+LOSC Lille,Sevilla FC,1.93,1.53,0,0
+Manchester City FC,Real Madrid CF,2.35,2.01,4,3
+Manchester City FC,RB Leipzig,2.35,2.04,6,3
+Manchester City FC,Atlético de Madrid,2.35,1.91,1,0
+Manchester City FC,Sporting CP,2.35,2.24,0,0
+Manchester City FC,Club Brugge,2.35,1.69,4,1
+Manchester City FC,FC Paris Saint-Germain,2.35,1.96,2,1
+BSC Young Boys,FC Villarreal,1.78,1.55,1,4
+BSC Young Boys,Atalanta BC,1.78,1.59,3,3
+BSC Young Boys,Manchester United FC,1.78,2.09,2,1
+Sport Lisboa e Benfica,FC Barcelona,1.92,2.14,3,0
+Sport Lisboa e Benfica,Dínamo Kiev,1.92,1.93,2,0
+Sport Lisboa e Benfica,FC Liverpool,1.92,1.87,1,3
+Sport Lisboa e Benfica,AFC Ajax,1.92,1.48,2,2
+Sport Lisboa e Benfica,FC Bayern Munique,1.92,1.93,0,4
+Sporting CP,Besiktas JK,2.24,3,4,0
+Sporting CP,Borussia Dortmund,2.24,2.01,3,1
+Sporting CP,AFC Ajax,2.24,1.48,1,5
+Sporting CP,Manchester City FC,2.24,2.35,0,5
+AC Milan,Atlético de Madrid,1.54,1.91,1,2
+AC Milan,Futebol Clube do Porto,1.54,2.02,1,1
+AC Milan,FC Liverpool,1.54,1.87,1,2
+FC Bayern Munique,Sport Lisboa e Benfica,1.93,1.92,5,2
+FC Bayern Munique,Dínamo Kiev,1.93,1.93,5,0
+FC Bayern Munique,Red Bull Salzburg,1.93,1.49,7,1
+FC Bayern Munique,FC Villarreal,1.93,1.55,1,1
+FC Bayern Munique,FC Barcelona,1.93,2.14,3,0
+AFC Ajax,Besiktas JK,1.48,3,2,0
+AFC Ajax,Sporting CP,1.48,2.24,4,2
+AFC Ajax,Sport Lisboa e Benfica,1.48,1.92,0,1
+AFC Ajax,Borussia Dortmund,1.48,2.01,4,0
+Dínamo Kiev,FC Barcelona,1.93,2.14,0,1
+Dínamo Kiev,Sport Lisboa e Benfica,1.93,1.92,0,0
+Dínamo Kiev,FC Bayern Munique,1.93,1.93,1,2
+Inter de Milão,FC Sheriff Tiraspol,1.92,1.32,3,1
+Inter de Milão,Shakhtar Donetsk,1.92,2.08,2,0
+Inter de Milão,FC Liverpool,1.92,1.87,0,2
+Inter de Milão,Real Madrid CF,1.92,2.01,0,1
+Real Madrid CF,Shakhtar Donetsk,2.01,2.08,2,1
+Real Madrid CF,Manchester City FC,2.01,2.35,3,1
+Real Madrid CF,FC Sheriff Tiraspol,2.01,1.32,1,2
+Real Madrid CF,Inter de Milão,2.01,1.92,2,0
+Real Madrid CF,FC Paris Saint-Germain,2.01,1.96,3,1
+Real Madrid CF,Chelsea FC,2.01,1.68,2,3
+Red Bull Salzburg,VfL Wolfsburg,1.49,1.8,3,1
+Red Bull Salzburg,Sevilla FC,1.49,1.53,1,0
+Red Bull Salzburg,LOSC Lille,1.49,1.93,2,1
+Red Bull Salzburg,FC Bayern Munique,1.49,1.93,1,1
+FC Sheriff Tiraspol,Shakhtar Donetsk,1.32,2.08,2,0
+FC Sheriff Tiraspol,Inter de Milão,1.32,1.92,1,3
+FC Sheriff Tiraspol,Real Madrid CF,1.32,2.01,0,3
+Malmö FF,Chelsea FC,1.64,1.68,0,1
+Malmö FF,Juventus FC,1.64,1.85,0,3
+Malmö FF,Zenit São Petersburgo,1.64,1.91,1,1
+Chelsea FC,Zenit São Petersburgo,1.68,1.91,1,0
+Chelsea FC,Malmö FF,1.68,1.64,4,0
+Chelsea FC,LOSC Lille,1.68,1.93,2,0
+Chelsea FC,Juventus FC,1.68,1.85,4,0
+Chelsea FC,Real Madrid CF,1.68,2.01,1,3
+Shakhtar Donetsk,Real Madrid CF,2.08,2.01,0,5
+Shakhtar Donetsk,FC Sheriff Tiraspol,2.08,1.32,1,1
+Shakhtar Donetsk,Inter de Milão,2.08,1.92,0,0
+Futebol Clube do Porto,FC Liverpool,2.02,1.87,1,5
+Futebol Clube do Porto,AC Milan,2.02,1.54,1,0
+Futebol Clube do Porto,Atlético de Madrid,2.02,1.91,1,3
+Atalanta BC,BSC Young Boys,1.59,1.78,1,0
+Atalanta BC,FC Villarreal,1.59,1.55,2,3
+Atalanta BC,Manchester United FC,1.59,2.09,2,2
+Juventus FC,FC Villarreal,1.85,1.55,0,3
+Juventus FC,Chelsea FC,1.85,1.68,1,0
+Juventus FC,Zenit São Petersburgo,1.85,1.91,4,2
+Juventus FC,Malmö FF,1.85,1.64,1,0
+FC Barcelona,Inter de Milão,2.14,1.92,3,3
+FC Barcelona,FC Bayern Munique,2.14,1.93,0,3
+FC Barcelona,FC Viktoria Plzen,2.14,1.49,5,1
+RB Leipzig,Celtic FC,2.04,1.77,3,1
+RB Leipzig,Shakhtar Donetsk,2.04,,1,4
+RB Leipzig,Manchester City FC,2.04,2.35,1,1
+RB Leipzig,Real Madrid CF,2.04,2.01,3,2
+Shakhtar Donetsk,Real Madrid CF,,2.01,1,1
+Shakhtar Donetsk,RB Leipzig,,2.04,0,4
+Shakhtar Donetsk,Celtic FC,,1.77,1,1
+Borussia Dortmund,FC Copenhagen,2.01,1.92,3,0
+Borussia Dortmund,Manchester City FC,2.01,2.35,0,0
+Borussia Dortmund,Chelsea FC,2.01,1.68,1,0
+Borussia Dortmund,Sevilla FC,2.01,1.53,1,1
+Maccabi Haifa,FC Paris Saint-Germain,1.31,1.96,1,3
+Maccabi Haifa,Sport Lisboa e Benfica,1.31,1.92,1,6
+Maccabi Haifa,Juventus FC,1.31,1.85,2,0
+Club Brugge,Bayer 04 Leverkusen,1.69,1.6,1,0
+Club Brugge,Futebol Clube do Porto,1.69,2.02,0,4
+Club Brugge,Sport Lisboa e Benfica,1.69,1.92,0,2
+Club Brugge,Atlético de Madrid,1.69,1.91,2,0
+Napoli,AC Milan,1.73,1.54,1,1
+Napoli,AFC Ajax,1.73,1.48,4,2
+Napoli,Rangers FC,1.73,1.85,3,0
+Napoli,SG Eintracht Frankfurt,1.73,1.96,3,0
+Napoli,FC Liverpool,1.73,1.87,4,1
+Bayer 04 Leverkusen,Futebol Clube do Porto,1.6,2.02,0,3
+Bayer 04 Leverkusen,Atlético de Madrid,1.6,1.91,2,0
+Bayer 04 Leverkusen,Club Brugge,1.6,1.69,0,0
+Sevilla FC,Manchester City FC,1.53,2.35,0,4
+Sevilla FC,Borussia Dortmund,1.53,2.01,1,4
+Sevilla FC,FC Copenhagen,1.53,1.92,3,0
+FC Paris Saint-Germain,Juventus FC,1.96,1.85,2,1
+FC Paris Saint-Germain,FC Bayern Munique,1.96,1.93,0,1
+FC Paris Saint-Germain,Maccabi Haifa,1.96,1.31,7,2
+FC Paris Saint-Germain,Sport Lisboa e Benfica,1.96,1.92,1,1
+Atlético de Madrid,Bayer 04 Leverkusen,1.91,1.6,2,2
+Atlético de Madrid,Futebol Clube do Porto,1.91,2.02,2,1
+Atlético de Madrid,Club Brugge,1.91,1.69,0,0
+FC Liverpool,Real Madrid CF,1.87,2.01,2,5
+FC Liverpool,Rangers FC,1.87,1.85,2,0
+FC Liverpool,Napoli,1.87,1.73,2,0
+FC Liverpool,AFC Ajax,1.87,1.48,2,1
+Manchester City FC,FC Copenhagen,2.35,1.92,5,0
+Manchester City FC,Real Madrid CF,2.35,2.01,4,0
+Manchester City FC,RB Leipzig,2.35,2.04,7,0
+Manchester City FC,Borussia Dortmund,2.35,2.01,2,1
+Manchester City FC,FC Bayern Munique,2.35,1.93,3,0
+Manchester City FC,Sevilla FC,2.35,1.53,3,1
+Sport Lisboa e Benfica,Maccabi Haifa,1.92,1.31,2,0
+Sport Lisboa e Benfica,FC Paris Saint-Germain,1.92,1.96,1,1
+Sport Lisboa e Benfica,Inter de Milão,1.92,1.92,0,2
+Sport Lisboa e Benfica,Juventus FC,1.92,1.85,4,3
+Sport Lisboa e Benfica,Club Brugge,1.92,1.69,5,1
+Sporting CP,"Tottenham Hotspur ",2.24,1.81,2,0
+Sporting CP,Olympique Marselha,2.24,1.59,0,2
+Sporting CP,SG Eintracht Frankfurt,2.24,1.96,1,2
+AC Milan,Napoli,1.54,1.73,1,0
+AC Milan,Chelsea FC,1.54,1.68,0,2
+AC Milan,Inter de Milão,1.54,1.92,0,2
+AC Milan,GNK Dinamo Zagreb,1.54,1.91,3,1
+AC Milan,Red Bull Salzburg,1.54,1.49,4,0
+AC Milan,"Tottenham Hotspur ",1.54,1.81,1,0
+FC Bayern Munique,Inter de Milão,1.93,1.92,2,0
+FC Bayern Munique,FC Barcelona,1.93,2.14,2,0
+FC Bayern Munique,FC Viktoria Plzen,1.93,1.49,5,0
+FC Bayern Munique,FC Paris Saint-Germain,1.93,1.96,2,0
+FC Bayern Munique,Manchester City FC,1.93,2.35,1,1
+FC Copenhagen,Borussia Dortmund,1.92,2.01,1,1
+FC Copenhagen,Manchester City FC,1.92,2.35,0,0
+FC Copenhagen,Sevilla FC,1.92,1.53,0,0
+AFC Ajax,Rangers FC,1.48,1.85,4,0
+AFC Ajax,FC Liverpool,1.48,1.87,0,3
+AFC Ajax,Napoli,1.48,1.73,1,6
+Inter de Milão,Futebol Clube do Porto,1.92,2.02,1,0
+Inter de Milão,FC Viktoria Plzen,1.92,1.49,4,0
+Inter de Milão,AC Milan,1.92,1.54,1,0
+Inter de Milão,FC Bayern Munique,1.92,1.93,0,2
+Inter de Milão,Sport Lisboa e Benfica,1.92,1.92,3,3
+Inter de Milão,FC Barcelona,1.92,2.14,1,0
+Celtic FC,Real Madrid CF,1.77,2.01,0,3
+Celtic FC,RB Leipzig,1.77,2.04,0,2
+Celtic FC,Shakhtar Donetsk,1.77,,1,1
+Real Madrid CF,RB Leipzig,2.01,2.04,2,0
+Real Madrid CF,FC Liverpool,2.01,1.87,1,0
+Real Madrid CF,Celtic FC,2.01,1.77,5,1
+Real Madrid CF,Chelsea FC,2.01,1.68,2,0
+Real Madrid CF,Manchester City FC,2.01,2.35,1,1
+Real Madrid CF,Shakhtar Donetsk,2.01,,2,1
+Olympique Marselha,SG Eintracht Frankfurt,1.59,1.96,0,1
+Olympique Marselha,"Tottenham Hotspur ",1.59,1.81,1,2
+Olympique Marselha,Sporting CP,1.59,2.24,4,1
+Red Bull Salzburg,AC Milan,1.49,1.54,1,1
+Red Bull Salzburg,GNK Dinamo Zagreb,1.49,1.91,1,0
+Red Bull Salzburg,Chelsea FC,1.49,1.68,1,2
+FC Viktoria Plzen,Inter de Milão,1.49,1.92,0,2
+FC Viktoria Plzen,FC Bayern Munique,1.49,1.93,2,4
+FC Viktoria Plzen,FC Barcelona,1.49,2.14,2,4
+"Tottenham Hotspur ",Olympique Marselha,1.81,1.59,2,0
+"Tottenham Hotspur ",SG Eintracht Frankfurt,1.81,1.96,3,2
+"Tottenham Hotspur ",AC Milan,1.81,1.54,0,0
+"Tottenham Hotspur ",Sporting CP,1.81,2.24,1,1
+SG Eintracht Frankfurt,Sporting CP,1.96,2.24,0,3
+SG Eintracht Frankfurt,Napoli,1.96,1.73,0,2
+SG Eintracht Frankfurt,Olympique Marselha,1.96,1.59,2,1
+SG Eintracht Frankfurt,"Tottenham Hotspur ",1.96,1.81,0,0
+Rangers FC,Napoli,1.85,1.73,0,3
+Rangers FC,FC Liverpool,1.85,1.87,1,7
+Rangers FC,AFC Ajax,1.85,1.48,1,3
+GNK Dinamo Zagreb,Chelsea FC,1.91,1.68,1,0
+GNK Dinamo Zagreb,Red Bull Salzburg,1.91,1.49,1,1
+GNK Dinamo Zagreb,AC Milan,1.91,1.54,0,4
+Chelsea FC,Red Bull Salzburg,1.68,1.49,1,1
+Chelsea FC,Borussia Dortmund,1.68,2.01,2,0
+Chelsea FC,AC Milan,1.68,1.54,3,0
+Chelsea FC,GNK Dinamo Zagreb,1.68,1.91,2,1
+Chelsea FC,Real Madrid CF,1.68,2.01,0,2
+Futebol Clube do Porto,Club Brugge,2.02,1.69,0,4
+Futebol Clube do Porto,Inter de Milão,2.02,1.92,0,0
+Futebol Clube do Porto,Bayer 04 Leverkusen,2.02,1.6,2,0
+Futebol Clube do Porto,Atlético de Madrid,2.02,1.91,2,1
+Juventus FC,FC Paris Saint-Germain,1.85,1.96,1,2
+Juventus FC,Sport Lisboa e Benfica,1.85,1.92,1,2
+Juventus FC,Maccabi Haifa,1.85,1.31,3,1

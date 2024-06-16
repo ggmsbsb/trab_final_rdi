@@ -1,7 +1,6 @@
 package final_rdi.rdifinal.service;
 import final_rdi.rdifinal.config.AppConfig;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.commons.csv.CSVFormat;
@@ -14,9 +13,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 // Anotação para indicar que a classe é um serviço
 @Service
@@ -34,34 +34,54 @@ public class DataClean {
         String semiFinalDataPath = AppConfig.path_semifinalbase;
         String quarterFinalDataPath = AppConfig.path_quarterbase;
         String octaFinalDataPath = AppConfig.path_octabase;
+        String goalsDataPath = AppConfig.path_goals;
+        String[] desiredColumns = new String[] {"time_mandante", "time_visitante", "proporcao_sucesso_mandante", "proporcao_sucesso_visitante", "gols_mandante", "gols_visitante"};
     
         // Lê o arquivo CSV e escreve o arquivo limpo
         try {
             Reader in = new FileReader(dataPath);
-            Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in);
+            List<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in).getRecords();
+    
+            Iterator<CSVRecord> recordIterator = records.iterator();
+            String[] headers = recordIterator.next().toMap().keySet().toArray(new String[0]);
     
             //Cria os arquivos de saída
             Writer outFinal = new FileWriter(finalDataPath);
-            CSVPrinter printerFinal = new CSVPrinter(outFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+            CSVPrinter printerFinal = new CSVPrinter(outFinal, CSVFormat.DEFAULT.withHeader(headers));
     
             Writer outSemiFinal = new FileWriter(semiFinalDataPath);
-            CSVPrinter printerSemiFinal = new CSVPrinter(outSemiFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+            CSVPrinter printerSemiFinal = new CSVPrinter(outSemiFinal, CSVFormat.DEFAULT.withHeader(headers));
     
             Writer outQuarterFinal = new FileWriter(quarterFinalDataPath);
-            CSVPrinter printerQuarterFinal = new CSVPrinter(outQuarterFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+            CSVPrinter printerQuarterFinal = new CSVPrinter(outQuarterFinal, CSVFormat.DEFAULT.withHeader(headers));
     
             Writer outOctaFinal = new FileWriter(octaFinalDataPath);
-            CSVPrinter printerOctaFinal = new CSVPrinter(outOctaFinal, CSVFormat.DEFAULT.withHeader((String[]) records.iterator().next().toMap().keySet().toArray(new String[0])));
+            CSVPrinter printerOctaFinal = new CSVPrinter(outOctaFinal, CSVFormat.DEFAULT.withHeader(headers));
     
-            processRecords(records.iterator(), printerFinal, printerSemiFinal, printerQuarterFinal, printerOctaFinal);
+            // Create the output file
+            Writer out = new FileWriter(goalsDataPath);
+            CSVPrinter printer = new CSVPrinter(out, CSVFormat.DEFAULT.withHeader(desiredColumns));
+    
+            // Iterate over the records and write only the desired columns to the output file
+            for (CSVRecord record : records) {
+                Map<String, String> recordMap = record.toMap();
+                List<String> recordValues = new ArrayList<>();
+                for (String column : desiredColumns) {
+                    recordValues.add(recordMap.get(column));
+                }
+                printer.printRecord(recordValues);
+            }
+    
+            processRecords(recordIterator, printerFinal, printerSemiFinal, printerQuarterFinal, printerOctaFinal);
     
             // Fecha os arquivos de saída
             printerFinal.close();
             printerSemiFinal.close();
             printerQuarterFinal.close();
             printerOctaFinal.close();
+            printer.close();
         } catch (IOException e) {
-            LOGGER.severe("Error processing CSV file: " + e.getMessage());
+            LOGGER.severe("Erro ao processar csv: " + e.getMessage());
         }
     }
 
