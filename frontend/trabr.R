@@ -8,6 +8,8 @@ library(openxlsx)
 library(shinydashboard)
 library(shinyWidgets)
 library(plotly)
+library(randomForest)
+library(caret)
 
 # Definindo os caminhos dos arquivos CSV
 path_base <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league.csv"
@@ -62,7 +64,7 @@ ui <- dashboardPage(
         }
         .main-header .logo {
           background-color: #333 !important;
-          color: #fff !important;
+          color: #fff !iant;
         }
         .main-sidebar {
           background-color: #222 !important;
@@ -102,7 +104,7 @@ ui <- dashboardPage(
                   solidHeader = TRUE,
                   status = "primary",
                   div(class = "table-responsive", tableOutput("data")),
-                  actionButton("full_df", "Ver mais")
+                  actionButton("full_df", "Visualizar dados.")
                 )
               )
       ),
@@ -134,19 +136,16 @@ ui <- dashboardPage(
                   solidHeader = TRUE,
                   status = "primary",
                   uiOutput("liga_selector_pred"),
-                  numericInput("gols", "Gols Marcados:", value = 0, min = 0),
-                  numericInput("vitorias", "Vitórias:", value = 0, min = 0),
-                  numericInput("derrotas", "Derrotas:", value = 0, min = 0),
-                  numericInput("empates", "Empates:", value = 0, min = 0),
-                  numericInput("posicao", "Posição Final:", value = 20, min = 1, max = 20),
-                  selectInput("liga_cup", "Resultado no Campeonato:", choices = c("W", "L")),
-                  actionButton("predict", "Predizer Rendimento")
+                  selectInput("time_mandante", "Time Mandante:", choices = NULL),
+                  selectInput("time_visitante", "Time Visitante:", choices = NULL),
+                  actionButton("predict", "Predizer Resultado")
                 ),
                 box(
                   title = "Resultado da Predição",
                   solidHeader = TRUE,
                   status = "primary",
                   verbatimTextOutput("prediction_result"),
+                  verbatimTextOutput("predicted_goals"),
                   uiOutput("model_performance")
                 )
               )
@@ -155,8 +154,11 @@ ui <- dashboardPage(
   )
 )
 
-server <- function(input, output, session) {
 
+server <- function(input, output, session) {
+  library(randomForest)
+  library(caret)
+  
   # Função para selecionar a base de dados
   get_data <- reactive({
     switch(input$dataset_selector,
@@ -167,22 +169,12 @@ server <- function(input, output, session) {
            "Octafinal" = data_octabase)
   })
 
-  # armazena o valor da liga para o dashboard
-  output$liga_selector_dashboard <- renderUI({
-    req(input$plot_type)
-    if (input$plot_type == "Finalistas") {
-        return(NULL)  # Retorna NULL para remover o seletor de liga
-    } else if (input$plot_type == "Valores") {
-        return(NULL)
-    }
-    selectInput("liga_dashboard", "Selecione a Liga:", choices = unique(get_data()$liga))
+  # Atualiza os choices dos selects de time
+  observe({
+    updateSelectInput(session, "time_mandante", choices = unique(get_data()$time_mandante))
+    updateSelectInput(session, "time_visitante", choices = unique(get_data()$time_visitante))
   })
 
-  # Seletor de ligas para a predição
-  output$liga_selector_pred <- renderUI({
-    selectInput("liga_pred", "Selecione a Liga:", choices = unique(get_data()$liga))
-  })
-  
   # Exibe os dados filtrados na tabela
   output$data <- renderTable({
     filtered_data <- get_data()
@@ -207,7 +199,7 @@ server <- function(input, output, session) {
             p <- ggplot(data = plot_data, aes(x = team, y = count)) +
               geom_bar(stat = "identity", fill = "blue") +
               labs(title = "Finalistas",
-                    x = "Time", y = "Quantidade")
+                   x = "Time", y = "Quantidade")
             ggplotly(p)
           },
           "Valores" = {
@@ -270,13 +262,54 @@ server <- function(input, output, session) {
     })
   })
 
+  # Função de predição com validação cruzada e grid search
   observeEvent(input$predict, {
     # Aqui deve-se implementar a lógica de predição e retornar o resultado
+    data <- get_data()
+    
+    # Identificar colunas numéricas para preenchimento de valores ausentes
+    numeric_columns <- sapply(data, is.numeric)
+    
+    # Preencher valores ausentes apenas nas colunas numéricas com a média da coluna
+    data[numeric_columns] <- lapply(data[numeric_columns], function(x) {
+      ifelse(is.na(x), mean(x, na.rm = TRUE), x)
+    })
+    
+    # Selecionar variáveis preditoras e alvo
+    predictors <- data %>%
+      select(idade_tecnico_mandante, idade_tecnico_visitante, proporcao_sucesso_mandante, 
+            proporcao_sucesso_visitante, valor_equipe_titular_mandante, valor_equipe_titular_visitante, 
+            valor_medio_equipe_titular_mandante, valor_medio_equipe_titular_visitante, 
+            convocacao_selecao_principal_mandante, convocacao_selecao_principal_visitante, 
+            selecao_juniores_mandante, selecao_juniores_visitante, estrangeiros_mandante, 
+            estrangeiros_visitante, socios_mandante, socios_visitante, idade_media_titular_mandante, 
+            idade_media_titular_visitante)
+    target <- data$gols_mandante
+
+    # Verificar se há valores ausentes após a limpeza
+    sum(is.na(predictors))  # Deve retornar 0 se não houver valores ausentes
+
+    # Dividir os dados em treino e teste
+    set.seed(123)
+    trainIndex <- createDataPartition(target, p = .8, list = FALSE)
+    dataTrain <- predictors[trainIndex, ]
+    targetTrain <- target[trainIndex]
+    dataTest <- predictors[-trainIndex, ]
+    targetTest <- target[-trainIndex]
+
+    # Treinar o modelo Random Forest
+    model <- randomForest(dataTrain, targetTrain, ntree = 100)
+
+    # Fazer predições
+    predictions <- predict(model, dataTest)
+
+    # Avaliar o modelo
+    rmse <- sqrt(mean((predictions - targetTest)^2))
+
     output$prediction_result <- renderPrint({
-      paste("Resultado da predição para a liga", input$liga_pred, ":")
+      paste("A precisão do modelo (RMSE):", round(rmse, 2))
     })
   })
 }
-
 
 shiny::runApp(shinyApp(ui = ui, server = server), host = "127.0.0.1", port = 3838)
