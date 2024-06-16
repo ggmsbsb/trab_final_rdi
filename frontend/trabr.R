@@ -291,23 +291,30 @@ server <- function(input, output, session) {
 
     # Dividir os dados em treino e teste
     set.seed(123)
-    trainIndex <- createDataPartition(target, p = .8, list = FALSE)
+    trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
+    predictors <- as.data.frame(predictors)
     dataTrain <- predictors[trainIndex, ]
     targetTrain <- target[trainIndex]
     dataTest <- predictors[-trainIndex, ]
     targetTest <- target[-trainIndex]
 
-    # Treinar o modelo Random Forest
-    model <- randomForest(dataTrain, targetTrain, ntree = 100)
+    #Definine o controle
+    control <- trainControl(method="cv", number=5, search="random")
 
-    # Fazer predições
-    predictions <- predict(model, dataTest)
+    # Define the grid of parameters to consider
+    tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTrain))))
 
-    # Avaliar o modelo
+    # Train the model
+    model <- train(dataTrain, targetTrain, method = "rf", metric = "RMSE", tuneGrid = tuneGrid, trControl = control)
+
+    # Make predictions
+    predictions <- predict(model, newdata = dataTest)
+
+    # Calculate RMSE
     rmse <- sqrt(mean((predictions - targetTest)^2))
 
     output$prediction_result <- renderPrint({
-      paste("A precisão do modelo (RMSE):", round(rmse, 2))
+      paste("A precisão do modelo (RMSE):", round(rmse, 2), "Predicted average gols_mandante:", round(mean(predictions), 2))
     })
   })
 }
