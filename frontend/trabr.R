@@ -270,123 +270,133 @@ server <- function(input, output, session) {
 
 observeEvent(input$predict, {
   
-    # Função para determinar quem é "melhor" com base na quantidade de gols
-    definir_melhor <- function(data, time1, time2) {
-      confrontos <- data %>%
-        filter((time_mandante == time1 & time_visitante == time2) | (time_mandante == time2 & time_visitante == time1))
+  # Função para determinar quem é "melhor" com base na quantidade de gols
+  definir_melhor <- function(data, time1, time2) {
+    confrontos <- data %>%
+      filter((time_mandante == time1 & time_visitante == time2) | (time_mandante == time2 & time_visitante == time1))
+    
+    if (nrow(confrontos) == 0) {
+      return(0)  # Não há confrontos diretos entre os times
+    } else {
+      gols_time1 <- sum(confrontos[confrontos$time_mandante == time1, "gols_mandante"]) + sum(confrontos[confrontos$time_visitante == time1, "gols_visitante"])
+      gols_time2 <- sum(confrontos[confrontos$time_mandante == time2, "gols_mandante"]) + sum(confrontos[confrontos$time_visitante == time2, "gols_visitante"])
       
-      if (nrow(confrontos) == 0) {
-        return(0)  # Não há confrontos diretos entre os times
-      } else {
-        gols_time1 <- sum(confrontos[confrontos$time_mandante == time1, "gols_mandante"]) + sum(confrontos[confrontos$time_visitante == time1, "gols_visitante"])
-        gols_time2 <- sum(confrontos[confrontos$time_mandante == time2, "gols_mandante"]) + sum(confrontos[confrontos$time_visitante == time2, "gols_visitante"])
-        
-        return(sign(gols_time1 - gols_time2))  # retorna -1, 0 ou 1
+      return(sign(gols_time1 - gols_time2))  # retorna -1, 0 ou 1
+    }
+  }
+  
+  # Calcula a classificação ordinal dos times
+  calcular_classificacao <- function(data, times) {
+    classificacao <- numeric(length(times))
+    
+    for (i in seq_along(times)) {
+      for (j in seq_along(times)[-i]) {
+        confronto <- definir_melhor(data, times[i], times[j])
+        classificacao[i] <- classificacao[i] + max(confronto, 0)
+        classificacao[j] <- classificacao[j] + max(-confronto, 0)
       }
     }
     
-    # Calcula a classificação ordinal dos times
-    calcular_classificacao <- function(data, times) {
-      classificacao <- numeric(length(times))
-      
-      for (i in seq_along(times)) {
-        for (j in seq_along(times)[-i]) {
-          confronto <- definir_melhor(data, times[i], times[j])
-          classificacao[i] <- classificacao[i] + max(confronto, 0)
-          classificacao[j] <- classificacao[j] + max(-confronto, 0)
-        }
-      }
-      
-      return(classificacao)
-    }
-    
-    # Função para preparar os dados para treinamento do modelo de IA
-    preparar_dados_modelo <- function(data, times_selecionados) {
-      mandante_data <- data %>%
-        filter(time_mandante == times_selecionados[1]) %>%
-        summarise(
-          proporcao_sucesso_mandante = mean(proporcao_sucesso_mandante, na.rm = TRUE),
-          gols_mandante = mean(gols_mandante, na.rm = TRUE)
-        )
-      
-      visitante_data <- data %>%
-        filter(time_visitante == times_selecionados[2]) %>%
-        summarise(
-          proporcao_sucesso_visitante = mean(proporcao_sucesso_visitante, na.rm = TRUE),
-          gols_visitante = mean(gols_visitante, na.rm = TRUE)
-        )
-      
-      data.frame(
-        proporcao_sucesso_mandante = mandante_data$proporcao_sucesso_mandante,
-        gols_mandante = mandante_data$gols_mandante,
-        proporcao_sucesso_visitante = visitante_data$proporcao_sucesso_visitante,
-        gols_visitante = visitante_data$gols_visitante
+    return(classificacao)
+  }
+  
+  # Função para preparar os dados para treinamento do modelo de IA
+  preparar_dados_modelo <- function(data, times_selecionados) {
+    mandante_data <- data %>%
+      filter(time_mandante == times_selecionados[1]) %>%
+      summarise(
+        proporcao_sucesso_mandante = mean(proporcao_sucesso_mandante, na.rm = TRUE),
+        gols_mandante = mean(gols_mandante, na.rm = TRUE)
       )
-    }
     
-    # Lista de times selecionados pelo usuário
-    times_selecionados <- unique(c(input$time_mandante, input$time_visitante))
-    
-    # Classificação ordinal dos times
-    classificacoes <- calcular_classificacao(data_goalbase, times_selecionados)
-    
-    # Preparação dos dados para treinamento do modelo
-    predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
-    target <- data_goalbase$match_outcome
-    
-    # Remover linhas com valores NA e substituir por média da coluna
-    preProc <- preProcess(predictors, method = 'medianImpute')
-    predictors <- predict(preProc, predictors)
-    predictors <- predictors[complete.cases(predictors, target), ]
-    target <- target[complete.cases(predictors, target)]
-    
-    # Dividir os dados em conjunto de treino e teste
-    set.seed(123)
-    trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
-    dataTreino <- predictors[trainIndex, ]
-    targetTreino <- target[trainIndex]
-    dataTestes <- predictors[-trainIndex, ]
-    targetTestes <- target[-trainIndex]
-    
-    # Definir controle com validação cruzada de 10 folds
-    control <- trainControl(method = "cv", number = 10, classProbs = TRUE, summaryFunction = multiClassSummary)
-    
-    # Definir grid de parâmetros a considerar
-    tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTreino))))
-    
-    # Treinar o modelo
-    model <- train(dataTreino, targetTreino, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
-    
-    # Fazer previsões com o modelo treinado
-    predictions <- predict(model, newdata = dataTestes)
-    
-    # Calcular a precisão do modelo
-    accuracy <- mean(predictions == targetTestes)
-    
-    # Previsões com o modelo para os times selecionados
-    selected_predictors <- preparar_dados_modelo(data_goalbase, times_selecionados)
-    prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
-    prob_mandante <- prob_predictions[, "mandante"] * 100
-    prob_visitante <- prob_predictions[, "visitante"] * 100
-    
-    # Normalizar as probabilidades para somar 100%
-    total_prob <- prob_mandante + prob_visitante
-    prob_mandante_norm <- prob_mandante / total_prob * 100
-    prob_visitante_norm <- prob_visitante / total_prob * 100
-    
-    # Exibição dos resultados na interface Shiny
-    output$prediction_result <- renderPrint({
-      paste("Probabilidade de Vitória - Mandante:", round(prob_mandante_norm, 2), "%\n",
-            "Probabilidade de Vitória - Visitante:", round(prob_visitante_norm, 2), "%")
-    })
-    
-    output$model_performance <- renderUI({
-      tagList(
-        h4("Desempenho do Modelo"),
-        p(paste("Precisão em %:", round(accuracy, 2) * 100))
+    visitante_data <- data %>%
+      filter(time_visitante == times_selecionados[2]) %>%
+      summarise(
+        proporcao_sucesso_visitante = mean(proporcao_sucesso_visitante, na.rm = TRUE),
+        gols_visitante = mean(gols_visitante, na.rm = TRUE)
       )
-    })
+    
+    data.frame(
+      proporcao_sucesso_mandante = mandante_data$proporcao_sucesso_mandante,
+      gols_mandante = mandante_data$gols_mandante,
+      proporcao_sucesso_visitante = visitante_data$proporcao_sucesso_visitante,
+      gols_visitante = visitante_data$gols_visitante
+    )
+  }
+  
+  # Lista de times selecionados pelo usuário
+  times_selecionados <- unique(c(input$time_mandante, input$time_visitante))
+  
+  # Classificação ordinal dos times
+  classificacoes <- calcular_classificacao(data_goalbase, times_selecionados)
+  
+  # Preparação dos dados para treinamento do modelo
+  predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
+  target <- data_goalbase$match_outcome
+  
+  # Remover linhas com valores NA e substituir por média da coluna
+  preProc <- preProcess(predictors, method = 'medianImpute')
+  predictors <- predict(preProc, predictors)
+  complete_cases <- complete.cases(predictors, target)
+  predictors <- predictors[complete_cases, ]
+  target <- target[complete_cases]
+  
+  # Dividir os dados em conjunto de treino e teste
+  set.seed(123)
+  trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
+  dataTreino <- predictors[trainIndex, ]
+  targetTreino <- target[trainIndex]
+  dataTestes <- predictors[-trainIndex, ]
+  targetTestes <- target[-trainIndex]
+  
+  # Definir controle com validação cruzada de 10 folds
+  control <- trainControl(method = "repeatedcv", number = 10, repeats = 3, classProbs = TRUE, summaryFunction = multiClassSummary)
+  
+  # Definir grid de parâmetros a considerar
+  tuneGrid <- expand.grid(.mtry = 1:sqrt(ncol(dataTreino)))
+  
+  # Treinar o modelo
+  model <- train(x = dataTreino, y = targetTreino, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
+  
+  # Fazer previsões com o modelo treinado
+  predictions <- predict(model, newdata = dataTestes)
+  
+  # Calcular a precisão do modelo
+  accuracy <- mean(predictions == targetTestes)
+  
+  # Calcular a margem de erro da acurácia
+  cv_results <- model$results$Accuracy
+  mean_accuracy <- mean(cv_results)
+  sd_accuracy <- sd(cv_results)
+  margin_of_error <- qt(0.975, df = length(cv_results) - 1) * sd_accuracy / sqrt(length(cv_results))
+  
+  # Previsões com o modelo para os times selecionados
+  selected_predictors <- preparar_dados_modelo(data_goalbase, times_selecionados)
+  prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
+  prob_mandante <- prob_predictions[, "mandante"] * 100
+  prob_visitante <- prob_predictions[, "visitante"] * 100
+  
+  # Normalizar as probabilidades para somar 100%
+  total_prob <- prob_mandante + prob_visitante
+  prob_mandante_norm <- prob_mandante / total_prob * 100
+  prob_visitante_norm <- prob_visitante / total_prob * 100
+  
+  # Exibição dos resultados na interface Shiny
+  output$prediction_result <- renderPrint({
+    paste("Probabilidade de Vitória - Mandante:", round(prob_mandante_norm, 2), "%\n",
+          "Probabilidade de Vitória - Visitante:", round(prob_visitante_norm, 2), "%")
   })
+  
+  output$model_performance <- renderUI({
+    tagList(
+      h4("Desempenho do Modelo"),
+      p(paste("Pico de precisão em %:", round(accuracy * 100, 2))),
+      p(paste("Minimo de precisão em %:", round(accuracy * 100 - margin_of_error, 2))),
+    )
+  })
+})
+
+
 }
 
 shiny::runApp(shinyApp(ui = ui, server = server), host = "127.0.0.1", port = 3838)
