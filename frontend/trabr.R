@@ -9,6 +9,17 @@ library(dplyr)
 library(openxlsx)
 library(MLmetrics)
 
+# Lista de pacotes necessários
+packages <- c("shiny", "shinydashboard", "shinyWidgets", "plotly", "randomForest", "caret", "readr", "dplyr", "openxlsx", "MLmetrics")
+
+# Verifica se os pacotes estão instalados. Caso não, instalar. (Minha versão do pacman)
+for(package in packages){
+  if(!require(package, character.only = TRUE)){
+    install.packages(package, dependencies = TRUE)
+    library(package, character.only = TRUE)
+  }
+}
+
 # Definindo os caminhos dos arquivos CSV
 path_base <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league.csv"
 path_finalbase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league_final.csv"
