@@ -1,15 +1,13 @@
-# Carregando bibliotecas necessárias
-library(readr)
-library(dplyr)
 library(shiny)
-library(ggplot2)
-library(caret)
-library(openxlsx)
 library(shinydashboard)
 library(shinyWidgets)
 library(plotly)
 library(randomForest)
 library(caret)
+library(readr)
+library(dplyr)
+library(openxlsx)
+library(MLmetrics)
 
 # Definindo os caminhos dos arquivos CSV
 path_base <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league.csv"
@@ -17,6 +15,7 @@ path_finalbase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_lea
 path_semifinalbase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league_semifinalist.csv"
 path_quarterbase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league_quarterfinalist.csv"
 path_octabase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league_octafinalist.csv"
+path_goalbase <- "D:\\CDMI\\rdifinal\\src\\main\\resources\\data\\champions_league_goals.csv"
 
 # Leitura dos arquivos CSV
 data_base <- read_csv(path_base)
@@ -24,10 +23,23 @@ data_finalbase <- read_csv(path_finalbase)
 data_semifinalbase <- read_csv(path_semifinalbase)
 data_quarterbase <- read_csv(path_quarterbase)
 data_octabase <- read_csv(path_octabase)
+data_goalbase <- read_csv(path_goalbase)
 
 # Transformações necessárias
 data_base <- data_base %>%
   mutate(across(c(gols_mandante, gols_visitante), as.numeric))
+data_goalbase <- data_goalbase %>%
+  mutate(across(c(gols_mandante, gols_visitante), as.numeric))
+
+# Adicionar a coluna match_outcome
+data_goalbase <- data_goalbase %>%
+  mutate(
+    match_outcome = case_when(
+      gols_mandante > gols_visitante ~ "mandante",
+      gols_mandante < gols_visitante ~ "visitante",
+      TRUE ~ "empate"
+    )
+  )
 
 ui <- dashboardPage(
   dashboardHeader(
@@ -97,7 +109,7 @@ ui <- dashboardPage(
                   width = 3,
                   collapsible = TRUE,
                   selectInput("dataset_selector", "Selecione a Base de Dados:", 
-                              choices = c("Base", "Final", "Semifinal", "Quarterfinal", "Octafinal")),
+                              choices = c("Base", "Final", "Semifinal", "Quarterfinal", "Octafinal", "Goals")),
                 ),
                 box(
                   title = "Dados",
@@ -154,10 +166,7 @@ ui <- dashboardPage(
   )
 )
 
-
 server <- function(input, output, session) {
-  library(randomForest)
-  library(caret)
   
   # Função para selecionar a base de dados
   get_data <- reactive({
@@ -166,7 +175,8 @@ server <- function(input, output, session) {
            "Final" = data_finalbase,
            "Semifinal" = data_semifinalbase,
            "Quarterfinal" = data_quarterbase,
-           "Octafinal" = data_octabase)
+           "Octafinal" = data_octabase,
+           "Goals" = data_goalbase)
   })
 
   # Atualiza os choices dos selects de time
@@ -262,61 +272,76 @@ server <- function(input, output, session) {
     })
   })
 
-  # Função de predição com validação cruzada e grid search
   observeEvent(input$predict, {
-    # Aqui deve-se implementar a lógica de predição e retornar o resultado
-    data <- get_data()
+    # Prepare predictors and target
+    predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
+    target <- data_goalbase$match_outcome  # Nova coluna criada
     
-    # Identificar colunas numéricas para preenchimento de valores ausentes
-    numeric_columns <- sapply(data, is.numeric)
+    # Verificar se há pelo menos 2 classes no alvo
+    if (length(unique(target)) < 2) {
+      output$prediction_result <- renderPrint({
+        "Erro: O alvo deve ter pelo menos duas classes diferentes."
+      })
+      return()
+    }
     
-    # Preencher valores ausentes apenas nas colunas numéricas com a média da coluna
-    data[numeric_columns] <- lapply(data[numeric_columns], function(x) {
-      ifelse(is.na(x), mean(x, na.rm = TRUE), x)
-    })
-    
-    # Selecionar variáveis preditoras e alvo
-    predictors <- data %>%
-      select(idade_tecnico_mandante, idade_tecnico_visitante, proporcao_sucesso_mandante, 
-            proporcao_sucesso_visitante, valor_equipe_titular_mandante, valor_equipe_titular_visitante, 
-            valor_medio_equipe_titular_mandante, valor_medio_equipe_titular_visitante, 
-            convocacao_selecao_principal_mandante, convocacao_selecao_principal_visitante, 
-            selecao_juniores_mandante, selecao_juniores_visitante, estrangeiros_mandante, 
-            estrangeiros_visitante, socios_mandante, socios_visitante, idade_media_titular_mandante, 
-            idade_media_titular_visitante)
-    target <- data$gols_mandante
+    # Tratar NAs se houver
+    na_indices <- which(apply(predictors, 1, function(x) any(is.na(x))))
+    predictors <- predictors[-na_indices, ]
+    target <- target[-na_indices]
 
-    # Verificar se há valores ausentes após a limpeza
-    sum(is.na(predictors))  # Deve retornar 0 se não houver valores ausentes
-
-    # Dividir os dados em treino e teste
+    # Split the data into training and testing sets
     set.seed(123)
     trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
-    predictors <- as.data.frame(predictors)
     dataTrain <- predictors[trainIndex, ]
     targetTrain <- target[trainIndex]
     dataTest <- predictors[-trainIndex, ]
     targetTest <- target[-trainIndex]
 
-    #Definine o controle
-    control <- trainControl(method="cv", number=5, search="random")
+    # Define the control
+    control <- trainControl(method = "cv", number = 5, classProbs = TRUE, summaryFunction = multiClassSummary)
 
     # Define the grid of parameters to consider
     tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTrain))))
 
     # Train the model
-    model <- train(dataTrain, targetTrain, method = "rf", metric = "RMSE", tuneGrid = tuneGrid, trControl = control)
+    model <- train(dataTrain, targetTrain, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
 
     # Make predictions
     predictions <- predict(model, newdata = dataTest)
 
-    # Calculate RMSE
-    rmse <- sqrt(mean((predictions - targetTest)^2))
+    # Calculate accuracy
+    accuracy <- sum(predictions == targetTest) / length(targetTest)
 
+    # Calculate probabilities for the selected teams
+    selected_data <- data_goalbase %>%
+      filter(time_mandante == input$time_mandante & time_visitante == input$time_visitante)
+
+    # Prepare selected data for prediction
+    selected_predictors <- selected_data[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
+
+    # Check for NA or NaN values and remove or replace them
+    selected_predictors <- na.omit(selected_predictors)
+
+    # Make predictions for the selected teams
+    prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
+    prob_mandante <- prob_predictions[, "mandante"]
+    prob_visitante <- prob_predictions[, "visitante"]
+
+    # Display results in the Shiny interface
     output$prediction_result <- renderPrint({
-      paste("A precisão do modelo (RMSE):", round(rmse, 2), "Predicted average gols_mandante:", round(mean(predictions), 2))
+      paste("Probabilidade de Vitória - Mandante:", round(prob_mandante * 100, 2), "%\n",
+            "Probabilidade de Vitória - Visitante:", round(prob_visitante * 100, 2), "%")
+    })
+
+    output$model_performance <- renderUI({
+      tagList(
+        h4("Desempenho do Modelo"),
+        p(paste("Accuracy:", round(accuracy, 2)))
+      )
     })
   })
+
 }
 
 shiny::runApp(shinyApp(ui = ui, server = server), host = "127.0.0.1", port = 3838)
