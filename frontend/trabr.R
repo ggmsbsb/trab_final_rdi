@@ -272,76 +272,144 @@ server <- function(input, output, session) {
     })
   })
 
-  observeEvent(input$predict, {
-    # Prepare predictors and target
-    predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
-    target <- data_goalbase$match_outcome  # Nova coluna criada
+observeEvent(input$predict, {
+  
+  # Função para determinar quem é "melhor" com base na quantidade de gols
+  definir_melhor <- function(data, time1, time2) {
+    confrontos <- data %>%
+      filter((time_mandante == time1 & time_visitante == time2) | (time_mandante == time2 & time_visitante == time1))
     
-    # Verificar se há pelo menos 2 classes no alvo
-    if (length(unique(target)) < 2) {
-      output$prediction_result <- renderPrint({
-        "Erro: O alvo deve ter pelo menos duas classes diferentes."
-      })
-      return()
+    if (nrow(confrontos) == 0) {
+      return(0)  # Não há confrontos diretos entre os times
+    } else {
+      gols_time1 <- sum(ifelse(confrontos$time_mandante == time1, confrontos$gols_mandante, confrontos$gols_visitante))
+      gols_time2 <- sum(ifelse(confrontos$time_mandante == time2, confrontos$gols_mandante, confrontos$gols_visitante))
+      
+      if (gols_time1 > gols_time2) {
+        return(1)  # time1 é "melhor" que time2
+      } else if (gols_time2 > gols_time1) {
+        return(2)  # time2 é "melhor" que time1
+      } else {
+        return(0)  # empate nos gols
+      }
+    }
+  }
+  
+  # Calcula a classificação ordinal dos times
+  calcular_classificacao <- function(data, times) {
+    classificacao <- rep(0, length(times))
+    
+    for (i in 1:length(times)) {
+      for (j in (i + 1):length(times)) {
+        confronto <- definir_melhor(data, times[i], times[j])
+        if (confronto == 1) {
+          classificacao[i] <- classificacao[i] + 1
+        } else if (confronto == 2) {
+          classificacao[j] <- classificacao[j] + 1
+        }
+      }
     }
     
-    # Tratar NAs se houver
-    na_indices <- which(apply(predictors, 1, function(x) any(is.na(x))))
-    predictors <- predictors[-na_indices, ]
-    target <- target[-na_indices]
-
-    # Split the data into training and testing sets
-    set.seed(123)
-    trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
-    dataTrain <- predictors[trainIndex, ]
-    targetTrain <- target[trainIndex]
-    dataTest <- predictors[-trainIndex, ]
-    targetTest <- target[-trainIndex]
-
-    # Define the control
-    control <- trainControl(method = "cv", number = 5, classProbs = TRUE, summaryFunction = multiClassSummary)
-
-    # Define the grid of parameters to consider
-    tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTrain))))
-
-    # Train the model
-    model <- train(dataTrain, targetTrain, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
-
-    # Make predictions
-    predictions <- predict(model, newdata = dataTest)
-
-    # Calculate accuracy
-    accuracy <- sum(predictions == targetTest) / length(targetTest)
-
-    # Calculate probabilities for the selected teams
-    selected_data <- data_goalbase %>%
-      filter(time_mandante == input$time_mandante & time_visitante == input$time_visitante)
-
-    # Prepare selected data for prediction
-    selected_predictors <- selected_data[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
-
-    # Check for NA or NaN values and remove or replace them
-    selected_predictors <- na.omit(selected_predictors)
-
-    # Make predictions for the selected teams
-    prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
-    prob_mandante <- prob_predictions[, "mandante"]
-    prob_visitante <- prob_predictions[, "visitante"]
-
-    # Display results in the Shiny interface
-    output$prediction_result <- renderPrint({
-      paste("Probabilidade de Vitória - Mandante:", round(prob_mandante * 100, 2), "%\n",
-            "Probabilidade de Vitória - Visitante:", round(prob_visitante * 100, 2), "%")
-    })
-
-    output$model_performance <- renderUI({
-      tagList(
-        h4("Desempenho do Modelo"),
-        p(paste("Accuracy:", round(accuracy, 2)))
+    return(classificacao)
+  }
+  
+  # Função para preparar os dados para treinamento do modelo de IA
+  preparar_dados_modelo <- function(data, times_selecionados) {
+    mandante_data <- data %>%
+      filter(time_mandante == times_selecionados[1]) %>%
+      summarise(
+        proporcao_sucesso_mandante = mean(proporcao_sucesso_mandante, na.rm = TRUE),
+        gols_mandante = mean(gols_mandante, na.rm = TRUE)
       )
-    })
+    
+    visitante_data <- data %>%
+      filter(time_visitante == times_selecionados[2]) %>%
+      summarise(
+        proporcao_sucesso_visitante = mean(proporcao_sucesso_visitante, na.rm = TRUE),
+        gols_visitante = mean(gols_visitante, na.rm = TRUE)
+      )
+    
+    selected_predictors <- data.frame(
+      proporcao_sucesso_mandante = mandante_data$proporcao_sucesso_mandante,
+      gols_mandante = mandante_data$gols_mandante,
+      proporcao_sucesso_visitante = visitante_data$proporcao_sucesso_visitante,
+      gols_visitante = visitante_data$gols_visitante
+    )
+    
+    return(selected_predictors)
+  }
+  
+  # Lista de times selecionados pelo usuário
+  times_selecionados <- unique(c(input$time_mandante, input$time_visitante))
+  
+  # Classificação ordinal dos times
+  classificacoes <- calcular_classificacao(data_goalbase, times_selecionados)
+  
+  # Preparação dos dados para treinamento do modelo
+  dados_treino <- preparar_dados_modelo(data_goalbase, times_selecionados)
+  
+  # Preparar predictors e target para o modelo
+  predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
+  target <- data_goalbase$match_outcome
+  
+  # Remover linhas com valores NA
+  complete_cases <- complete.cases(predictors, target)
+  predictors <- predictors[complete_cases, ]
+  target <- target[complete_cases]
+  
+  # Substituir NA por média da coluna
+  for(i in seq_along(predictors)) {
+    predictors[, i][is.na(predictors[, i])] <- mean(predictors[, i], na.rm = TRUE)
+  }
+  
+  # Dividir os dados em conjunto de treino e teste
+  set.seed(123)
+  trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
+  dataTrain <- predictors[trainIndex, ]
+  targetTrain <- target[trainIndex]
+  dataTest <- predictors[-trainIndex, ]
+  targetTest <- target[-trainIndex]
+  
+  # Definir controle com validação cruzada de 10 folds
+  control <- trainControl(method = "cv", number = 10, classProbs = TRUE, summaryFunction = multiClassSummary)
+  
+  # Definir grid de parâmetros a considerar
+  tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTrain))))
+  
+  # Treinar o modelo
+  model <- train(dataTrain, targetTrain, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
+  
+  # Fazer previsões com o modelo treinado
+  predictions <- predict(model, newdata = dataTest)
+  
+  # Calcular a precisão do modelo
+  accuracy <- sum(predictions == targetTest) / length(targetTest)
+  
+  # Calcular a margem de erro da acurácia
+  cv_results <- model$results$Accuracy
+  mean_accuracy <- mean(cv_results)
+  sd_accuracy <- sd(cv_results)
+  margin_of_error <- qnorm(0.975) * (sd_accuracy / sqrt(length(cv_results)))
+  
+  # Previsões com o modelo para os times selecionados
+  selected_predictors <- preparar_dados_modelo(data_goalbase, times_selecionados)
+  prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
+  prob_mandante <- prob_predictions[, "mandante"]
+  prob_visitante <- prob_predictions[, "visitante"]
+  
+  # Exibição dos resultados na interface Shiny
+  output$prediction_result <- renderPrint({
+    paste("Probabilidade de Vitória - Mandante:", round(prob_mandante * 100, 2), "%\n",
+          "Probabilidade de Vitória - Visitante:", round(prob_visitante * 100, 2), "%")
   })
-
+  
+  output$model_performance <- renderUI({
+    tagList(
+      h4("Desempenho do Modelo"),
+      p(paste("Precisão:", round(accuracy, 2), "Margem de erro é de +/-", round(margin_of_error, 2)))
+    )
+  })
+})
 }
 
 shiny::runApp(shinyApp(ui = ui, server = server), host = "127.0.0.1", port = 3838)
