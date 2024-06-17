@@ -346,9 +346,6 @@ observeEvent(input$predict, {
   classificacoes <- calcular_classificacao(data_goalbase, times_selecionados)
   
   # Preparação dos dados para treinamento do modelo
-  dados_treino <- preparar_dados_modelo(data_goalbase, times_selecionados)
-  
-  # Preparar predictors e target para o modelo
   predictors <- data_goalbase[, c('proporcao_sucesso_mandante', 'proporcao_sucesso_visitante', 'gols_mandante', 'gols_visitante')]
   target <- data_goalbase$match_outcome
   
@@ -365,25 +362,25 @@ observeEvent(input$predict, {
   # Dividir os dados em conjunto de treino e teste
   set.seed(123)
   trainIndex <- createDataPartition(target, p = .8, list = FALSE, times = 1)
-  dataTrain <- predictors[trainIndex, ]
-  targetTrain <- target[trainIndex]
-  dataTest <- predictors[-trainIndex, ]
-  targetTest <- target[-trainIndex]
+  dataTreino <- predictors[trainIndex, ]
+  targetTreino <- target[trainIndex]
+  dataTestes <- predictors[-trainIndex, ]
+  targetTestes <- target[-trainIndex]
   
   # Definir controle com validação cruzada de 10 folds
   control <- trainControl(method = "cv", number = 10, classProbs = TRUE, summaryFunction = multiClassSummary)
   
   # Definir grid de parâmetros a considerar
-  tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTrain))))
+  tuneGrid <- expand.grid(.mtry = c(1:sqrt(ncol(dataTreino))))
   
   # Treinar o modelo
-  model <- train(dataTrain, targetTrain, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
+  model <- train(dataTreino, targetTreino, method = "rf", metric = "Accuracy", tuneGrid = tuneGrid, trControl = control)
   
   # Fazer previsões com o modelo treinado
-  predictions <- predict(model, newdata = dataTest)
+  predictions <- predict(model, newdata = dataTestes)
   
   # Calcular a precisão do modelo
-  accuracy <- sum(predictions == targetTest) / length(targetTest)
+  accuracy <- sum(predictions == targetTestes) / length(targetTestes)
   
   # Calcular a margem de erro da acurácia
   cv_results <- model$results$Accuracy
@@ -394,19 +391,24 @@ observeEvent(input$predict, {
   # Previsões com o modelo para os times selecionados
   selected_predictors <- preparar_dados_modelo(data_goalbase, times_selecionados)
   prob_predictions <- predict(model, newdata = selected_predictors, type = "prob")
-  prob_mandante <- prob_predictions[, "mandante"]
-  prob_visitante <- prob_predictions[, "visitante"]
+  prob_mandante <- prob_predictions[, "mandante"] * 100
+  prob_visitante <- prob_predictions[, "visitante"] * 100
+  
+  # Normalizar as probabilidades para somar 100%
+  total_prob <- prob_mandante + prob_visitante
+  prob_mandante_norm <- prob_mandante / total_prob * 100
+  prob_visitante_norm <- prob_visitante / total_prob * 100
   
   # Exibição dos resultados na interface Shiny
   output$prediction_result <- renderPrint({
-    paste("Probabilidade de Vitória - Mandante:", round(prob_mandante * 100, 2), "%\n",
-          "Probabilidade de Vitória - Visitante:", round(prob_visitante * 100, 2), "%")
+    paste("Probabilidade de Vitória - Mandante:", round(prob_mandante_norm, 2), "%\n",
+          "Probabilidade de Vitória - Visitante:", round(prob_visitante_norm, 2), "%")
   })
   
   output$model_performance <- renderUI({
     tagList(
       h4("Desempenho do Modelo"),
-      p(paste("Precisão:", round(accuracy, 2), "Margem de erro é de +/-", round(margin_of_error, 2)))
+      p(paste("Precisão em %:", round(accuracy, 2) * 100, " | " , "Margem de erro é de +/-", round(margin_of_error, 2)))
     )
   })
 })
