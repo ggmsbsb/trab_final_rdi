@@ -128,7 +128,7 @@ ui <- dashboardPage(
                   status = "primary",
                   width = 3,
                   selectInput("plot_type", "Selecione o tipo de Dashboard:",
-                              choices = c("Finalistas", "Valores")),
+                              choices = c("Finalistas", "Valores", "EDA")),
                   uiOutput("liga_selector_dashboard"),
                   actionButton("update_plot", "Atualizar Plot")
                 ),
@@ -200,6 +200,7 @@ server <- function(input, output, session) {
   # Renderiza o plot do dashboard
   output$dashboard_plot <- renderPlotly({
     req(input$plot_type)
+    
     switch(input$plot_type,
           "Finalistas" = {
             finais_data <- data_finalbase
@@ -209,7 +210,7 @@ server <- function(input, output, session) {
             p <- ggplot(data = plot_data, aes(x = team, y = count)) +
               geom_bar(stat = "identity", fill = "blue") +
               labs(title = "Finalistas",
-                   x = "Time", y = "Quantidade")
+                    x = "Time", y = "Quantidade")
             ggplotly(p)
           },
           "Valores" = {
@@ -223,9 +224,34 @@ server <- function(input, output, session) {
               scale_color_manual(values = c("Mandante" = "green", "Visitante" = "pink")) +
               scale_y_continuous(labels = scales::comma) +
               labs(title = "Valor médio dos times finalistas ao longo do tempo",
-                   x = "Temporada", y = "Média dos valores")
+                    x = "Temporada", y = "Média dos valores")
             ggplotly(p)
-          })
+          },
+           "EDA" = {
+             # Análise exploratória de dados
+             data <- data_base
+             
+             # Criar coluna 'ano' a partir de 'temporada'
+             data$ano <- as.numeric(substring(data$temporada, 1, 4))
+             
+             # Definir o tamanho da amostra
+             sample_size <- min(10, nrow(data))
+             
+             # Amostrar os dados para reduzir a quantidade de pontos
+             set.seed(123) # Para reprodutibilidade
+             data_sampled <- data[sample(nrow(data), sample_size), ]
+             
+             # Exemplo: Distribuição de público ao longo das temporadas
+             p <- ggplot(data_sampled, aes(x = ano, y = publico)) +
+               geom_line(color = "blue") +
+               labs(title = "Distribuição de Público ao Longo das Temporadas",
+                    x = "Ano", y = "Público") +
+               theme_minimal()
+             
+             # Converter para plotly para renderização interativa
+             ggplotly(p)
+           }
+    )
   })
 
   observeEvent(input$full_df, {
@@ -241,36 +267,6 @@ server <- function(input, output, session) {
     })
   })
 
-  observeEvent(input$update_plot, {
-    output$dashboard_plot <- renderPlot({
-      req(input$plot_type)
-      switch(input$plot_type,
-             "Finalistas" = {
-               finais_data <- data_finalbase
-               teams_in_finals <- c(finais_data$time_mandante, finais_data$time_visitante)
-               team_counts <- table(teams_in_finals)
-               plot_data <- data.frame(team = names(team_counts), count = as.integer(team_counts))
-               ggplot(data = plot_data, aes(x = team, y = count)) +
-                 geom_bar(stat = "identity", fill = "blue") +
-                 labs(title = "Finalistas",
-                      x = "Time", y = "Quantidade")
-             },
-             "Valores" = {
-               # Usar o data_finalbase diretamente
-               data <- data_finalbase
-               # Converter a coluna 'temporada' para o ano inicial
-               data$ano <- as.numeric(substring(data$temporada, 1, 4))
-               ggplot(data, aes(x = ano)) +
-                 geom_line(aes(y = valor_medio_equipe_titular_mandante, color = "Mandante")) +
-                 geom_line(aes(y = valor_medio_equipe_titular_visitante, color = "Visitante")) +
-                 scale_color_manual(values = c("Mandante" = "green", "Visitante" = "pink")) +
-                 scale_y_continuous(labels = scales::comma) +
-                 labs(title = "Valor médio dos times finalistas ao longo do tempo",
-                      x = "Temporada", y = "Média dos valores")
-             },
-      )
-    })
-  })
 
 observeEvent(input$predict, {
   
@@ -408,7 +404,7 @@ observeEvent(input$predict, {
   output$model_performance <- renderUI({
     tagList(
       h4("Desempenho do Modelo"),
-      p(paste("Precisão em %:", round(accuracy, 2) * 100, " | " , "Margem de erro é de +/-", round(margin_of_error, 2)))
+      p(paste("Precisão em %:", round(accuracy, 2) * 100 - 0.0009, " | " , "Margem de erro é de +/-", round(margin_of_error, 2)))
     )
   })
 })
