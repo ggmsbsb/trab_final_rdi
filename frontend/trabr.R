@@ -241,24 +241,18 @@ server <- function(input, output, session) {
            "EDA" = {
              # Análise exploratória de dados
              data <- data_base
-             
              # Criar coluna 'ano' a partir de 'temporada'
              data$ano <- as.numeric(substring(data$temporada, 1, 4))
-             
              # Definir o tamanho da amostra
              sample_size <- min(10, nrow(data))
-             
              # Amostrar os dados para reduzir a quantidade de pontos
              set.seed(123) # Para reprodutibilidade
              data_sampled <- data[sample(nrow(data), sample_size), ]
-             
-             # Exemplo: Distribuição de público ao longo das temporadas
              p <- ggplot(data_sampled, aes(x = ano, y = publico)) +
                geom_line(color = "blue") +
                labs(title = "Distribuição de Público ao Longo das Temporadas",
                     x = "Ano", y = "Público") +
                theme_minimal()
-             
              # Converter para plotly para renderização interativa
              ggplotly(p)
            }
